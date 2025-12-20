@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/heisenberg-portfolio/static/css/main.666ba607.css",
+    "main.js": "/heisenberg-portfolio/static/js/main.69e089b5.js",
+    "static/js/453.b05d8aa5.chunk.js": "/heisenberg-portfolio/static/js/453.b05d8aa5.chunk.js",
+    "static/media/bg-light.png": "/heisenberg-portfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/heisenberg-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/100day_1.png": "/heisenberg-portfolio/static/media/100day_1.7d16e408d2b65abbbdf8.png",
+    "static/media/total_result.png": "/heisenberg-portfolio/static/media/total_result.37042bf750b72587c557.png",
+    "static/media/parking1.png": "/heisenberg-portfolio/static/media/parking1.0043b60a5d784e687423.png",
+    "static/media/head.jpg": "/heisenberg-portfolio/static/media/head.962ce6ebf86b51232de8.jpg",
+    "static/media/Trend_TCE.png": "/heisenberg-portfolio/static/media/Trend_TCE.a6ec3f2452d447714388.png",
+    "static/media/yulon_logo.png": "/heisenberg-portfolio/static/media/yulon_logo.2d46b32d1166a938a39e.png",
+    "static/media/labor_division.png": "/heisenberg-portfolio/static/media/labor_division.f97394055e3f18b56d2d.png",
+    "static/media/fcc_logo.webp": "/heisenberg-portfolio/static/media/fcc_logo.3872cd69cea1e8fe6e4b.webp",
+    "index.html": "/heisenberg-portfolio/index.html",
+    "main.666ba607.css.map": "/heisenberg-portfolio/static/css/main.666ba607.css.map",
+    "main.69e089b5.js.map": "/heisenberg-portfolio/static/js/main.69e089b5.js.map",
+    "453.b05d8aa5.chunk.js.map": "/heisenberg-portfolio/static/js/453.b05d8aa5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.666ba607.css",
+    "static/js/main.69e089b5.js"
+  ]
+}
