@@ -5,6 +5,7 @@ import {
   Timeline,
   Expertise,
   Project,
+  BusinessAnalysis,
   Research,
   Teaching,
   Navigation,
@@ -49,6 +50,7 @@ function App() {
             <Expertise/>
             <Timeline/>
             <Project/>
+            <BusinessAnalysis/>
             <Research/>
             <Teaching/>
         </FadeIn>
