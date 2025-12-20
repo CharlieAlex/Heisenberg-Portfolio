@@ -80,6 +80,7 @@ function Expertise() {
                 </div>
             </div>
         </div>
+        <hr style={{ width: '80%', margin: '0 auto', border: '0', borderTop: '2px dashed #ccc' }} />
     </div>
     );
 }

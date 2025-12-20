@@ -19,6 +19,7 @@ function Project() {
                 <p>Elevate the Betting Game with Data-Backed Strategies. A web scraping system that captures prediction results from top-ranking players and provides statistical analyses of prediction accuracy.</p>
             </div>
         </div>
+        <hr style={{ width: '80%', margin: '0 auto', border: '0', borderTop: '2px dashed #ccc' }} />
     </div>
     );
 }
