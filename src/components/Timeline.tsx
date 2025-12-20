@@ -1,10 +1,11 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
+import yulonLogo from '../assets/images/yulon_logo.png';
+import shopeeLogo from '../assets/images/shopee_logo.png';
+import fccLogo from '../assets/images/fcc_logo.webp';
 
 function Timeline() {
   return (
@@ -16,50 +17,50 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            date="2023.8 - present"
+            iconStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            icon={<img src={yulonLogo} alt="Yulon" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Data Analyst</h3>
+            <h4 className="vertical-timeline-element-subtitle">Yulon Group, Taiwan</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Causal Machine Learning, Machine Learning, Tableau Dashboard, A/B Testing, Data Pipeline, Statistical Analysis
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            date="2022.9 - 2023.3"
+            iconStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            icon={<img src={shopeeLogo} alt="Shopee" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Data Engineer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Shopee Xpress, Taiwan</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              SQL Data Reporting, Apps Script Automation, Dashboard Maintenance, Data Pipeline Construction
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            date="2022.3 - 2022.8"
+            iconStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            icon={<img src={shopeeLogo} alt="Shopee" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Logistics Analysis Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Shopee Cross Border, Taiwan</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+              P&L Estimation, VBA Automation, Campaign Analytics, Impact Analysis
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            date="2019.3 - 2019.8"
+            iconStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            icon={<img src={fccLogo} alt="FCC Partners" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">Assistant Analyst Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">FCC Partners Asia, Taiwan</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              Investment Teaser, Business Plan, Data Collection, Market Research
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
