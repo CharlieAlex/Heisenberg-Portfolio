@@ -1,0 +1,74 @@
+.teaching-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    text-align: left;
+
+    h1 {
+        margin-bottom: 3rem;
+        // Font styles are likely inherited or global, checking Main.scss might be good but let's stick to basic structure.
+    }
+
+    .teaching-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .teaching-item {
+        background-color: white; // Or transparent depending on theme
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: transform 0.2s, box-shadow 0.2s;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: block; // Make the whole box clickable or just title? User said "Only title can be clicked"
+            // "only title can be clicked" - logic:
+            // "應該是只有標題可以點" (Should be only title can be clicked)
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333; // dark grey
+            
+            &:hover {
+                text-decoration: underline;
+                color: #5000ca; // simplistic hover color
+            }
+        }
+
+        p {
+            margin-top: 0.5rem;
+            color: #666;
+            font-size: 1rem;
+        }
+    }
+}
+
+// Dark mode adjustments if necessary
+.dark-mode {
+    .teaching-item {
+        background-color: #333;
+        border-color: #555;
+        
+        h2 {
+            color: #f0f0f0;
+             &:hover {
+                color: #bb86fc;
+            }
+        }
+        
+        p {
+            color: #ccc;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.markdown-viewer-container {
+    padding: 2rem 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333; // Default light mode text color
+
+    .back-button {
+        background-color: transparent;
+        border: 1px solid #ccc;
+        color: #333 !important; /* Force dark text color */
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+
+    .markdown-content {
+        h1, h2, h3, h4, h5, h6, p, li, a, th, td {
+            color: #1a1a1a !important;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+        }
+        
+        p, li, a {
+             font-weight: normal;
+             margin-top: 0;
+             margin-bottom: 1em;
+        }
+
+        h1 {
+            font-size: 2.25em;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+
+        h2 {
+            font-size: 1.75em;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        ul, ol {
+            padding-left: 2em;
+            margin-bottom: 1em;
+        }
+
+        li {
+            margin-bottom: 0.25em;
+        }
+
+        code {
+            background-color: rgba(27,31,35,0.05);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 85%;
+        }
+
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+            
+            code {
+                background-color: transparent;
+                padding: 0;
+                font-size: 100%;
+            }
+        }
+        
+        blockquote {
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            padding: 0 1em;
+            margin: 0 0 16px 0;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+            
+            th, td {
+                border: 1px solid #dfe2e5;
+                padding: 6px 13px;
+            }
+            
+            th {
+                background-color: #f6f8fa;
+            }
+            
+            tr:nth-child(2n) {
+                background-color: #f6f8fa;
+            }
+        }
+    }
+}
+
+// Dark mode adjustments (if the parent container doesn't control this, we might need to handle it or rely on inherited classes)
+// Since App.tsx handles mode, we can use the same technique if this component is inside the main-container or similar.
+// However, the router will swap components. We should make sure styles are compatible.
+ @media (prefers-color-scheme: dark) {
+     // If we rely on system preference or if we can pass a prop/context.
+     // For now, let's just assume light mode default or add a dark class if the user passes it.
+ }
