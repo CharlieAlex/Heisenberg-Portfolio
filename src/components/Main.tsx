@@ -1,8 +1,10 @@
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { FaMedium } from 'react-icons/fa';
+import { FaMedium } from 'react-icons/fa6';
 import '../assets/styles/Main.scss';
+const FaMediumIcon = FaMedium as any;
+
 
 function Main() {
 
@@ -16,7 +18,7 @@ function Main() {
           <div className="social_icons">
             <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-            <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMedium/></a>
+            <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMediumIcon/></a>
           </div>
           <h1>羅偉駿 Alex Lo</h1>
           <p>Data Analyst | Data Scientist</p>
@@ -24,7 +26,7 @@ function Main() {
           <div className="mobile_social_icons">
             <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-            <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMedium/></a>
+            <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMediumIcon/></a>
           </div>
         </div>
       </div>
