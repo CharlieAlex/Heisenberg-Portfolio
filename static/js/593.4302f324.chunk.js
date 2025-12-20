@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_portfolio_template=self.webpackChunkreact_portfolio_template||[]).push([[593],{5593:(e,t,a)=>{a.d(t,{createRadarServices:()=>r.f});var r=a(6751);a(2916)}}]);
