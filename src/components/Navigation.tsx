@@ -61,14 +61,26 @@ function Navigation({parentToChild, modeChange}: any) {
 
   const [activeSection, setActiveSection] = useState<string>('');
 
+  const observerRefs = React.useRef<{ [key: string]: IntersectionObserverEntry }>({});
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
+        observerRefs.current[entry.target.id] = entry;
       });
-    }, { threshold: 0.2, rootMargin: '-50px 0px -50% 0px' });
+
+      const visibleSections = Object.values(observerRefs.current).filter(
+        (entry) => entry.isIntersecting
+      );
+
+      if (visibleSections.length > 0) {
+        // Sort by intersection ratio (most visible wins)
+        // Or better: sort by which one is closest to the top of the viewport if we are looking at the top
+        // Let's us intersectionRatio for now as it's robust for "what is mainly on screen"
+        visibleSections.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        setActiveSection(visibleSections[0].target.id);
+      }
+    }, { threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5], rootMargin: '-10% 0px -45% 0px' });
 
     navItems.forEach((item) => {
       const element = document.getElementById(item[1]);
