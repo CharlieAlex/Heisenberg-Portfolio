@@ -1,21 +1,25 @@
 .markdown-viewer-container {
-    padding: 2rem 5%;
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
-    color: #333; // Default light mode text color
+    color: #333;
+    background-color: white; // Match home-page light mode (f8f9fa would be better if we want exact match)
+    box-sizing: border-box;
 
     .back-button {
+        display: inline-block;
+        margin-left: 5%;
         background-color: transparent;
         border: 1px solid #ccc;
-        color: #333 !important; /* Force dark text color */
+        color: #333 !important;
         padding: 0.5rem 1rem;
         cursor: pointer;
         font-size: 1rem;
         margin-bottom: 2rem;
         border-radius: 4px;
-        transition: background-color 0.2s;
+        transition: all 0.2s;
 
         &:hover {
             background-color: #f0f0f0;
@@ -23,6 +27,10 @@
     }
 
     .markdown-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 5%;
+        
         h1, h2, h3, h4, h5, h6, p, li, a, th, td {
             color: #1a1a1a !important;
             margin-top: 1.5em;
@@ -67,6 +75,7 @@
             border-radius: 3px;
             font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
             font-size: 85%;
+            color: #d11141 !important; // Some color for light mode code
         }
 
         pre {
@@ -79,6 +88,7 @@
                 background-color: transparent;
                 padding: 0;
                 font-size: 100%;
+                color: inherit !important;
             }
         }
         
@@ -107,13 +117,71 @@
                 background-color: #f6f8fa;
             }
         }
+
+        .mermaid {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &.dark-mode {
+        background-color: #0d1116; // Match index.scss main-container
+        color: #e6edf3;
+
+        .back-button {
+            border-color: #30363d;
+            color: #c9d1d9 !important;
+            &:hover {
+                background-color: #21262d;
+                border-color: #8b949e;
+            }
+        }
+
+        .markdown-content {
+            h1, h2, h3, h4, h5, h6, p, li, a, th, td {
+                color: #e6edf3 !important;
+            }
+
+            h1, h2 {
+                border-bottom-color: #21262d;
+            }
+
+            pre {
+                background-color: #161b22;
+                border: 1px solid #30363d;
+            }
+
+            code {
+                 background-color: rgba(110,118,129,0.4);
+                 color: #e6edf3 !important;
+            }
+
+            blockquote {
+                color: #8b949e;
+                border-left-color: #30363d;
+            }
+
+            table {
+                th, td {
+                    border-color: #30363d;
+                    color: #c9d1d9;
+                }
+                th {
+                    background-color: #161b22;
+                }
+                tr:nth-child(2n) {
+                    background-color: #0d1117;
+                }
+            }
+
+            .mermaid {
+                background: #161b22;
+                border: 1px solid #30363d;
+            }
+        }
     }
 }
-
-// Dark mode adjustments (if the parent container doesn't control this, we might need to handle it or rely on inherited classes)
-// Since App.tsx handles mode, we can use the same technique if this component is inside the main-container or similar.
-// However, the router will swap components. We should make sure styles are compatible.
- @media (prefers-color-scheme: dark) {
-     // If we rely on system preference or if we can pass a prop/context.
-     // For now, let's just assume light mode default or add a dark class if the user passes it.
- }

@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from "react";
-import { LanguageProvider } from "./contexts/LanguageContext";
+import React, { useEffect } from "react";
+import { useTheme } from "./contexts/ThemeContext";
 import { useLocation } from "react-router-dom";
 import {
   Main,
@@ -16,15 +16,7 @@ import FadeIn from './components/FadeIn';
 import './index.scss';
 
 function App() {
-    const [mode, setMode] = useState<string>('light');
-
-    const handleModeChange = () => {
-        if (mode === 'dark') {
-            setMode('light');
-        } else {
-            setMode('dark');
-        }
-    }
+    const { mode } = useTheme();
 
     const location = useLocation();
 
@@ -44,9 +36,8 @@ function App() {
     }, [location]);
 
     return (
-    <LanguageProvider>
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
-        <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
+        <Navigation/>
         <FadeIn transitionDuration={700}>
             <Main/>
             <Expertise/>
@@ -58,7 +49,6 @@ function App() {
         </FadeIn>
         <Footer />
     </div>
-    </LanguageProvider>
     );
 }
 

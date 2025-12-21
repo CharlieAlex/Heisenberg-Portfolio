@@ -16,14 +16,14 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import LanguageIcon from '@mui/icons-material/Language';
+import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
 
 const drawerWidth = 240;
 
-function Navigation({parentToChild, modeChange}: any) {
-
-  const {mode} = parentToChild;
+function Navigation() {
+  const { mode, toggleMode } = useTheme();
   const { language, toggleLanguage } = useLanguage();
   const t = translations[language].navigation;
 
@@ -131,7 +131,7 @@ function Navigation({parentToChild, modeChange}: any) {
             <MenuIcon />
           </IconButton>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <IconButton color="inherit" onClick={() => modeChange()}>
+            <IconButton color="inherit" onClick={() => toggleMode()}>
               {mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
             </IconButton>
             <IconButton color="inherit" onClick={toggleLanguage} sx={{ ml: 0 }}>

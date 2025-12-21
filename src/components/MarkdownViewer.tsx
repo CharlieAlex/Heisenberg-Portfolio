@@ -9,20 +9,22 @@ import mermaid from 'mermaid';
 import '../assets/styles/MarkdownViewer.scss';
 import 'highlight.js/styles/github-dark.css';
 import 'katex/dist/katex.min.css';
+import { useTheme } from '../contexts/ThemeContext';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../assets/data/translations';
 
-// Initialize mermaid
-mermaid.initialize({
-  startOnLoad: true,
-  theme: 'default',
-  securityLevel: 'loose',
-});
-
-const Mermaid = ({ chart }: { chart: string }) => {
+// Initialize mermaid with dynamic theme
+const Mermaid = ({ chart, mode }: { chart: string, mode: string }) => {
   const ref = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
     if (ref.current) {
-      mermaid.contentLoaded();
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: mode === 'dark' ? 'dark' : 'default',
+        securityLevel: 'loose',
+      });
+      
       const id = `mermaid-${Math.random().toString(36).substr(2, 9)}`;
       mermaid.render(id, chart).then(({ svg }) => {
           if (ref.current) {
@@ -33,7 +35,7 @@ const Mermaid = ({ chart }: { chart: string }) => {
           if (ref.current) ref.current.innerHTML = "Error rendering chart";
       });
     }
-  }, [chart]);
+  }, [chart, mode]);
 
   return <div className="mermaid" ref={ref} />;
 };
@@ -42,6 +44,9 @@ function MarkdownViewer() {
     const { fileName } = useParams<{ fileName: string }>();
     const [content, setContent] = useState('');
     const navigate = useNavigate();
+    const { mode } = useTheme();
+    const { language } = useLanguage();
+    const t = translations[language].navigation;
 
     useEffect(() => {
         if (fileName) {
@@ -61,9 +66,9 @@ function MarkdownViewer() {
     }, [fileName]);
 
     return (
-        <div className="markdown-viewer-container">
+        <div className={`markdown-viewer-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
             <button className="back-button" onClick={() => navigate('/', { state: { target: 'teaching' } })}>
-                ← Back to Portfolio
+                {t.back}
             </button>
             <div className="markdown-content">
                 <ReactMarkdown 
@@ -73,7 +78,7 @@ function MarkdownViewer() {
                         code({node, inline, className, children, ...props}: any) {
                             const match = /language-(\w+)/.exec(className || '')
                             if (!inline && match && match[1] === 'mermaid') {
-                                return <Mermaid chart={children} />;
+                                return <Mermaid chart={children} mode={mode} />;
                             }
                             return (
                                 <code className={className} {...props}>

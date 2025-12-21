@@ -6,17 +6,24 @@ import reportWebVitals from './reportWebVitals';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import MarkdownViewer from './components/MarkdownViewer';
 
+import { ThemeProvider } from './contexts/ThemeContext';
+import { LanguageProvider } from './contexts/LanguageContext';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/teaching/:fileName" element={<MarkdownViewer />} />
-      </Routes>
-    </HashRouter>
+    <ThemeProvider>
+      <LanguageProvider>
+        <HashRouter>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/teaching/:fileName" element={<MarkdownViewer />} />
+          </Routes>
+        </HashRouter>
+      </LanguageProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
