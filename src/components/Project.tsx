@@ -2,21 +2,26 @@ import React from "react";
 import parking1 from '../assets/images/parking1.png';
 import totalResult from '../assets/images/total_result.png';
 import '../assets/styles/Project.scss';
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../assets/data/translations";
 
 function Project() {
+    const { language } = useLanguage();
+    const t = translations[language].projects;
+
     return(
     <div className="projects-container" id="projects">
-        <h1>Side Projects</h1>
+        <h1>{t.title}</h1>
         <div className="projects-grid">
             <div className="project">
                 <a href="https://parkfinder.streamlit.app/" target="_blank" rel="noreferrer" className="project-img-wrapper"><img src={parking1} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://parkfinder.streamlit.app/" target="_blank" rel="noreferrer"><h2>ParkFinder</h2></a>
-                <p>Real-time query, tracking, and statistical analysis of available parking spaces in Taipei City. We retrieve parking data, aggregate availability for fixed time periods, and offer interactive visualization tools.</p>
+                <a href="https://parkfinder.streamlit.app/" target="_blank" rel="noreferrer"><h2>{t.parkfinder.title}</h2></a>
+                <p>{t.parkfinder.desc}</p>
             </div>
             <div className="project">
                 <a href="https://docs.google.com/spreadsheets/d/1IcTCgwnIk_EKnqRdBYK7-MGfxiTrxbTnm3-89Fc76X4/edit?usp=sharing" target="_blank" rel="noreferrer" className="project-img-wrapper"><img src={totalResult} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://docs.google.com/spreadsheets/d/1IcTCgwnIk_EKnqRdBYK7-MGfxiTrxbTnm3-89Fc76X4/edit?usp=sharing" target="_blank" rel="noreferrer"><h2>Sports Betting Freerider</h2></a>
-                <p>Elevate the Betting Game with Data-Backed Strategies. A web scraping system that captures prediction results from top-ranking players and provides statistical analyses of prediction accuracy.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1IcTCgwnIk_EKnqRdBYK7-MGfxiTrxbTnm3-89Fc76X4/edit?usp=sharing" target="_blank" rel="noreferrer"><h2>{t.betting.title}</h2></a>
+                <p>{t.betting.desc}</p>
             </div>
         </div>
         <hr style={{ width: '80%', margin: '0 auto', border: '0', borderTop: '2px dashed #ccc' }} />

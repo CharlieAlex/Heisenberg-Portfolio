@@ -15,13 +15,26 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import LanguageIcon from '@mui/icons-material/Language';
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../assets/data/translations";
 
 const drawerWidth = 240;
-const navItems = [['Expertise', 'expertise'], ['Career', 'history'], ['Projects', 'projects'], ['Analysis', 'business-analysis'], ['Research', 'research'], ['Teaching', 'teaching']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
   const {mode} = parentToChild;
+  const { language, toggleLanguage } = useLanguage();
+  const t = translations[language].navigation;
+
+  const navItems = [
+    [t.expertise, 'expertise'], 
+    [t.history, 'history'], 
+    [t.projects, 'projects'], 
+    [t.analysis, 'business-analysis'], 
+    [t.research, 'research'], 
+    [t.teaching, 'teaching']
+  ];
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -63,7 +76,7 @@ function Navigation({parentToChild, modeChange}: any) {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [navItems]);
 
   const scrollToSection = (section: string) => {
     const element = document.getElementById(section);
@@ -105,12 +118,18 @@ function Navigation({parentToChild, modeChange}: any) {
           >
             <MenuIcon />
           </IconButton>
-          {mode === 'dark' ? (
-            <LightModeIcon onClick={() => modeChange()}/>
-          ) : (
-            <DarkModeIcon onClick={() => modeChange()}/>
-          )}
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <IconButton color="inherit" onClick={() => modeChange()}>
+              {mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
+            </IconButton>
+            <IconButton color="inherit" onClick={toggleLanguage} sx={{ ml: 0 }}>
+              <LanguageIcon />
+              <Box component="span" sx={{ fontSize: '0.8rem', ml: 0.5, fontWeight: 'bold' }}>
+                {language === 'en' ? 'EN' : '中'}
+              </Box>
+            </IconButton>
+          </Box>
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, ml: 2 }}>
             {navItems.map((item) => (
               <Button 
                 key={item[0]} 

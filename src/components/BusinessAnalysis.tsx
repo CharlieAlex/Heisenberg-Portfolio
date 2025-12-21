@@ -6,6 +6,8 @@ import '../assets/styles/BusinessAnalysis.scss';
 import { Modal, Box, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../assets/data/translations";
 
 interface AnalysisItem {
   id: string;
@@ -14,30 +16,6 @@ interface AnalysisItem {
   shortDescription: string;
   fullDescription: string;
 }
-
-const analysisData: AnalysisItem[] = [
-  {
-    id: 'people-flow-map',
-    title: 'Tableau Shared Station Flow Map',
-    image: peopleFlowMap,
-    shortDescription: 'Optimizing station placement and elimination using shared station flow visualization.',
-    fullDescription: 'We utilized Tableau to create a comprehensive visualization of shared station usage flows. This map empowers the business unit to intuitively understand the "people flow" across different locations. By analyzing this data, the team can make data-driven decisions on where to strategically open new stations to capture high demand and identify underperforming stations with low foot traffic for potential elimination, thereby optimizing the overall network efficiency.'
-  },
-  {
-    id: 'is-trip-rate',
-    title: 'Driver Trip Rate Estimation',
-    image: isTripRate,
-    shortDescription: 'Estimating driver acceptance rates using total fare and performance metrics with LOWESS fitting.',
-    fullDescription: 'This project focuses on estimating the probability of a driver accepting a trip request (Trip Rate). We analyze historical data correlating the total fare amount and individual driver performance metrics. By applying LOWESS (Locally Weighted Scatterplot Smoothing) to fit the data points, we generated a trip rate curve. This model allows us to simulate different pricing scenarios and determine the optimal subsidy amount required to achieve a target acceptance rate at the lowest possible cost.'
-  },
-  {
-    id: 'mgm-analysis',
-    title: 'MGM Social Network Analysis',
-    image: mgm,
-    shortDescription: 'Analyzing "Member Get Member" campaign performance using social network analysis.',
-    fullDescription: 'Leveraging the NetworkX library, we conducted a social network analysis on the "Member Get Member" (MGM) campaign. By mapping out the connections formed through referrals, we classified users into different community clusters. We then calculated various network centrality metrics to identify key influencers within the network. This analysis enables targeted marketing strategies, focusing resources on users with high centrality to maximize the viral effect and overall campaign performance.'
-  }
-];
 
 const modalStyle = {
   position: 'absolute' as 'absolute',
@@ -56,6 +34,9 @@ const modalStyle = {
 };
 
 function BusinessAnalysis() {
+    const { language } = useLanguage();
+    const t = translations[language].analysis;
+
     const [open, setOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState<AnalysisItem | null>(null);
 
@@ -68,9 +49,33 @@ function BusinessAnalysis() {
         setOpen(false);
     };
 
+    const analysisData: AnalysisItem[] = [
+      {
+        id: 'people-flow-map',
+        title: t.people_flow.title,
+        image: peopleFlowMap,
+        shortDescription: t.people_flow.short,
+        fullDescription: t.people_flow.full
+      },
+      {
+        id: 'is-trip-rate',
+        title: t.trip_rate.title,
+        image: isTripRate,
+        shortDescription: t.trip_rate.short,
+        fullDescription: t.trip_rate.full
+      },
+      {
+        id: 'mgm-analysis',
+        title: t.mgm.title,
+        image: mgm,
+        shortDescription: t.mgm.short,
+        fullDescription: t.mgm.full
+      }
+    ];
+
     return(
     <div className="business-analysis-container" id="business-analysis">
-        <h1>Business Analysis</h1>
+        <h1>{t.title}</h1>
         <div className="analysis-grid">
             {analysisData.map((item) => (
                 <div className="analysis-item" key={item.id} onClick={() => handleOpen(item)}>

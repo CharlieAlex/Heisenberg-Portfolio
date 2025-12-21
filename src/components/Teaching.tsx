@@ -1,24 +1,29 @@
 import React from "react";
 import '../assets/styles/Teaching.scss';
 import { Link } from 'react-router-dom';
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../assets/data/translations";
 
 function Teaching() {
+    const { language } = useLanguage();
+    const t = translations[language].teaching;
+
     const teachingData = [
         {
-            title: "Git Advanced Course",
+            title: t.git.title,
             fileName: "Git 進階課程.md",
-            description: "An advanced guide to Git version control, covering branching strategies, conflict resolution, and best practices."
+            description: t.git.desc
         },
         {
-            title: "Machine Learning Hyperparameter Tuning Guide",
+            title: t.ml_tuning.title,
             fileName: "機器學習(非深度學習)調參指南.md",
-            description: "A comprehensive guide to hyperparameter tuning for non-deep learning models, focusing on practical techniques and strategies."
+            description: t.ml_tuning.desc
         }
     ];
 
     return (
         <div className="teaching-container" id="teaching">
-            <h1>Teaching</h1>
+            <h1>{t.title}</h1>
             <div className="teaching-grid">
                 {teachingData.map((item, index) => (
                     <div className="teaching-item" key={index}>

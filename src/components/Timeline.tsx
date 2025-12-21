@@ -11,6 +11,8 @@ import fccLogo from '../assets/images/fcc_logo.webp';
 import ntuLogo from '../assets/images/ntu_logo.jpg';
 import { Modal, Box, Typography, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../assets/data/translations";
 
 interface TimelineItem {
   id: string;
@@ -22,93 +24,6 @@ interface TimelineItem {
   summary: string;
   details: string[];
 }
-
-const timelineData: TimelineItem[] = [
-  {
-    id: 'yulon',
-    type: 'work',
-    title: 'Data Analyst',
-    subtitle: 'Yulon Group, Taiwan',
-    date: '2023.8 - present',
-    icon: <img src={yulonLogo} alt="Yulon" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
-    summary: 'Causal Machine Learning, Machine Learning, Tableau Dashboard, A/B Testing, Data Pipeline, Statistical Analysis',
-    details: [
-      "Specialized in Causal Machine Learning and Statistical Analysis.",
-      "Developed and maintained Tableau Dashboards for business intelligence.",
-      "Designed and executed A/B Testing experiments.",
-      "Built resilient Data Pipelines for data processing.",
-      "Applied Machine Learning models to solve business problems."
-    ]
-  },
-  {
-    id: 'ntu-master',
-    type: 'education',
-    title: 'Master\'s Degree',
-    subtitle: 'National Taiwan University, Economics',
-    date: '2021.9 - 2023.6',
-    icon: <img src={ntuLogo} alt="NTU" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
-    summary: 'Machine Learning, Econometrics, Data Science',
-    details: [
-      "Overall GPA: 4.09/4.30",
-      "Course Highlights: Machine Learning and Econometrics, Data Science and Social Inquiry, Applied Econometric Method, Industrial Organization and Firm Strategy"
-    ]
-  },
-  {
-    id: 'shopee-xpress',
-    type: 'work',
-    title: 'Data Engineer Intern',
-    subtitle: 'Shopee Xpress, Taiwan',
-    date: '2022.9 - 2023.3',
-    icon: <img src={spxLogo} alt="Shopee" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
-    summary: 'SQL Data Reporting, Apps Script Automation, Dashboard Maintenance',
-    details: [
-      "Assisted other teams in utilizing SQL to query databases and developed 10+ fully automated dynamic data reports based on actual business needs.",
-      "Optimized the data storage system for the inventory management department, replacing spreadsheet functions with Apps Script to increase page load speed by 100%+.",
-      "Maintained dashboards for buyers and sellers, adding 3 key metrics and identifying 10+ existing errors.",
-      "Constructed the data flow for the eco-package project, tracking the usage and lifecycle of each packaging unit to provide decision support for procurement and distribution."
-    ]
-  },
-  {
-    id: 'shopee-cross-border',
-    type: 'work',
-    title: 'Logistics Analysis Intern',
-    subtitle: 'Shopee Cross Border, Taiwan',
-    date: '2022.3 - 2022.8',
-    icon: <img src={shopeeLogo} alt="Shopee" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
-    summary: 'P&L Estimation, VBA Automation, Campaign Analytics',
-    details: [
-      "Estimated and validated the P&L of 5+ cross-border free shipping campaigns with a scale of NT$ 1 M+, assisting in the formulation of activities to maximize profits.",
-      "Tracked the performance of 3 cross-border seller programs, ensuring data integrity, and automated processes with VBA to reduce operational time by 50%+.",
-      "Analyzed the impacts of relevant events such as the impact of customs real-name authentication, and the crowding-out effect of new logistics channels."
-    ]
-  },
-  {
-    id: 'ntu-bachelor',
-    type: 'education',
-    title: 'Double Bachelor\'s Degree',
-    subtitle: 'National Taiwan University, Economics & Philosophy',
-    date: '2016.9 - 2021.6',
-    icon: <img src={ntuLogo} alt="NTU" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
-    summary: 'Economics & Philosophy, Presidential Awards',
-    details: [
-      "Overall GPA: 4.00/4.30",
-      "Awards: President Awards in 106, President Awards in 109"
-    ]
-  },
-  {
-    id: 'fcc',
-    type: 'work',
-    title: 'Assistant Analyst Intern',
-    subtitle: 'FCC Partners Asia, Taiwan',
-    date: '2019.3 - 2019.8',
-    icon: <img src={fccLogo} alt="FCC Partners" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
-    summary: 'Investment Teaser, Business Plan, Market Research',
-    details: [
-      "Assisted in drafting 3 investment teaser and 1 business plan covering development plans, fundraising strategies, market prospects, and investment highlights.",
-      "Prepared 20+ data collection reports for potential clients, focusing on business models, competitive advantages, financial performance, and fundraising records."
-    ]
-  }
-];
 
 const modalStyle = {
   position: 'absolute' as 'absolute',
@@ -125,6 +40,9 @@ const modalStyle = {
 };
 
 function Timeline() {
+  const { language } = useLanguage();
+  const t = translations[language].career;
+
   const [open, setOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<TimelineItem | null>(null);
 
@@ -136,6 +54,69 @@ function Timeline() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const timelineData: TimelineItem[] = [
+    {
+      id: 'yulon',
+      type: 'work',
+      title: t.yulon.title,
+      subtitle: t.yulon.subtitle,
+      date: t.yulon.date,
+      icon: <img src={yulonLogo} alt="Yulon" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
+      summary: t.yulon.summary,
+      details: t.yulon.details
+    },
+    {
+      id: 'ntu-master',
+      type: 'education',
+      title: t.ntu_master.title,
+      subtitle: t.ntu_master.subtitle,
+      date: '2021.9 - 2023.6',
+      icon: <img src={ntuLogo} alt="NTU" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
+      summary: t.ntu_master.summary,
+      details: t.ntu_master.details
+    },
+    {
+      id: 'shopee-xpress',
+      type: 'work',
+      title: t.shopee_xpress.title,
+      subtitle: t.shopee_xpress.subtitle,
+      date: '2022.9 - 2023.3',
+      icon: <img src={spxLogo} alt="Shopee" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
+      summary: t.shopee_xpress.summary,
+      details: t.shopee_xpress.details
+    },
+    {
+      id: 'shopee-cross-border',
+      type: 'work',
+      title: t.shopee_cb.title,
+      subtitle: t.shopee_cb.subtitle,
+      date: '2022.3 - 2022.8',
+      icon: <img src={shopeeLogo} alt="Shopee" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
+      summary: t.shopee_cb.summary,
+      details: t.shopee_cb.details
+    },
+    {
+      id: 'ntu-bachelor',
+      type: 'education',
+      title: t.ntu_bachelor.title,
+      subtitle: t.ntu_bachelor.subtitle,
+      date: '2016.9 - 2021.6',
+      icon: <img src={ntuLogo} alt="NTU" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
+      summary: t.ntu_bachelor.summary,
+      details: t.ntu_bachelor.details
+    },
+    {
+      id: 'fcc',
+      type: 'work',
+      title: t.fcc.title,
+      subtitle: t.fcc.subtitle,
+      date: '2019.3 - 2019.8',
+      icon: <img src={fccLogo} alt="FCC Partners" style={{width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%'}} />,
+      summary: t.fcc.summary,
+      details: t.fcc.details
+    }
+  ];
 
   const sortedTimelineData = [...timelineData].sort((a, b) => {
     const getStartDate = (dateStr: string) => {
@@ -149,7 +130,7 @@ function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1>Career History</h1>
+        <h1>{t.title}</h1>
         <VerticalTimeline>
           {sortedTimelineData.map((item) => (
             <VerticalTimelineElement

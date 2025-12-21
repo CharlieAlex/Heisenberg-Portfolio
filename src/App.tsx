@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { LanguageProvider } from "./contexts/LanguageContext";
 import { useLocation } from "react-router-dom";
 import {
   Main,
@@ -43,6 +44,7 @@ function App() {
     }, [location]);
 
     return (
+    <LanguageProvider>
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
@@ -56,6 +58,7 @@ function App() {
         </FadeIn>
         <Footer />
     </div>
+    </LanguageProvider>
     );
 }
 

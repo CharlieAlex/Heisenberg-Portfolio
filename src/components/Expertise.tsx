@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine, faDatabase, faFlask } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../assets/data/translations";
 
 const labelsFirst = [
     "Python",
@@ -38,17 +40,20 @@ const labelsThird = [
 ];
 
 function Expertise() {
+    const { language } = useLanguage();
+    const t = translations[language].expertise;
+
     return (
     <div className="container" id="expertise">
         <div className="skills-container">
-            <h1>Expertise</h1>
+            <h1>{t.title}</h1>
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faChartLine} size="3x"/>
-                    <h3>Data Science & Machine Learning</h3>
-                    <p>Proficient in building predictive models and conducting statistical analysis. I transform raw data into actionable insights using various machine learning algorithms and data visualization techniques.</p>
+                    <h3>{t.datascience.title}</h3>
+                    <p>{t.datascience.desc}</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">{t.tech_stack}</span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -57,10 +62,10 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDatabase} size="3x"/>
-                    <h3>Data Engineering & Cloud</h3>
-                    <p>Experienced in building data pipelines, ETL processes, and deploying machine learning models on cloud platforms. I ensure data quality and accessibility for downstream analytics.</p>
+                    <h3>{t.dataengineering.title}</h3>
+                    <p>{t.dataengineering.desc}</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">{t.tech_stack}</span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -69,10 +74,10 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faFlask} size="3x"/>
-                    <h3>Economics & Causal Inference</h3>
-                    <p>Strong foundation in econometrics and causal inference methods. I design and analyze experiments to measure true impact and guide data-driven decision making.</p>
+                    <h3>{t.economics.title}</h3>
+                    <p>{t.economics.desc}</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">{t.tech_stack}</span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
