@@ -7,7 +7,8 @@ export const translations = {
             analysis: "Analysis",
             research: "Research",
             teaching: "Teaching",
-            back: "← Back to Portfolio"
+            back: "← Back to Portfolio",
+            back_to_top: "Back to Top"
         },
         main: {
             name: "Heisenberg Lo",
@@ -159,7 +160,8 @@ export const translations = {
             analysis: "商業分析",
             research: "學術研究",
             teaching: "教學文件",
-            back: "← 返回主頁"
+            back: "← 返回主頁",
+            back_to_top: "回到頂部"
         },
         main: {
             name: "羅偉駿",

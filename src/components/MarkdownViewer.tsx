@@ -4,6 +4,7 @@ import rehypeHighlight from 'rehype-highlight';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { useParams, useNavigate } from 'react-router-dom';
 import mermaid from 'mermaid';
 import '../assets/styles/MarkdownViewer.scss';
@@ -65,6 +66,13 @@ function MarkdownViewer() {
         }
     }, [fileName]);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <div className={`markdown-viewer-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
             <button className="back-button" onClick={() => navigate('/', { state: { target: 'teaching' } })}>
@@ -90,6 +98,12 @@ function MarkdownViewer() {
                 >
                     {content}
                 </ReactMarkdown>
+            </div>
+            <div className="viewer-footer">
+                <button className="back-to-top" onClick={scrollToTop}>
+                    <KeyboardArrowUpIcon fontSize="large" />
+                    <span>{t.back_to_top}</span>
+                </button>
             </div>
         </div>
     );
