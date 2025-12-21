@@ -46,14 +46,29 @@ function Navigation({parentToChild, modeChange}: any) {
     };
   }, []);
 
+  const [activeSection, setActiveSection] = useState<string>('');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, { threshold: 0.2, rootMargin: '-50px 0px -50% 0px' });
+
+    navItems.forEach((item) => {
+      const element = document.getElementById(item[1]);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   const scrollToSection = (section: string) => {
-    console.log(section)
-    const expertiseElement = document.getElementById(section);
-    if (expertiseElement) {
-      expertiseElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
-    } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -64,7 +79,10 @@ function Navigation({parentToChild, modeChange}: any) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
+            <ListItemButton 
+              sx={{ textAlign: 'center', backgroundColor: activeSection === item[1] ? 'rgba(0, 0, 0, 0.08)' : 'transparent' }} 
+              onClick={() => scrollToSection(item[1])}
+            >
               <ListItemText primary={item[0]} />
             </ListItemButton>
           </ListItem>
@@ -94,7 +112,19 @@ function Navigation({parentToChild, modeChange}: any) {
           )}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
+              <Button 
+                key={item[0]} 
+                onClick={() => scrollToSection(item[1])} 
+                sx={{ 
+                  color: activeSection === item[1] ? '#5000ca' : (mode === 'light' && !scrolled ? '#000' : '#fff'),
+                  fontWeight: activeSection === item[1] ? 'bold' : 'normal',
+                  borderBottom: activeSection === item[1] ? '2px solid #5000ca' : '2px solid transparent',
+                  borderRadius: 0,
+                  '&:hover': {
+                    color: '#5000ca'
+                  }
+                }}
+              >
                 {item[0]}
               </Button>
             ))}
