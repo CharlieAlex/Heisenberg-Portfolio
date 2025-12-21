@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkheisenberg_portfolio=self.webpackChunkheisenberg_portfolio||[]).push([[901],{3901:(e,r,s)=>{s.d(r,{createInfoServices:()=>o.v});var o=s(5315);s(2916)}}]);

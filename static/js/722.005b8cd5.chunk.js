@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_portfolio_template=self.webpackChunkreact_portfolio_template||[]).push([[722],{9722:(e,t,a)=>{a.d(t,{createPacketServices:()=>c.$});var c=a(3959);a(2916)}}]);

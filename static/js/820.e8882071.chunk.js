@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_portfolio_template=self.webpackChunkreact_portfolio_template||[]).push([[820],{820:(e,t,a)=>{a.d(t,{createTreemapServices:()=>r.d});var r=a(1168);a(2916)}}]);
