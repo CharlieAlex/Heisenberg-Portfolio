@@ -103,11 +103,15 @@ export const translations = {
             title: "Side Projects",
             parkfinder: {
                 title: "ParkFinder",
-                desc: "Real-time query, tracking, and statistical analysis of available parking spaces in Taipei City. We retrieve parking data, aggregate availability for fixed time periods, and offer interactive visualization tools."
+                short: "Real-time query and statistical analysis of available parking spaces in Taipei City.",
+                full: "ParkFinder is a comprehensive real-time parking availability platform for Taipei City. The system combines a robust data pipeline that retrieves live parking data from government APIs, statistical analysis based on historical patterns, and interactive visualization using Streamlit.\n\nKey Features:\n• Real-time parking space availability queries across all Taipei districts\n• Historical data analysis to predict parking availability by time of day\n• Interactive maps and filters for multi-dimensional exploration\n• Daily automated data collection and aggregation\n\nThe platform helps drivers save time by identifying parking lots with higher availability based on historical trends, reducing urban congestion and improving city mobility.",
+                link: "https://parkfinder.streamlit.app/"
             },
             betting: {
                 title: "Sports Betting Freerider",
-                desc: "Elevate the Betting Game with Data-Backed Strategies. A web scraping system that captures prediction results from top-ranking players and provides statistical analyses of prediction accuracy."
+                short: "Data-backed prediction tracking system capturing insights from top-ranking bettors.",
+                full: "Sports Betting Freerider is an automated web scraping system designed to track and analyze prediction results from top-ranking sports betting players.\n\nKey Features:\n• Automated web scraping of prediction data from multiple platforms\n• Statistical analysis of prediction accuracy by sport, league, and betting type\n• Google Sheets integration for seamless data tracking and sharing\n• Performance metrics dashboard to identify consistently accurate predictors\n\nBy leveraging collective intelligence from proven successful bettors, this system provides data-driven insights to inform betting strategies. The analysis reveals patterns in prediction accuracy across different sports and time periods.",
+                link: "https://docs.google.com/spreadsheets/d/1IcTCgwnIk_EKnqRdBYK7-MGfxiTrxbTnm3-89Fc76X4/edit?usp=sharing"
             }
         },
         analysis: {
@@ -132,15 +136,21 @@ export const translations = {
             title: "Research",
             thesis: {
                 title: "Parental Death & Marital Decisions",
-                desc: "The Effects of Parental Death on Offspring's Marital Decisions: Evidence from Taiwan. A Pioneering Study using Event Study Method."
+                short: "Pioneering Event Study research on how parental loss affects offspring's marriage decisions.",
+                full: "The Effects of Parental Death on Offspring's Marital Decisions: Evidence from Taiwan\n\nThis Master's thesis examines the causal relationship between parental death and offspring's marital decisions using Taiwan's comprehensive administrative data.\n\nMethodology:\n• Event Study design to capture dynamic effects before and after parental death\n• Large-scale administrative data ensuring statistical power and external validity\n• Control for time-invariant individual heterogeneity\n\nKey Findings:\n• Significant changes in marriage timing following parental loss\n• Heterogeneous effects by gender and birth order\n• Evidence of both \"guardian effect\" and \"inheritance effect\"\n\nThis pioneering research contributes to understanding family dynamics, bereavement effects, and demographic transitions in East Asian societies.",
+                link: "/paper/thesis.pdf"
             },
             pension: {
                 title: "National Pension Reform",
-                desc: "How does National Pension Reform affect household economic behaviors? Evidence from Taiwan using Difference-in-Differences method."
+                short: "Difference-in-Differences analysis of pension reform's impact on household economic behavior.",
+                full: "How Does National Pension Reform Affect Household Economic Behaviors? Evidence from Taiwan\n\nThis study analyzes the causal effects of Taiwan's National Pension Reform on household economic decisions using quasi-experimental methods.\n\nMethodology:\n• Difference-in-Differences (DiD) approach exploiting policy timing variation\n• Comparison between affected and unaffected cohorts\n• Robustness checks including placebo tests and parallel trend verification\n\nKey Findings:\n• Significant changes in household savings rates post-reform\n• Adjusted labor supply decisions, particularly among older workers\n• Consumption smoothing behavior in response to expected pension changes\n\nThe findings provide crucial insights for pension policy design and understanding how households respond to social security changes.",
+                link: "/paper/labor_final.pdf"
             },
             labor: {
                 title: "Division of Unpaid Labor",
-                desc: "What is the cause and effect of the domestic division of unpaid labor? Evidence from Taiwanese Family using Ordered Probit model."
+                short: "Ordered Probit analysis of domestic labor division determinants in Taiwanese families.",
+                full: "What is the Cause and Effect of the Domestic Division of Unpaid Labor? Evidence from Taiwanese Families\n\nThis research investigates the determinants and consequences of unpaid domestic labor division within Taiwanese households.\n\nMethodology:\n• Ordered Probit model to analyze ordinal outcome of labor division\n• Taiwan Social Change Survey data providing rich household information\n• Control for selection bias and endogeneity concerns\n\nKey Findings:\n• Gender remains a primary determinant of household labor allocation\n• Education and relative income significantly affect bargaining power\n• Unequal division correlates with reduced female labor force participation\n• Cultural factors interact with economic incentives\n\nThis study contributes to labor economics and gender studies by quantifying the trade-offs in household production decisions.",
+                link: "/paper/applied_econ_final.pdf"
             }
         },
         teaching: {
@@ -259,11 +269,15 @@ export const translations = {
             title: "個人專案",
             parkfinder: {
                 title: "ParkFinder 台北停車通",
-                desc: "台北市停車位即時查詢與統計分析。我們爬取即時停車數據，彙整分析固定時段的停車可用率，並提供互動式的視覺化工具。"
+                short: "台北市停車位即時查詢與歷史數據統計分析平台。",
+                full: "ParkFinder 台北停車通是一個全方位的台北市即時停車位查詢平台。系統整合了政府開放資料API的即時數據擷取、歷史數據的統計分析，以及使用 Streamlit 建構的互動式視覺化介面。\n\n主要功能：\n• 台北市各行政區停車場即時空位查詢\n• 基於歷史數據分析，預測不同時段的停車位可用率\n• 互動式地圖與多維度篩選功能\n• 每日自動化數據收集與彙整\n\n這個平台幫助駕駛人根據歷史趨勢找到空位率較高的停車場，節省尋找車位的時間，降低都市交通壅塞，提升城市移動效率。",
+                link: "https://parkfinder.streamlit.app/"
             },
             betting: {
                 title: "運彩高手預測追蹤系統",
-                desc: "用數據策略提升運彩勝率。這是一個網頁爬蟲系統，捕捉頂尖玩家的預測結果，並提供預測準確率的統計分析報告。"
+                short: "追蹤頂尖運彩玩家預測結果的數據驅動分析系統。",
+                full: "運彩高手預測追蹤系統是一個自動化網頁爬蟲系統，專門追蹤並分析頂尖運彩玩家的預測結果。\n\n主要功能：\n• 從多個平台自動爬取預測數據\n• 依運動類型、聯賽、投注類型進行準確率統計分析\n• Google Sheets 整合，方便數據追蹤與分享\n• 績效指標儀表板，識別持續準確的預測者\n\n透過彙整經驗證的成功投注者的集體智慧，這個系統提供數據驅動的洞察，作為投注策略的參考依據。分析結果揭示了不同運動項目和時間期間的預測準確率模式。",
+                link: "https://docs.google.com/spreadsheets/d/1IcTCgwnIk_EKnqRdBYK7-MGfxiTrxbTnm3-89Fc76X4/edit?usp=sharing"
             }
         },
         analysis: {
@@ -288,15 +302,21 @@ export const translations = {
             title: "學術研究",
             thesis: {
                 title: "父母過世與婚姻決策",
-                desc: "父母過世對子女婚姻決策的影響：來自台灣的證據。使用事件研究法 (Event Study) 的先驅研究。"
+                short: "使用事件研究法探討父母過世如何影響子女婚姻決策的先驅研究。",
+                full: "父母過世對子女婚姻決策的影響：來自台灣的證據\n\n本碩士論文利用台灣完整的行政資料，探討父母過世與子女婚姻決策之間的因果關係。\n\n研究方法：\n• 事件研究法 (Event Study) 設計，捕捉父母過世前後的動態效果\n• 大規模行政資料確保統計檢定力與外部效度\n• 控制個體層級的時間不變異質性\n\n主要發現：\n• 父母過世後，子女婚姻時機出現顯著變化\n• 效果依性別與出生序呈現異質性\n• 發現「監護人效果」與「遺產效果」的證據\n\n這項先驅研究有助於理解東亞社會的家庭動態、喪親效應與人口轉型。",
+                link: "/paper/thesis.pdf"
             },
             pension: {
                 title: "國民年金改革",
-                desc: "國民年金改革如何影響家庭經濟行為？使用差異中之差異法 (DiD) 基於台灣數據的實證研究。"
+                short: "使用差異中之差異法分析年金改革對家庭經濟行為的影響。",
+                full: "國民年金改革如何影響家庭經濟行為？來自台灣的證據\n\n本研究使用準實驗方法，分析台灣國民年金改革對家庭經濟決策的因果效果。\n\n研究方法：\n• 差異中之差異法 (DiD)，利用政策實施時間的變異\n• 比較受影響與未受影響的世代群組\n• 穩健性檢驗包含安慰劑檢定與平行趨勢驗證\n\n主要發現：\n• 改革後家庭儲蓄率出現顯著變化\n• 勞動供給決策調整，尤其在年長工作者族群\n• 因應預期年金變動的消費平滑化行為\n\n研究結果為年金政策設計提供關鍵洞察，有助理解家庭如何回應社會安全制度的變革。",
+                link: "/paper/labor_final.pdf"
             },
             labor: {
                 title: "無償勞動分工",
-                desc: "家務無償勞動分工的成因與影響為何？使用 Ordered Probit 模型對台灣家庭的實證分析。"
+                short: "使用 Ordered Probit 模型分析台灣家庭無償勞動分工的決定因素。",
+                full: "家務無償勞動分工的成因與影響為何？來自台灣家庭的證據\n\n本研究探討台灣家庭中無償家務勞動分工的決定因素與後果。\n\n研究方法：\n• Ordered Probit 模型分析勞動分工的順序結果變數\n• 台灣社會變遷調查資料提供豐富的家戶資訊\n• 控制選擇性偏誤與內生性問題\n\n主要發現：\n• 性別仍是家務勞動分配的主要決定因素\n• 教育程度與相對所得顯著影響協商權力\n• 不平等分工與女性勞動參與率降低相關\n• 文化因素與經濟誘因交互作用\n\n本研究透過量化家庭生產決策中的權衡取捨，為勞動經濟學與性別研究做出貢獻。",
+                link: "/paper/applied_econ_final.pdf"
             }
         },
         teaching: {
