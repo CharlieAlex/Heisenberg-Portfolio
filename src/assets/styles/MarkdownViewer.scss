@@ -215,7 +215,7 @@
 
             &:hover {
                 transform: translateY(-5px);
-                color: #702cf1;
+                color: #bb86fc;
             }
 
             svg {
@@ -235,9 +235,9 @@
         .viewer-footer {
             border-top-color: rgba(255, 255, 255, 0.1);
             .back-to-top {
-                color: #5000ca;
+                color: #bb86fc;
                 &:hover {
-                    color: #702cf1;
+                    color: #d1b3ff; // Even lighter for hover in dark mode
                 }
             }
         }

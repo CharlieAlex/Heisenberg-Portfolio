@@ -103,5 +103,11 @@
              background-color: #333;
              border-color: #444;
         }
+
+        &:hover {
+            h2 {
+                color: #bb86fc;
+            }
+        }
     }
 }
