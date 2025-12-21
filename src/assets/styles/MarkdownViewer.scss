@@ -22,7 +22,9 @@
         transition: all 0.2s;
 
         &:hover {
-            background-color: #f0f0f0;
+            background-color: rgba(80, 0, 202, 0.05); // Very subtle hint
+            color: #5000ca !important;
+            border-color: #5000ca;
         }
     }
 
@@ -136,8 +138,9 @@
             border-color: #30363d;
             color: #c9d1d9 !important;
             &:hover {
-                background-color: #21262d;
-                border-color: #8b949e;
+                background-color: rgba(187, 134, 252, 0.1);
+                border-color: #bb86fc;
+                color: #bb86fc !important;
             }
         }
 
