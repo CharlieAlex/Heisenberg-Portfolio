@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -27,14 +27,14 @@ function Navigation() {
   const { language, toggleLanguage } = useLanguage();
   const t = translations[language].navigation;
 
-  const navItems = [
+  const navItems = useMemo(() => [
     [t.expertise, 'expertise'], 
     [t.history, 'history'], 
     [t.projects, 'projects'], 
     [t.analysis, 'business-analysis'], 
     [t.research, 'research'], 
     [t.teaching, 'teaching']
-  ];
+  ], [t]);
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
