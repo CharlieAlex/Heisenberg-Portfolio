@@ -11,6 +11,7 @@ import fccLogo from '../assets/images/fcc_logo.webp';
 import ntuLogo from '../assets/images/ntu_logo.jpg';
 import { Modal, Box, Typography, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
+import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
 
@@ -40,8 +41,10 @@ const modalStyle = {
 };
 
 function Timeline() {
+  const { mode } = useTheme();
   const { language } = useLanguage();
   const t = translations[language].career;
+  const isDark = mode === 'dark';
 
   const [open, setOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<TimelineItem | null>(null);
@@ -53,6 +56,12 @@ function Timeline() {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const dynamicModalStyle = {
+    ...modalStyle,
+    bgcolor: isDark ? '#333' : 'background.paper',
+    color: isDark ? '#f0f0f0' : 'black',
   };
 
   const timelineData: TimelineItem[] = [
@@ -136,10 +145,17 @@ function Timeline() {
             <VerticalTimelineElement
               key={item.id}
               className={`vertical-timeline-element--${item.type} clickable-element`}
-              contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)', cursor: 'pointer' }}
-              contentArrowStyle={{ borderRight: '7px solid  white' }}
+              contentStyle={{ 
+                background: isDark ? '#333' : 'white', 
+                color: isDark ? '#f0f0f0' : 'rgb(39, 40, 34)', 
+                cursor: 'pointer' 
+              }}
+              contentArrowStyle={{ borderRight: `7px solid ${isDark ? '#333' : 'white'}` }}
               date={item.date}
-              iconStyle={{ background: item.type === 'education' ? 'rgb(233, 30, 99)' : 'white', color: item.type === 'education' ? 'white' : 'rgb(39, 40, 34)' }}
+              iconStyle={{ 
+                background: item.type === 'education' ? 'rgb(233, 30, 99)' : (isDark ? '#333' : 'white'), 
+                color: item.type === 'education' ? 'white' : (isDark ? '#f0f0f0' : 'rgb(39, 40, 34)') 
+              }}
               icon={item.icon}
               onTimelineElementClick={() => handleOpen(item)}
             >
@@ -156,23 +172,23 @@ function Timeline() {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <Box sx={modalStyle}>
+          <Box sx={dynamicModalStyle}>
             {selectedItem && (
               <>
-                <Typography id="modal-modal-title" variant="h5" component="h2" sx={{ fontWeight: 'bold', mb: 1, color: 'black' }}>
+                <Typography id="modal-modal-title" variant="h5" component="h2" sx={{ fontWeight: 'bold', mb: 1, color: isDark ? '#fff' : 'black' }}>
                   {selectedItem.title}
                 </Typography>
-                <Typography variant="h6" sx={{ mb: 2, fontSize: '1rem', color: 'black' }}>
+                <Typography variant="h6" sx={{ mb: 2, fontSize: '1rem', color: isDark ? '#ccc' : 'black' }}>
                   {selectedItem.subtitle} <br/>
-                  <span style={{ fontSize: '0.9rem', color: 'gray' }}>{selectedItem.date}</span>
+                  <span style={{ fontSize: '0.9rem', color: isDark ? '#aaa' : 'gray' }}>{selectedItem.date}</span>
                 </Typography>
-                <List sx={{ color: 'black' }}>
+                <List sx={{ color: isDark ? '#f0f0f0' : 'black' }}>
                   {selectedItem.details.map((detail, index) => (
                     <ListItem key={index} alignItems="flex-start" sx={{ py: 0.5 }}>
                       <ListItemIcon sx={{ minWidth: 24, mt: 1 }}>
-                        <CircleIcon sx={{ fontSize: 8 }} />
+                        <CircleIcon sx={{ fontSize: 8, color: isDark ? '#f0f0f0' : 'inherit' }} />
                       </ListItemIcon>
-                      <ListItemText primary={detail} sx={{ color: 'black' }} />
+                      <ListItemText primary={detail} sx={{ color: isDark ? '#f0f0f0' : 'black' }} />
                     </ListItem>
                   ))}
                 </List>

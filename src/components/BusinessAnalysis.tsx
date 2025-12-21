@@ -6,6 +6,7 @@ import '../assets/styles/BusinessAnalysis.scss';
 import { Modal, Box, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
+import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
 
@@ -34,8 +35,10 @@ const modalStyle = {
 };
 
 function BusinessAnalysis() {
+    const { mode } = useTheme();
     const { language } = useLanguage();
     const t = translations[language].analysis;
+    const isDark = mode === 'dark';
 
     const [open, setOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState<AnalysisItem | null>(null);
@@ -47,6 +50,12 @@ function BusinessAnalysis() {
 
     const handleClose = () => {
         setOpen(false);
+    };
+
+    const dynamicModalStyle = {
+        ...modalStyle,
+        bgcolor: isDark ? '#333' : 'background.paper',
+        color: isDark ? '#f0f0f0' : 'black',
     };
 
     const analysisData: AnalysisItem[] = [
@@ -94,7 +103,7 @@ function BusinessAnalysis() {
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
-            <Box sx={modalStyle}>
+            <Box sx={dynamicModalStyle}>
                 <IconButton
                     aria-label="close"
                     onClick={handleClose}
@@ -102,24 +111,25 @@ function BusinessAnalysis() {
                         position: 'absolute',
                         right: 8,
                         top: 8,
-                        color: (theme) => theme.palette.grey[500],
+                        color: isDark ? '#aaa' : (theme) => theme.palette.grey[500],
                     }}
                 >
                     <CloseIcon />
                 </IconButton>
                 {selectedItem && (
                     <>
-                        <Typography id="modal-modal-title" variant="h5" component="h2" sx={{ fontWeight: 'bold', mb: 2, color: '#333' }}>
+                        <Typography id="modal-modal-title" variant="h5" component="h2" sx={{ fontWeight: 'bold', mb: 2, color: isDark ? '#fff' : '#333' }}>
                             {selectedItem.title}
                         </Typography>
                         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
                              <img 
+                                width="100%"
                                 src={selectedItem.image} 
                                 alt={selectedItem.title} 
                                 style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain', borderRadius: '4px' }}
                             />
                         </div>
-                        <Typography id="modal-modal-description" sx={{ mt: 2, color: '#555', lineHeight: 1.6 }}>
+                        <Typography id="modal-modal-description" sx={{ mt: 2, color: isDark ? '#ccc' : '#555', lineHeight: 1.6 }}>
                             {selectedItem.fullDescription}
                         </Typography>
                     </>
