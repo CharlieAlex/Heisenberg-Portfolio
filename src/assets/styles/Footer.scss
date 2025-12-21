@@ -39,16 +39,26 @@ footer {
 
     .social-links {
         display: flex;
-        gap: 20px;
+        justify-content: center;
+        align-items: center; // Vertical alignment
+        gap: 25px; // Increased gap for better look
         margin-bottom: 10px;
 
         a {
-            color: inherit;
-            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; // Default to white (Dark Mode)
+            transition: color 0.3s ease, transform 0.2s ease;
             
             &:hover {
                 color: #5000ca;
+                transform: translateY(-2px);
             }
+        }
+
+        svg {
+            display: block; // Remove inline spacing
         }
     }
 

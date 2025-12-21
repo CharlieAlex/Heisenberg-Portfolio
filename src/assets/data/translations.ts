@@ -10,6 +10,9 @@ export const translations = {
             back: "← Back to Portfolio",
             back_to_top: "Back to Top"
         },
+        footer: {
+            contact_me: "Contact me: "
+        },
         main: {
             name: "Heisenberg Lo",
             title: "Data Scientist",
@@ -162,6 +165,9 @@ export const translations = {
             teaching: "教學文件",
             back: "← 返回主頁",
             back_to_top: "回到頂部"
+        },
+        footer: {
+            contact_me: "聯絡我："
         },
         main: {
             name: "羅偉駿",

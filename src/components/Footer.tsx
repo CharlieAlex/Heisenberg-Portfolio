@@ -12,7 +12,8 @@ const FaMediumIcon = FaMedium as any;
 
 function Footer() {
   const { language } = useLanguage();
-  const t = translations[language].navigation;
+  const t_nav = translations[language].navigation;
+  const t_footer = translations[language].footer;
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -25,14 +26,14 @@ function Footer() {
     <footer>
       <button className="back-to-top" onClick={scrollToTop}>
         <KeyboardArrowUpIcon fontSize="large" />
-        <span>{t.back_to_top}</span>
+        <span>{t_nav.back_to_top}</span>
       </button>
       <div className="social-links">
-        <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-        <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMediumIcon size={24}/></a>
+        <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer"><GitHubIcon sx={{ fontSize: 28 }}/></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><LinkedInIcon sx={{ fontSize: 28 }}/></a>
+        <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMediumIcon size={28}/></a>
       </div>
-      <p>Contact me: charliealex0101@gmail.com</p>
+      <p>{t_footer.contact_me}charliealex0101@gmail.com</p>
     </footer>
   );
 }
