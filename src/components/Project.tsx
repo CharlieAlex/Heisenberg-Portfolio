@@ -1,6 +1,6 @@
 import React from "react";
 import parking1 from '../assets/images/parking1.png';
-import totalResult from '../assets/images/total_result.png';
+import totalResult from '../assets/images/streamlit_dashboard.png';
 import '../assets/styles/Project.scss';
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
