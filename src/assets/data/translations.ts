@@ -162,6 +162,14 @@ export const translations = {
             ml_tuning: {
                 title: "Machine Learning Hyperparameter Tuning Guide",
                 desc: "A comprehensive guide to hyperparameter tuning for non-deep learning models, focusing on practical techniques and strategies."
+            },
+            note_taking: {
+                title: "Note-taking Methodology",
+                desc: "Learn how to build a personal knowledge management system using effective note-taking techniques."
+            },
+            problem_solving: {
+                title: "McKinsey 7-Step Problem Solving",
+                desc: "A structural approach to solving complex business problems based on the McKinsey methodology."
             }
         }
     },
@@ -326,8 +334,16 @@ export const translations = {
                 desc: "Git 版本控制進階指南，涵蓋分支策略、衝突解決與最佳實踐。"
             },
             ml_tuning: {
-                title: "機器學習(非深度學習)調參指南",
+                title: "機器學習調參指南",
                 desc: "針對非深度學習模型的超參數調整綜合指南，專注於實用技巧與策略。"
+            },
+            note_taking: {
+                title: "知識管理方法論：如何做好筆記",
+                desc: "學習如何透過有效的筆記技巧，建立個人知識管理系統。"
+            },
+            problem_solving: {
+                title: "麥肯錫解決問題七步驟",
+                desc: "基於麥肯錫方法論，系統性解決複雜商業問題的結構化方法。"
             }
         }
     }

@@ -16,8 +16,18 @@ function Teaching() {
         },
         {
             title: t.ml_tuning.title,
-            fileName: "機器學習(非深度學習)調參指南.md",
+            fileName: "機器學習調參指南.md",
             description: t.ml_tuning.desc
+        },
+        {
+            title: t.note_taking.title,
+            fileName: "知識管理方法論-如何做好筆記.md",
+            description: t.note_taking.desc
+        },
+        {
+            title: t.problem_solving.title,
+            fileName: "麥肯錫解決問題七步驟_教學版.md",
+            description: t.problem_solving.desc
         }
     ];
 
