@@ -22,17 +22,17 @@ export const translations = {
         expertise: {
             title: "Expertise",
             tech_stack: "Tech stack:",
-            datascience: {
-                title: "Data Science & Machine Learning",
-                desc: "Proficient in building predictive models and conducting statistical analysis. I transform raw data into actionable insights using various machine learning algorithms and data visualization techniques."
+            decision_science: {
+                title: "Decision-Oriented Data Science",
+                desc: "Focus on decision-oriented data science, identifying high-value problems and structuring them into actionable analytical tasks. I leverage statistical analysis and machine learning, combined with Game Theory and Linear Programming, to generate comparable options and assess risks, delivering insights through automated dynamic dashboards."
             },
-            dataengineering: {
-                title: "Data Engineering & Cloud",
-                desc: "Experienced in building data pipelines, ETL processes, and deploying machine learning models on cloud platforms. I ensure data quality and accessibility for downstream analytics."
+            causal_analysis: {
+                title: "Causal Analysis & Experimentation",
+                desc: "Design and execute interpretable A/B tests in real-world business environments. When randomization isn't possible, I use econometric methods to construct counterfactuals. Proficient in Causal Machine Learning (e.g., Causal Forests, DML) for analyzing heterogeneous effects and designing precise interventions."
             },
-            economics: {
-                title: "Economics & Causal Inference",
-                desc: "Strong foundation in econometrics and causal inference methods. I design and analyze experiments to measure true impact and guide data-driven decision making."
+            analytics_engineering: {
+                title: "Analytics Engineering",
+                desc: "Engineer reproducible, maintainable workflows for analysis and ML. I refactor ad-hoc scripts into modular, config-driven systems with version control and automated tracking. Capable of deploying and containerizing models for production implementation."
             }
         },
         career: {
@@ -196,17 +196,17 @@ export const translations = {
         expertise: {
             title: "專業技能",
             tech_stack: "技術堆疊：",
-            datascience: {
-                title: "資料科學與機器學習",
-                desc: "精通建模預測與統計分析。我使用多種機器學習演算法與資料視覺化技術，將複雜的數據轉化為可執行的洞察報告。"
+            decision_science: {
+                title: "決策導向資料科學",
+                desc: "專注於決策導向的資料科學實務，能辨識真正具有決策價值的商業問題，並透過假設拆解與問題結構化，將其轉化為可分析、可建模、可行動的資料任務。在實務中能依據不同決策情境，靈活運用統計分析與機器學習模型，並結合賽局理論、社會網絡分析與線性規劃等方法，選擇最合適的分析框架，產出可比較的不同行動選項，並評估其潛在影響與風險。將分析結果建成自動更新的動態儀表板，提供即時檢視與加速迭代決策。"
             },
-            dataengineering: {
-                title: "資料工程與雲端架構",
-                desc: "具備建置資料管線 (Pipeline)、ETL 流程與雲端平台模型部署的經驗。確保數據品質並提升後續分析的存取效率。"
+            causal_analysis: {
+                title: "因果推論與實驗設計",
+                desc: "能在真實商業環境下規劃、設計並執行具備可解釋性的 A/B Testing 實驗，並有效處理實驗污染、執行偏差與資料干擾等常見問題。在無法進行隨機實驗的情境中，能運用計量經濟學方法建構合理的反事實對照組，清楚說明假設成立條件與推論限制，避免過度解讀因果結果。此外，熟悉 Causal Forest、DML 等因果機器學習方法，能於大規模資料下進行異質性效果分析，並據此設計更精準且有效的決策干預。"
             },
-            economics: {
-                title: "經濟學與因果推論",
-                desc: "擁有深厚的計量經濟學與因果推論基礎。我專設計並分析實驗 (A/B Testing)，以衡量決策的真實影響力，實現數據驅動決策。"
+            analytics_engineering: {
+                title: "分析式資料工程",
+                desc: "能將資料分析、機器學習與實驗流程工程化，打造可重現、可追蹤且可長期維護的分析與模型系統。具備將一次性分析流程重構為模組化、設定驅動程式架構的實務經驗，並結合版本控管、實驗追蹤與自動化產出機制，確保分析結果在不同時間與執行環境下仍具一致性與可驗證性。對於需要實際落地的模型與分析成果，亦能處理基礎部署與容器化需求。"
             }
         },
         career: {

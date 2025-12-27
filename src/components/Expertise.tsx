@@ -10,33 +10,30 @@ import { translations } from "../assets/data/translations";
 const labelsFirst = [
     "Python",
     "SQL",
-    "Pandas",
-    "NumPy",
-    "Scikit-Learn",
-    "TensorFlow",
-    "Machine Learning",
-    "Statistical Analysis"
+    "Tableau",
+    "Scikit-learn",
+    "StatisticalAnalysis",
+    "GameTheory",
+    "SocialNetworkAnalysis",
+    "LinearProgramming"
 ];
 
 const labelsSecond = [
-    "Git",
-    "Docker",
-    "AWS",
-    "Google Cloud",
-    "BigQuery",
-    "Airflow",
-    "dbt",
-    "Spark"
+    "A/B Testing",
+    "CausalInference",
+    "Econometrics",
+    "EconML",
+    "CDP"
 ];
 
 const labelsThird = [
-    "Causal Inference",
-    "Econometrics",
-    "A/B Testing",
-    "Game Theory",
-    "Social Network Analysis",
-    "EconML",
-    "Time Series Analysis"
+    "Git",
+    "MLflow",
+    "Docker",
+    "Airflow",
+    "AppsScript",
+    "Streamlit",
+    "BigQuery"
 ];
 
 function Expertise() {
@@ -50,8 +47,8 @@ function Expertise() {
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faChartLine} size="3x"/>
-                    <h3>{t.datascience.title}</h3>
-                    <p>{t.datascience.desc}</p>
+                    <h3>{t.decision_science.title}</h3>
+                    <p>{t.decision_science.desc}</p>
                     <div className="flex-chips">
                         <span className="chip-title">{t.tech_stack}</span>
                         {labelsFirst.map((label, index) => (
@@ -61,9 +58,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDatabase} size="3x"/>
-                    <h3>{t.dataengineering.title}</h3>
-                    <p>{t.dataengineering.desc}</p>
+                    <FontAwesomeIcon icon={faFlask} size="3x"/>
+                    <h3>{t.causal_analysis.title}</h3>
+                    <p>{t.causal_analysis.desc}</p>
                     <div className="flex-chips">
                         <span className="chip-title">{t.tech_stack}</span>
                         {labelsSecond.map((label, index) => (
@@ -73,9 +70,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faFlask} size="3x"/>
-                    <h3>{t.economics.title}</h3>
-                    <p>{t.economics.desc}</p>
+                    <FontAwesomeIcon icon={faDatabase} size="3x"/>
+                    <h3>{t.analytics_engineering.title}</h3>
+                    <p>{t.analytics_engineering.desc}</p>
                     <div className="flex-chips">
                         <span className="chip-title">{t.tech_stack}</span>
                         {labelsThird.map((label, index) => (
