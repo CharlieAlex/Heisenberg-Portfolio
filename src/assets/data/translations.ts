@@ -24,15 +24,15 @@ export const translations = {
             tech_stack: "Tech stack:",
             decision_science: {
                 title: "Decision-Oriented Data Science",
-                desc: "Focus on decision-oriented data science, identifying high-value problems and structuring them into actionable analytical tasks. I leverage statistical analysis and machine learning, combined with Game Theory and Linear Programming, to generate comparable options and assess risks, delivering insights through automated dynamic dashboards."
+                desc: "Translates ambiguous business objectives into actionable analytical problems by decomposing hypotheses and structuring decision frameworks. Rapidly identifies key metrics and decision levers to drive impact. Integrates statistical analysis, machine learning, and linear programming with economic foundations—such as Game Theory and Social Network Analysis—to evaluate strategic options. Generates comparable scenarios to assess risks and trade-offs, delivering productized, auto-updating dashboards for real-time monitoring and agile decision-making."
             },
             causal_analysis: {
                 title: "Causal Analysis & Experimentation",
-                desc: "Design and execute interpretable A/B tests in real-world business environments. When randomization isn't possible, I use econometric methods to construct counterfactuals. Proficient in Causal Machine Learning (e.g., Causal Forests, DML) for analyzing heterogeneous effects and designing precise interventions."
+                desc: "Designs and executes interpretable A/B tests in complex business environments, effectively mitigating pollution, execution bias, and data noise. When randomization is infeasible, applies econometric quasi-experimental methods to construct robust counterfactuals, clearly defining assumptions and limitations to prevent misinterpretation. Leverages Causal Machine Learning (e.g., Causal Forests, DML) to analyze heterogeneous effects on large-scale datasets, enabling precise segmentation and targeted intervention strategies."
             },
             analytics_engineering: {
                 title: "Analytics Engineering",
-                desc: "Engineer reproducible, maintainable workflows for analysis and ML. I refactor ad-hoc scripts into modular, config-driven systems with version control and automated tracking. Capable of deploying and containerizing models for production implementation."
+                desc: "Engineers reproducible data and ML workflows, transforming ad-hoc research into maintainable, production-ready pipelines. Implements modular, config-driven architectures integrated with version control and experiment tracking to ensure result consistency and verifiability. Manages the end-to-end lifecycle from analysis to deployment, utilizing containerization to support long-running models and scalable analytical services."
             }
         },
         career: {
@@ -198,15 +198,15 @@ export const translations = {
             tech_stack: "技術堆疊：",
             decision_science: {
                 title: "決策導向資料科學",
-                desc: "專注於決策導向的資料科學實務，能辨識真正具有決策價值的商業問題，並透過假設拆解與問題結構化，將其轉化為可分析、可建模、可行動的資料任務。在實務中能依據不同決策情境，靈活運用統計分析與機器學習模型，並結合賽局理論、社會網絡分析與線性規劃等方法，選擇最合適的分析框架，產出可比較的不同行動選項，並評估其潛在影響與風險。將分析結果建成自動更新的動態儀表板，提供即時檢視與加速迭代決策。"
+                desc: "專長將商業目標轉譯為可分析、可建模、可行動的資料問題，透過假設拆解與問題結構化，快速界定關鍵指標與決策槓桿。能依不同情境整合統計分析、機器學習與線性規劃模型，並運用賽局理論、社會網絡分析等經濟學基礎建立分析框架，產出可比較的行動選項，評估影響、風險與權衡。可將分析結果產品化為自動更新的動態儀表板，支援即時監控與快速迭代決策。"
             },
             causal_analysis: {
                 title: "因果推論與實驗設計",
-                desc: "能在真實商業環境下規劃、設計並執行具備可解釋性的 A/B Testing 實驗，並有效處理實驗污染、執行偏差與資料干擾等常見問題。在無法進行隨機實驗的情境中，能運用計量經濟學方法建構合理的反事實對照組，清楚說明假設成立條件與推論限制，避免過度解讀因果結果。此外，熟悉 Causal Forest、DML 等因果機器學習方法，能於大規模資料下進行異質性效果分析，並據此設計更精準且有效的決策干預。"
+                desc: "能在真實商業場景規劃並執行 A/B Testing 實驗，並能處理實驗污染、執行偏差與資料干擾等常見落地問題。當無法隨機化時，能以計量經濟學的準實驗方法建構合理反事實對照組，清楚說明假設成立條件與推論限制，避免錯誤解讀的風險。亦熟悉 Causal Forest、DML 等因果機器學習模型，可在大規模資料下進行異質性效果分析，據此提出更精準的分群干預與實驗策略。"
             },
             analytics_engineering: {
                 title: "分析式資料工程",
-                desc: "能將資料分析、機器學習與實驗流程工程化，打造可重現、可追蹤且可長期維護的分析與模型系統。具備將一次性分析流程重構為模組化、設定驅動程式架構的實務經驗，並結合版本控管、實驗追蹤與自動化產出機制，確保分析結果在不同時間與執行環境下仍具一致性與可驗證性。對於需要實際落地的模型與分析成果，亦能處理基礎部署與容器化需求。"
+                desc: "能將資料分析、機器學習與實驗流程工程化，把一次性研究重構為可重現、可追蹤、可維護的分析/模型管線。熟悉模組化與設定驅動（config-driven）架構設計，並整合版本控管、實驗追蹤與自動化產出，確保不同時間與執行環境下結果一致且可驗證。亦具備將成果落地的基礎能力，包含容器化與簡易部署，支援模型與分析服務長期運行。"
             }
         },
         career: {
