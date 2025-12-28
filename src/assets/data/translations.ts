@@ -101,17 +101,21 @@ export const translations = {
         },
         projects: {
             title: "Side Projects",
+            visit_github: "Visit GitHub",
+            visit_app: "Visit App",
             parkfinder: {
                 title: "ParkFinder",
                 short: "Real-time query and statistical analysis of available parking spaces in Taipei City.",
                 full: "ParkFinder is a comprehensive real-time parking availability platform for Taipei City. The system combines a robust data pipeline that retrieves live parking data from government APIs, statistical analysis based on historical patterns, and interactive visualization using Streamlit.\n\nKey Features:\n• Real-time parking space availability queries across all Taipei districts\n• Historical data analysis to predict parking availability by time of day\n• Interactive maps and filters for multi-dimensional exploration\n• Daily automated data collection and aggregation\n\nThe platform helps drivers save time by identifying parking lots with higher availability based on historical trends, reducing urban congestion and improving city mobility.",
-                link: "https://parkfinder.streamlit.app/"
+                link: "https://parkfinder.streamlit.app/",
+                github: "https://github.com/CharlieAlex/ParkFinder"
             },
             betting: {
                 title: "Sports Betting Freerider",
                 short: "Data-backed prediction tracking system capturing insights from top-ranking bettors.",
                 full: "Sports Betting Freerider is an automated web scraping system designed to track and analyze prediction results from top-ranking sports betting players.\n\nKey Features:\n• Automated web scraping of prediction data from multiple platforms\n• Statistical analysis of prediction accuracy by sport, league, and betting type\n• Google Sheets integration for seamless data tracking and sharing\n• Performance metrics dashboard to identify consistently accurate predictors\n\nBy leveraging collective intelligence from proven successful bettors, this system provides data-driven insights to inform betting strategies. The analysis reveals patterns in prediction accuracy across different sports and time periods.",
-                link: "https://docs.google.com/spreadsheets/d/1IcTCgwnIk_EKnqRdBYK7-MGfxiTrxbTnm3-89Fc76X4/edit?usp=sharing"
+                link: "https://sports-betting-freerider.streamlit.app/",
+                github: "https://github.com/CharlieAlex/Sports-Betting-Freerider"
             }
         },
         analysis: {
@@ -275,17 +279,21 @@ export const translations = {
         },
         projects: {
             title: "個人專案",
+            visit_github: "前往 GitHub",
+            visit_app: "前往應用程式",
             parkfinder: {
                 title: "ParkFinder 台北停車通",
                 short: "台北市停車位即時查詢與歷史數據統計分析平台。",
                 full: "ParkFinder 台北停車通是一個全方位的台北市即時停車位查詢平台。系統整合了政府開放資料API的即時數據擷取、歷史數據的統計分析，以及使用 Streamlit 建構的互動式視覺化介面。\n\n主要功能：\n• 台北市各行政區停車場即時空位查詢\n• 基於歷史數據分析，預測不同時段的停車位可用率\n• 互動式地圖與多維度篩選功能\n• 每日自動化數據收集與彙整\n\n這個平台幫助駕駛人根據歷史趨勢找到空位率較高的停車場，節省尋找車位的時間，降低都市交通壅塞，提升城市移動效率。",
-                link: "https://parkfinder.streamlit.app/"
+                link: "https://parkfinder.streamlit.app/",
+                github: "https://github.com/CharlieAlex/ParkFinder"
             },
             betting: {
                 title: "運彩高手預測追蹤系統",
                 short: "追蹤頂尖運彩玩家預測結果的數據驅動分析系統。",
                 full: "運彩高手預測追蹤系統是一個自動化網頁爬蟲系統，專門追蹤並分析頂尖運彩玩家的預測結果。\n\n主要功能：\n• 從多個平台自動爬取預測數據\n• 依運動類型、聯賽、投注類型進行準確率統計分析\n• Google Sheets 整合，方便數據追蹤與分享\n• 績效指標儀表板，識別持續準確的預測者\n\n透過彙整經驗證的成功投注者的集體智慧，這個系統提供數據驅動的洞察，作為投注策略的參考依據。分析結果揭示了不同運動項目和時間期間的預測準確率模式。",
-                link: "https://docs.google.com/spreadsheets/d/1IcTCgwnIk_EKnqRdBYK7-MGfxiTrxbTnm3-89Fc76X4/edit?usp=sharing"
+                link: "https://sports-betting-freerider.streamlit.app/",
+                github: "https://github.com/CharlieAlex/Sports-Betting-Freerider"
             }
         },
         analysis: {

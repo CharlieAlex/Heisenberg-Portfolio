@@ -5,6 +5,7 @@ import '../assets/styles/Project.scss';
 import { Modal, Box, Typography, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from '@mui/material/IconButton';
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -17,6 +18,7 @@ interface ProjectItem {
   shortDescription: string;
   fullDescription: string;
   link: string;
+  github: string;
 }
 
 const modalStyle = {
@@ -66,7 +68,8 @@ function Project() {
         image: parking1,
         shortDescription: t.parkfinder.short,
         fullDescription: t.parkfinder.full,
-        link: t.parkfinder.link
+        link: t.parkfinder.link,
+        github: t.parkfinder.github
       },
       {
         id: 'betting',
@@ -74,7 +77,8 @@ function Project() {
         image: totalResult,
         shortDescription: t.betting.short,
         fullDescription: t.betting.full,
-        link: t.betting.link
+        link: t.betting.link,
+        github: t.betting.github
       }
     ];
 
@@ -128,21 +132,46 @@ function Project() {
                         <Typography id="modal-modal-description" sx={{ mt: 2, color: isDark ? '#ccc' : '#555', lineHeight: 1.8, whiteSpace: 'pre-line' }}>
                             {selectedItem.fullDescription}
                         </Typography>
-                        <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3 }}>
+                        <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3, gap: 2 }}>
                             <Button
-                                variant="contained"
-                                endIcon={<OpenInNewIcon />}
+                                variant="outlined"
+                                startIcon={<GitHubIcon />}
+                                href={selectedItem.github}
+                                target="_blank"
+                                rel="noreferrer"
+                                sx={{
+                                    color: isDark ? '#fff' : '#333',
+                                    borderColor: isDark ? '#fff' : '#333',
+                                    '&:hover': {
+                                        borderColor: isDark ? '#ccc' : '#000',
+                                        bgcolor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)',
+                                    }
+                                }}
+                            >
+                                {t.visit_github}
+                            </Button>
+                            <Button
+                                variant="outlined"
+                                startIcon={
+                                    <img 
+                                        src="https://streamlit.io/images/brand/streamlit-mark-color.png" 
+                                        alt="Streamlit" 
+                                        style={{ width: '20px', height: '20px' }} 
+                                    />
+                                }
                                 href={selectedItem.link}
                                 target="_blank"
                                 rel="noreferrer"
                                 sx={{
-                                    bgcolor: isDark ? '#bb86fc' : '#5000ca',
+                                    color: isDark ? '#fff' : '#333',
+                                    borderColor: isDark ? '#fff' : '#333',
                                     '&:hover': {
-                                        bgcolor: isDark ? '#9a67ea' : '#3d00a0',
+                                        borderColor: isDark ? '#ccc' : '#000',
+                                        bgcolor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)',
                                     }
                                 }}
                             >
-                                {language === 'en' ? 'Visit App' : '前往應用程式'}
+                                {t.visit_app}
                             </Button>
                         </Box>
                     </>
