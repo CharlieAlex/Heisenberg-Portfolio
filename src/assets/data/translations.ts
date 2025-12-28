@@ -116,6 +116,13 @@ export const translations = {
                 full: "Sports Betting Freerider is an automated web scraping system designed to track and analyze prediction results from top-ranking sports betting players.\n\nKey Features:\n• Automated web scraping of prediction data from multiple platforms\n• Statistical analysis of prediction accuracy by sport, league, and betting type\n• Google Sheets integration for seamless data tracking and sharing\n• Performance metrics dashboard to identify consistently accurate predictors\n\nBy leveraging collective intelligence from proven successful bettors, this system provides data-driven insights to inform betting strategies. The analysis reveals patterns in prediction accuracy across different sports and time periods.",
                 link: "https://sports-betting-freerider.streamlit.app/",
                 github: "https://github.com/CharlieAlex/Sports-Betting-Freerider"
+            },
+            ml_analysis: {
+                title: "ML Analysis Dashboard",
+                short: "Error analysis and interpretability dashboard for trained machine learning models.",
+                full: "ML Analysis Dashboard is a comprehensive tool for analyzing trained machine learning models, focusing on error analysis and model interpretability to drive continuous improvement.\n\nKey Features:\n• Error analysis to identify patterns in model mispredictions\n• Feature importance and SHAP value visualization\n• Interactive data exploration and filtering\n• Comparative analysis across different model versions\n\nThis dashboard empowers data scientists to understand model behavior, identify areas for improvement, and communicate insights to stakeholders effectively.",
+                link: "https://ML-Analysis-Dashboard.streamlit.app/",
+                github: "https://github.com/CharlieAlex/ML-Analysis-Dashboard"
             }
         },
         analysis: {
@@ -294,6 +301,13 @@ export const translations = {
                 full: "運彩高手預測追蹤系統是一個自動化網頁爬蟲系統，專門追蹤並分析頂尖運彩玩家的預測結果。\n\n主要功能：\n• 從多個平台自動爬取預測數據\n• 依運動類型、聯賽、投注類型進行準確率統計分析\n• Google Sheets 整合，方便數據追蹤與分享\n• 績效指標儀表板，識別持續準確的預測者\n\n透過彙整經驗證的成功投注者的集體智慧，這個系統提供數據驅動的洞察，作為投注策略的參考依據。分析結果揭示了不同運動項目和時間期間的預測準確率模式。",
                 link: "https://sports-betting-freerider.streamlit.app/",
                 github: "https://github.com/CharlieAlex/Sports-Betting-Freerider"
+            },
+            ml_analysis: {
+                title: "ML 分析儀表板",
+                short: "針對訓練完成的機器學習模型進行錯誤分析與可解釋性分析。",
+                full: "ML 分析儀表板是一個綜合性的機器學習模型分析工具，專注於錯誤分析與模型可解釋性，協助持續改善模型效能。\n\n主要功能：\n• 錯誤分析：識別模型預測錯誤的模式\n• 特徵重要性與 SHAP 值視覺化\n• 互動式數據探索與篩選\n• 不同模型版本的比較分析\n\n這個儀表板協助資料科學家理解模型行為、找出改善空間，並有效地向利害關係人傳達分析洞察。",
+                link: "https://ML-Analysis-Dashboard.streamlit.app/",
+                github: "https://github.com/CharlieAlex/ML-Analysis-Dashboard"
             }
         },
         analysis: {

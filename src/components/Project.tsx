@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import parking1 from '../assets/images/parking1.png';
 import totalResult from '../assets/images/streamlit_dashboard.png';
+import mlAnalysisDashboard from '../assets/images/ml-analysis-dashboard.png';
 import '../assets/styles/Project.scss';
 import { Modal, Box, Typography, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
@@ -79,6 +80,15 @@ function Project() {
         fullDescription: t.betting.full,
         link: t.betting.link,
         github: t.betting.github
+      },
+      {
+        id: 'ml_analysis',
+        title: t.ml_analysis.title,
+        image: mlAnalysisDashboard,
+        shortDescription: t.ml_analysis.short,
+        fullDescription: t.ml_analysis.full,
+        link: t.ml_analysis.link,
+        github: t.ml_analysis.github
       }
     ];
 
