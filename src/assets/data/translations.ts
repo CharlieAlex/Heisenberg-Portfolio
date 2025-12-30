@@ -54,7 +54,7 @@ export const translations = {
                 subtitle: "National Taiwan University, Economics",
                 summary: "Machine Learning, Econometrics, Data Science",
                 details: [
-                   "Overall GPA: 4.09/4.30",
+                   "Overall GPA: 4.09/4.30 (Max 4.30)",
                    "Course Highlights: Machine Learning and Econometrics, Data Science and Social Inquiry, Applied Econometric Method, Industrial Organization and Firm Strategy"
                 ]
             },
@@ -84,7 +84,7 @@ export const translations = {
                  subtitle: "National Taiwan University, Economics & Philosophy",
                  summary: "Economics & Philosophy, Presidential Awards",
                  details: [
-                    "Overall GPA: 4.00/4.30",
+                    "Overall GPA: 4.00/4.30 (Max 4.30)",
                     "Awards: President Awards in 106, President Awards in 109"
                  ]
             },
@@ -238,7 +238,7 @@ export const translations = {
                 subtitle: "國立台灣大學",
                 summary: "機器學習, 計量經濟學, 資料科學",
                 details: [
-                   "學業成績: 4.09/4.30",
+                   "學業成績: 4.09/4.30 (最高 4.30)",
                    "修課紀錄: 機器學習與因果推論、資料科學與社會研究、應用計量方法、產業組織與廠商策略"
                 ]
             },
@@ -268,7 +268,7 @@ export const translations = {
                  subtitle: "國立台灣大學",
                  summary: "經濟學 & 哲學, 書卷獎",
                  details: [
-                    "學業成績: 4.00/4.30",
+                    "學業成績: 4.00/4.30 (最高 4.30)",
                     "獲獎紀錄: 109學年社科學院書卷獎、106學年文學院書卷獎"
                  ]
             },
