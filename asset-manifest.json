@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Heisenberg-Portfolio/static/css/main.11b1c1d8.css",
-    "main.js": "/Heisenberg-Portfolio/static/js/main.1624df27.js",
+    "main.js": "/Heisenberg-Portfolio/static/js/main.ae9ef695.js",
     "static/js/453.0f2d55e7.chunk.js": "/Heisenberg-Portfolio/static/js/453.0f2d55e7.chunk.js",
     "static/js/448.b7095e8c.chunk.js": "/Heisenberg-Portfolio/static/js/448.b7095e8c.chunk.js",
     "static/js/550.808a76a5.chunk.js": "/Heisenberg-Portfolio/static/js/550.808a76a5.chunk.js",
@@ -38,7 +38,7 @@
     "static/js/593.b41eb4ae.chunk.js": "/Heisenberg-Portfolio/static/js/593.b41eb4ae.chunk.js",
     "static/js/820.31f65144.chunk.js": "/Heisenberg-Portfolio/static/js/820.31f65144.chunk.js",
     "static/js/571.13b85509.chunk.js": "/Heisenberg-Portfolio/static/js/571.13b85509.chunk.js",
-    "static/js/502.ed609be0.chunk.js": "/Heisenberg-Portfolio/static/js/502.ed609be0.chunk.js",
+    "static/js/502.ef13ec86.chunk.js": "/Heisenberg-Portfolio/static/js/502.ef13ec86.chunk.js",
     "static/js/532.de1f473e.chunk.js": "/Heisenberg-Portfolio/static/js/532.de1f473e.chunk.js",
     "static/js/646.bdbe74e8.chunk.js": "/Heisenberg-Portfolio/static/js/646.bdbe74e8.chunk.js",
     "static/js/590.f6bd80c0.chunk.js": "/Heisenberg-Portfolio/static/js/590.f6bd80c0.chunk.js",
@@ -47,9 +47,10 @@
     "static/media/people_flow_map.png": "/Heisenberg-Portfolio/static/media/people_flow_map.24b6d92e82c8f716d65a.png",
     "static/media/ntu_logo.jpg": "/Heisenberg-Portfolio/static/media/ntu_logo.da68f9c1128da8447f10.jpg",
     "static/media/bg-light.png": "/Heisenberg-Portfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/ml-analysis-dashboard.png": "/Heisenberg-Portfolio/static/media/ml-analysis-dashboard.99b8c3571da0f7740dc9.png",
     "static/media/bg-dark.png": "/Heisenberg-Portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/100day_1.png": "/Heisenberg-Portfolio/static/media/100day_1.7d16e408d2b65abbbdf8.png",
-    "static/media/total_result.png": "/Heisenberg-Portfolio/static/media/total_result.37042bf750b72587c557.png",
+    "static/media/streamlit_dashboard.png": "/Heisenberg-Portfolio/static/media/streamlit_dashboard.50880bd953951d4d42fc.png",
     "static/media/is_trip_rate.png": "/Heisenberg-Portfolio/static/media/is_trip_rate.c2adf09cc0f1cd62f122.png",
     "static/media/parking1.png": "/Heisenberg-Portfolio/static/media/parking1.0043b60a5d784e687423.png",
     "static/media/head.jpg": "/Heisenberg-Portfolio/static/media/head.962ce6ebf86b51232de8.jpg",
@@ -121,7 +122,7 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/Heisenberg-Portfolio/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/Heisenberg-Portfolio/index.html",
     "main.11b1c1d8.css.map": "/Heisenberg-Portfolio/static/css/main.11b1c1d8.css.map",
-    "main.1624df27.js.map": "/Heisenberg-Portfolio/static/js/main.1624df27.js.map",
+    "main.ae9ef695.js.map": "/Heisenberg-Portfolio/static/js/main.ae9ef695.js.map",
     "453.0f2d55e7.chunk.js.map": "/Heisenberg-Portfolio/static/js/453.0f2d55e7.chunk.js.map",
     "448.b7095e8c.chunk.js.map": "/Heisenberg-Portfolio/static/js/448.b7095e8c.chunk.js.map",
     "550.808a76a5.chunk.js.map": "/Heisenberg-Portfolio/static/js/550.808a76a5.chunk.js.map",
@@ -151,7 +152,7 @@
     "490.52a94a39.chunk.js.map": "/Heisenberg-Portfolio/static/js/490.52a94a39.chunk.js.map",
     "195.f8789c8d.chunk.js.map": "/Heisenberg-Portfolio/static/js/195.f8789c8d.chunk.js.map",
     "571.13b85509.chunk.js.map": "/Heisenberg-Portfolio/static/js/571.13b85509.chunk.js.map",
-    "502.ed609be0.chunk.js.map": "/Heisenberg-Portfolio/static/js/502.ed609be0.chunk.js.map",
+    "502.ef13ec86.chunk.js.map": "/Heisenberg-Portfolio/static/js/502.ef13ec86.chunk.js.map",
     "532.de1f473e.chunk.js.map": "/Heisenberg-Portfolio/static/js/532.de1f473e.chunk.js.map",
     "646.bdbe74e8.chunk.js.map": "/Heisenberg-Portfolio/static/js/646.bdbe74e8.chunk.js.map",
     "590.f6bd80c0.chunk.js.map": "/Heisenberg-Portfolio/static/js/590.f6bd80c0.chunk.js.map",
@@ -160,6 +161,6 @@
   },
   "entrypoints": [
     "static/css/main.11b1c1d8.css",
-    "static/js/main.1624df27.js"
+    "static/js/main.ae9ef695.js"
   ]
 }
