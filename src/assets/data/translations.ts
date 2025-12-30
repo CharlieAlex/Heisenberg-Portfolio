@@ -40,14 +40,13 @@ export const translations = {
             yulon: {
                 title: "Data Analyst",
                 subtitle: "Yulon Group, Taiwan",
-                date: "2023.8 - present",
-                summary: "Causal Machine Learning, Machine Learning, Tableau Dashboard, A/B Testing, Data Pipeline, Statistical Analysis",
+                date: "2024.6 - Present",
+                summary: "Causal Machine Learning, Machine Learning, Tableau Dashboard, A/B Testing, Statistical Analysis",
                 details: [
-                    "Specialized in Causal Machine Learning and Statistical Analysis.",
-                    "Developed and maintained Tableau Dashboards for business intelligence.",
-                    "Designed and executed A/B Testing experiments.",
-                    "Built resilient Data Pipelines for data processing.",
-                    "Applied Machine Learning models to solve business problems."
+                    "CarPlus: Designed and executed A/B tests to evaluate the impact of real-time incentives on user conversion, increasing order conversion rates by approximately 5%. Built operational metric dashboards to rapidly assess station performance, supporting decisions on differentiated marketing, vehicle dispatching, and station management.",
+                    "LINE GO Taxi: Applied Causal Forest models to estimate heterogeneous treatment effects across user segments, optimizing promotional resource allocation and reducing subsidy costs by nearly 20%. Leveraged linear programming optimization to determine optimal incentive levels for different groups, achieving an additional ~10% cost reduction while maintaining performance.",
+                    "Sinjang Used Cars: Built an auction price prediction model using LightGBM, reducing acquisition risk through precise pricing benchmarks with performance comparable to human experts. Developed a historical trend dashboard to systematically track price changes by model, aiding residual value assessment and long-term analysis.",
+                    "Others: Proactively planned and distributed knowledge on data analysis and causal inference, leading over 10 internal technical sharing sessions. Mentored one intern and one junior analyst to expedite their transition to practical projects. Delivered 3 campus speeches on real-world data projects, engaging nearly 100 students and fostering academic-industry exchange."
                 ]
             },
             ntu_master: {
@@ -223,16 +222,15 @@ export const translations = {
         career: {
             title: "職涯歷程",
             yulon: {
-                title: "數據分析師",
+                title: "資料分析師",
                 subtitle: "裕隆集團, 台灣",
-                date: "2023.8 - 至今",
-                summary: "因果機器學習, 機器學習, Tableau儀表板, A/B Testing, 資料管線, 統計分析",
+                date: "2024.6 - 至今",
+                summary: "因果機器學習, 機器學習, Tableau儀表板, A/B Testing, 統計分析",
                 details: [
-                    "專精於因果機器學習與統計分析。",
-                    "開發並維護 Tableau 商業智慧儀表板。",
-                    "設計並執行 A/B Testing 實驗。",
-                    "建置穩健的資料處理管線。",
-                    "應用機器學習模型解決商業問題。"
+                    "格上租車: 設計並執行 A/B Testing 實驗，評估即時誘因對用戶轉換行為的影響，提升下單轉換率約 5%。建立營運指標視覺化儀表板，協助快速衡量站點表現，以支援差異化行銷、車輛調度與開關站決策。",
+                    "LINE GO 計程車: 運用因果機器學習模型 Causal Forest 估計不同用戶群的異質性效果，優化優惠資源配置，補貼成本降低近 20%。透過線性規劃最佳化模型，針對不同人群配置最適誘因強度，在成效持平的前提下，額外降低約 10% 成本。",
+                    "行將中古車: 以 LightGBM 建立拍賣價格預測模型，透過精確的報價基準降低收購風險，模型表現與內部專業人員判斷水準相當。建立歷史趨勢分析儀表板，系統性追蹤不同車型的價格變化，作為殘值評估與長期分析依據。",
+                    "其他: 主動規劃並分享資料分析與因果推論相關主題，累計 10 堂以上內部技術分享。指導 1 位分析實習生與 1 位新人分析師，協助快速銜接實務專案。參與 3 場校園演講，對外分享實務資料分析專案，累計近 100 位學生參與，促進人才交流與學術合作。",
                 ]
             },
             ntu_master: {
