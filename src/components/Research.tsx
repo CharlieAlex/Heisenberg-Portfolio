@@ -158,6 +158,7 @@ function Research() {
                 )}
             </Box>
         </Modal>
+        <hr style={{ width: '100%', margin: '0 auto', border: '0', borderTop: '2px dashed #ccc', marginTop: '5rem' }} />
     </div>
     );
 }

@@ -44,7 +44,7 @@ function Teaching() {
                     </div>
                 ))}
             </div>
-            <hr style={{ width: '80%', margin: '0 auto', border: '0', borderTop: '2px dashed #ccc', marginTop: '3rem' }} />
+            <hr style={{ width: '100%', margin: '0 auto', border: '0', borderTop: '2px dashed #ccc', marginTop: '3rem' }} />
         </div>
     );
 }
