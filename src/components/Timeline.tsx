@@ -185,7 +185,7 @@ function Timeline() {
                 <List sx={{ color: isDark ? '#f0f0f0' : 'black' }}>
                   {selectedItem.details.map((detail, index) => (
                     <ListItem key={index} alignItems="flex-start" sx={{ py: 0.5 }}>
-                      <ListItemIcon sx={{ minWidth: 24, mt: 1 }}>
+                      <ListItemIcon sx={{ minWidth: 24, mt: '15px' }}>
                         <CircleIcon sx={{ fontSize: 8, color: isDark ? '#f0f0f0' : 'inherit' }} />
                       </ListItemIcon>
                       <ListItemText primary={detail} sx={{ color: isDark ? '#f0f0f0' : 'black' }} />
