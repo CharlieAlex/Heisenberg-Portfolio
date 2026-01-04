@@ -128,18 +128,18 @@ export const translations = {
             title: "Business Analysis",
             people_flow: {
                 title: "Tableau Shared Station Flow Map",
-                short: "Optimizing station placement and elimination using shared station flow visualization.",
-                full: "We utilized Tableau to create a comprehensive visualization of shared station usage flows. This map empowers the business unit to intuitively understand the \"people flow\" across different locations. By analyzing this data, the team can make data-driven decisions on where to strategically open new stations to capture high demand and identify underperforming stations with low foot traffic for potential elimination, thereby optimizing the overall network efficiency."
+                short: "Optimizing station placement, elimination, and vehicle dispatching using shared station flow visualization.",
+                full: "This project utilizes Tableau to create a comprehensive visualization of shared station usage flows, empowering the business unit to intuitively understand \"people flow\" across different locations. These insights drive data-driven decisions for strategically opening new stations in high-demand areas, optimizing vehicle dispatching to meet usage needs, and identifying underperforming stations for potential elimination, thereby enhancing overall network efficiency."
             },
             trip_rate: {
-                title: "Driver Trip Rate Estimation",
-                short: "Estimating driver acceptance rates using total fare and performance metrics with LOWESS fitting.",
-                full: "This project focuses on estimating the probability of a driver accepting a trip request (Trip Rate). We analyze historical data correlating the total fare amount and individual driver performance metrics. By applying LOWESS (Locally Weighted Scatterplot Smoothing) to fit the data points, we generated a trip rate curve. This model allows us to simulate different pricing scenarios and determine the optimal subsidy amount required to achieve a target acceptance rate at the lowest possible cost."
+                title: "Taxi Driver Trip Rate Analysis",
+                short: "Estimating the non-linear relationship between fare prices and driver acceptance rates to support optimal subsidy allocation.",
+                full: "Based on historical ride-hailing pricing and driver acceptance behavior, this analysis estimates the non-linear relationship between price and acceptance rates under various external conditions such as city and time period. It characterizes the diminishing marginal utility and saturation effects of price increases on acceptance willingness. By stabilizing the behavioral response curve through smoothing estimation, the project quantifies the trade-off between subsidy costs and acceptance rate improvements, supporting the selection of the most cost-effective subsidy and pricing intervals within a limited budget."
             },
             mgm: {
-                title: "MGM Social Network Analysis",
-                short: "Analyzing \"Member Get Member\" campaign performance using social network analysis.",
-                full: "Leveraging the NetworkX library, we conducted a social network analysis on the \"Member Get Member\" (MGM) campaign. By mapping out the connections formed through referrals, we classified users into different community clusters. We then calculated various network centrality metrics to identify key influencers within the network. This analysis enables targeted marketing strategies, focusing resources on users with high centrality to maximize the viral effect and overall campaign performance."
+                title: "Friend Referral Social Network Analysis",
+                short: "Constructing a referral social network to analyze the impact of structural reciprocity on campaign costs and diffusion efficiency.",
+                full: "Addressing the issue of excessive reward issuance in referral programs due to design flaws, this project constructs a user social network based on referral relationships. Through network simulation and structural analysis, it assesses the impact of policy adjustments on diffusion behavior and reward costs, quantifying potential savings in coupon issuance. Additionally, centrality analysis identifies key influencers for precision marketing, while detection of high-density subgroups supports the design of group-based promotions and bundling schemes, transforming cost vulnerabilities into scalable marketing strategies."
             }
         },
         research: {
@@ -312,18 +312,18 @@ export const translations = {
             title: "商業分析",
             people_flow: {
                 title: "Tableau 共享站點人流地圖",
-                short: "利用共享站點人流視覺化，優化站點的開設與淘汰決策。",
-                full: "我們利用 Tableau 建立了共享站點使用流量的綜合視覺化地圖。這份地圖讓業務單位能直觀地理解各個地點的「人流」。透過分析這些數據，團隊能夠依據數據決策，策略性地在需求量大的熱區開設新站點，並識別出人流低、表現不佳的站點進行淘汰，從而優化整體的網絡效率。"
+                short: "利用共享站點人流視覺化，優化站點的開設與淘汰、車輛調度等決策。",
+                full: "本專案利用 Tableau 建立了共享站點使用流量的綜合視覺化地圖。這份地圖讓業務單位能直觀地理解各個地點的「人流」。透過分析這些數據，團隊能夠依據數據決策，策略性地在需求量大的熱區開設新站點、將車輛調度至高需求站點，並識別出人流低、表現不佳的站點進行淘汰，從而優化整體的網絡效率。"
             },
             trip_rate: {
-                title: "司機接單率估計模型",
-                short: "利用總車資與績效指標，透過 LOWESS 擬合估計司機接單率。",
-                full: "本專案專注於估計司機接受行程請求的機率 (Trip Rate)。我們分析了總車資金額與個別司機績效指標之間的歷史數據相關性。透過應用 LOWESS (局部加權散點圖平滑) 技術來擬合數據點，我們生成了接單率曲線。此模型使我們能夠模擬不同的定價情境，並確定在最低成本下達到目標接單率所需的最佳補貼金額。"
+                title: "計程車司機接單率分析",
+                short: "估計叫車價格與司機接單率之間的非線性關係，以支援補貼決策的最佳配置。",
+                full: "基於歷史叫車價格與司機接單行為，在不同縣市與時段等外在環境條件下，估計價格與接單率之間的非線性關係，刻畫價格提升對接單意願的邊際遞減與飽和效果，並透過平滑估計穩定行為反應曲線，進一步量化補貼成本與接單率提升之間的權衡，支援在有限預算下選擇最具成本效益的補貼與定價區間。"
             },
             mgm: {
-                title: "MGM 社群網絡分析",
-                short: "運用社群網絡分析評估「舊客帶新客」(MGM) 活動成效。",
-                full: "利用 NetworkX 函式庫，我們對「舊客帶新客」(MGM) 活動進行了社群網絡分析。透過繪製由推薦關係形成的連結，我們將用戶分類為不同的社群聚落。接著，我們計算了各種網絡中心性指標，以識別網絡中的關鍵意見領袖 (Key Influencers)。這項分析使我們能夠制定精準的行銷策略，將資源集中在中心性高的用戶身上，以最大化病毒式傳播效應與整體活動成效。"
+                title: "好友分享社群網絡分析",
+                short: "建構好友分享關係的社群網絡，分析結構性互惠行為對活動成本與擴散效率的影響。",
+                full: "針對好友分享活動中因制度設計產生的獎勵過度發放問題，建構以分享關係為邊的用戶社群網絡，透過網絡模擬與結構分析，評估適當的制度調整對整體擴散行為與獎勵成本的影響，並量化可降低的優惠券發放量；同時運用中心性分析辨識具高影響力的關鍵用戶，支援精準行銷，並進一步識別高密度子群結構，作為設計群體型促銷與綑綁使用方案的依據，將原本的成本漏洞轉化為可擴張的行銷策略。"
             }
         },
         research: {
