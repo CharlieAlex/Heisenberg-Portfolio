@@ -102,6 +102,13 @@ export const translations = {
             title: "Side Projects",
             visit_github: "Visit GitHub",
             visit_app: "Visit App",
+            ml_analysis: {
+                title: "ML Analysis Dashboard",
+                short: "Error analysis and interpretability dashboard for trained machine learning models.",
+                full: "ML Analysis Dashboard is a comprehensive tool for analyzing trained machine learning models, focusing on error analysis and model interpretability to drive continuous improvement.\n\nKey Features:\n• Error analysis to identify patterns in model mispredictions\n• Feature importance and SHAP value visualization\n• Interactive data exploration and filtering\n• Comparative analysis across different model versions\n\nThis dashboard empowers data scientists to understand model behavior, identify areas for improvement, and communicate insights to stakeholders effectively.",
+                link: "https://ML-Analysis-Dashboard.streamlit.app/",
+                github: "https://github.com/CharlieAlex/ML-Analysis-Dashboard"
+            },
             parkfinder: {
                 title: "ParkFinder",
                 short: "Real-time query and statistical analysis of available parking spaces in Taipei City.",
@@ -112,16 +119,9 @@ export const translations = {
             betting: {
                 title: "Sports Betting Freerider",
                 short: "Data-backed prediction tracking system capturing insights from top-ranking bettors.",
-                full: "Sports Betting Freerider is an automated web scraping system designed to track and analyze prediction results from top-ranking sports betting players.\n\nKey Features:\n• Automated web scraping of prediction data from multiple platforms\n• Statistical analysis of prediction accuracy by sport, league, and betting type\n• Google Sheets integration for seamless data tracking and sharing\n• Performance metrics dashboard to identify consistently accurate predictors\n\nBy leveraging collective intelligence from proven successful bettors, this system provides data-driven insights to inform betting strategies. The analysis reveals patterns in prediction accuracy across different sports and time periods.",
+                full: "Sports Betting Freerider is a Line Bot driven crawler system designed to track and analyze prediction results from top-ranking sports betting players.\n\nKey Features:\n• Flexible crawling targets specified via Line Bot, fully automated with iOS Shortcuts\n• Automated scraping of prediction data from Playsport, with statistical analysis of prediction accuracy by sport, league, and betting type\n• BigQuery & Google Sheets integration for seamless data tracking and sharing\n• Performance metrics dashboard to identify consistently accurate predictors\n\nBy leveraging collective intelligence from proven successful bettors, this system provides data-driven insights to inform betting strategies. The analysis reveals patterns in prediction accuracy across different sports and time periods.",
                 link: "https://sports-betting-freerider.streamlit.app/",
                 github: "https://github.com/CharlieAlex/Sports-Betting-Freerider"
-            },
-            ml_analysis: {
-                title: "ML Analysis Dashboard",
-                short: "Error analysis and interpretability dashboard for trained machine learning models.",
-                full: "ML Analysis Dashboard is a comprehensive tool for analyzing trained machine learning models, focusing on error analysis and model interpretability to drive continuous improvement.\n\nKey Features:\n• Error analysis to identify patterns in model mispredictions\n• Feature importance and SHAP value visualization\n• Interactive data exploration and filtering\n• Comparative analysis across different model versions\n\nThis dashboard empowers data scientists to understand model behavior, identify areas for improvement, and communicate insights to stakeholders effectively.",
-                link: "https://ML-Analysis-Dashboard.streamlit.app/",
-                github: "https://github.com/CharlieAlex/ML-Analysis-Dashboard"
             }
         },
         analysis: {
@@ -286,8 +286,15 @@ export const translations = {
             title: "個人專案",
             visit_github: "前往 GitHub",
             visit_app: "前往應用程式",
+            ml_analysis: {
+                title: "機器學習分析儀表板",
+                short: "針對訓練完成的機器學習模型進行錯誤分析與可解釋性分析。",
+                full: "ML 分析儀表板是一個綜合性的機器學習模型分析工具，專注於錯誤分析與模型可解釋性，協助持續改善模型效能。\n\n主要功能：\n• 錯誤分析：識別模型預測錯誤的模式\n• 特徵重要性與 SHAP 值視覺化\n• 互動式數據探索與篩選\n• 不同模型版本的比較分析\n\n這個儀表板協助資料科學家理解模型行為、找出改善空間，並有效地向利害關係人傳達分析洞察。",
+                link: "https://ML-Analysis-Dashboard.streamlit.app/",
+                github: "https://github.com/CharlieAlex/ML-Analysis-Dashboard"
+            },
             parkfinder: {
-                title: "ParkFinder 台北停車通",
+                title: "台北停車通",
                 short: "台北市停車位即時查詢與歷史數據統計分析平台。",
                 full: "ParkFinder 台北停車通是一個全方位的台北市即時停車位查詢平台。系統整合了政府開放資料API的即時數據擷取、歷史數據的統計分析，以及使用 Streamlit 建構的互動式視覺化介面。\n\n主要功能：\n• 台北市各行政區停車場即時空位查詢\n• 基於歷史數據分析，預測不同時段的停車位可用率\n• 互動式地圖與多維度篩選功能\n• 每日自動化數據收集與彙整\n\n這個平台幫助駕駛人根據歷史趨勢找到空位率較高的停車場，節省尋找車位的時間，降低都市交通壅塞，提升城市移動效率。",
                 link: "https://parkfinder.streamlit.app/",
@@ -296,16 +303,9 @@ export const translations = {
             betting: {
                 title: "運彩高手預測追蹤系統",
                 short: "追蹤頂尖運彩玩家預測結果的數據驅動分析系統。",
-                full: "運彩高手預測追蹤系統是一個自動化網頁爬蟲系統，專門追蹤並分析頂尖運彩玩家的預測結果。\n\n主要功能：\n• 從多個平台自動爬取預測數據\n• 依運動類型、聯賽、投注類型進行準確率統計分析\n• Google Sheets 整合，方便數據追蹤與分享\n• 績效指標儀表板，識別持續準確的預測者\n\n透過彙整經驗證的成功投注者的集體智慧，這個系統提供數據驅動的洞察，作為投注策略的參考依據。分析結果揭示了不同運動項目和時間期間的預測準確率模式。",
+                full: "運彩高手預測追蹤系統是一個以 Line Bot 驅動的爬蟲系統，專門追蹤並分析頂尖運彩玩家的預測結果。\n\n主要功能：\n• 以 Line Bot 彈性指定要爬蟲的資料內容，可透過 ios 捷徑實現全自動化\n• 從玩運彩網站爬取預測數據，依運動、聯賽、投注類型進行準確率統計分析\n• BigQuery 與 Google Sheets 整合，方便數據追蹤與分享\n• 績效指標儀表板，識別持續準確的預測者\n\n透過彙整經驗證的成功投注者的集體智慧，這個系統提供數據驅動的洞察，作為投注策略的參考依據。分析結果揭示了不同運動項目和時間期間的預測準確率模式。",
                 link: "https://sports-betting-freerider.streamlit.app/",
                 github: "https://github.com/CharlieAlex/Sports-Betting-Freerider"
-            },
-            ml_analysis: {
-                title: "ML 分析儀表板",
-                short: "針對訓練完成的機器學習模型進行錯誤分析與可解釋性分析。",
-                full: "ML 分析儀表板是一個綜合性的機器學習模型分析工具，專注於錯誤分析與模型可解釋性，協助持續改善模型效能。\n\n主要功能：\n• 錯誤分析：識別模型預測錯誤的模式\n• 特徵重要性與 SHAP 值視覺化\n• 互動式數據探索與篩選\n• 不同模型版本的比較分析\n\n這個儀表板協助資料科學家理解模型行為、找出改善空間，並有效地向利害關係人傳達分析洞察。",
-                link: "https://ML-Analysis-Dashboard.streamlit.app/",
-                github: "https://github.com/CharlieAlex/ML-Analysis-Dashboard"
             }
         },
         analysis: {
