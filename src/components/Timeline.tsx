@@ -9,6 +9,8 @@ import shopeeLogo from '../assets/images/shopee_logo.png';
 import spxLogo from '../assets/images/spx_logo.webp';
 import fccLogo from '../assets/images/fcc_logo.webp';
 import ntuLogo from '../assets/images/ntu_logo.jpg';
+import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
 import { Modal, Box, Typography, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
 import { useTheme } from "../contexts/ThemeContext";
@@ -37,7 +39,9 @@ const modalStyle = {
   boxShadow: 24,
   p: 4,
   borderRadius: 2,
-  outline: 'none'
+  outline: 'none',
+  maxHeight: '90vh',
+  overflowY: 'auto' as 'auto'
 };
 
 function Timeline() {
@@ -173,9 +177,21 @@ function Timeline() {
           aria-describedby="modal-modal-description"
         >
           <Box sx={dynamicModalStyle}>
+            <IconButton
+                aria-label="close"
+                onClick={handleClose}
+                sx={{
+                    position: 'absolute',
+                    right: 8,
+                    top: 8,
+                    color: isDark ? '#aaa' : (theme) => theme.palette.grey[500],
+                }}
+            >
+                <CloseIcon />
+            </IconButton>
             {selectedItem && (
               <>
-                <Typography id="modal-modal-title" variant="h5" component="h2" sx={{ fontWeight: 'bold', mb: 1, color: isDark ? '#fff' : 'black' }}>
+                <Typography id="modal-modal-title" variant="h5" component="h2" sx={{ fontWeight: 'bold', mb: 1, color: isDark ? '#fff' : 'black', pr: 4 }}>
                   {selectedItem.title}
                 </Typography>
                 <Typography variant="h6" sx={{ mb: 2, fontSize: '1rem', color: isDark ? '#ccc' : 'black' }}>
