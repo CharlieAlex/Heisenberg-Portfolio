@@ -8,6 +8,7 @@ import {
   Project,
   BusinessAnalysis,
   Research,
+  Honors,
   Teaching,
   Navigation,
   Footer,
@@ -45,6 +46,7 @@ function App() {
             <Project/>
             <BusinessAnalysis/>
             <Research/>
+            <Honors/>
             <Teaching/>
         </FadeIn>
         <Footer />

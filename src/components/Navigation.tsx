@@ -33,6 +33,7 @@ function Navigation() {
     [t.projects, 'projects'], 
     [t.analysis, 'business-analysis'], 
     [t.research, 'research'], 
+    [t.honors, 'honors'],
     [t.teaching, 'teaching']
   ], [t]);
 

@@ -6,6 +6,7 @@ export const translations = {
             projects: "Projects",
             analysis: "Analysis",
             research: "Research",
+            honors: "Honors",
             teaching: "Teaching",
             back: "← Back to Portfolio",
             back_to_top: "Back to Top"
@@ -163,6 +164,29 @@ export const translations = {
                 link: "/paper/applied_econ_final.pdf"
             }
         },
+        honors: {
+            title: "Honors",
+            award1: {
+                title: "Department's Best Employee",
+                subtitle: "CarPlus, Yulon Group",
+                date: "2025"
+            },
+            award2: {
+                title: "Presidential Award",
+                subtitle: "College of Social Sciences, National Taiwan University",
+                date: "2020"
+            },
+            award3: {
+                title: "TOEIC Golden Certificate",
+                subtitle: "Score: 870/990",
+                date: "2020"
+            },
+            award4: {
+                title: "Presidential Award",
+                subtitle: "College of Liberal Arts, National Taiwan University",
+                date: "2017"
+            }
+        },
         teaching: {
             title: "Teaching",
             git: {
@@ -194,6 +218,7 @@ export const translations = {
             projects: "個人專案",
             analysis: "商業分析",
             research: "學術研究",
+            honors: "榮譽獎項",
             teaching: "教學文件",
             back: "← 返回主頁",
             back_to_top: "回到頂部"
@@ -284,6 +309,29 @@ export const translations = {
                   "協助撰寫 3 份投資概要與 1 份商業計畫書，內容涵蓋發展規劃、募資計劃、市場前景與投資亮點。",
                   "製作 20+ 份潛在客戶的資料蒐集報告，聚焦於商業模式、競爭優勢、財務表現與融資紀錄。"
                 ]
+            }
+        },
+        honors: {
+            title: "榮譽獎項",
+            award1: {
+                title: "部門最佳員工",
+                subtitle: "格上租車, 裕隆集團",
+                date: "2025"
+            },
+            award2: {
+                title: "書卷獎",
+                subtitle: "國立台灣大學 社科學院",
+                date: "2020"
+            },
+            award3: {
+                title: "TOEIC 金色證書",
+                subtitle: "分數: 870/990",
+                date: "2020"
+            },
+            award4: {
+                title: "書卷獎",
+                subtitle: "國立台灣大學 文學院",
+                date: "2017"
             }
         },
         projects: {

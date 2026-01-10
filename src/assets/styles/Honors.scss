@@ -1,0 +1,141 @@
+
+
+.honors-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    text-align: left;
+    width: 100%;
+
+    h1 {
+        margin-bottom: 3rem;
+    }
+
+    .honors-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .honor-item {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        border-radius: 12px;
+        background-color: #fff; /* Light mode default */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        &.dark {
+            background-color: #333;
+            color: #f0f0f0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+
+            &:hover {
+                box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+                background-color: #3a3a3a;
+            }
+
+            .honor-icon {
+                color: #ffd700; /* Gold color for icon in dark mode */
+                background-color: rgba(255, 215, 0, 0.1);
+            }
+
+            .honor-content {
+                h3 {
+                    color: #fff;
+                }
+                p {
+                    color: #ccc;
+                }
+                .honor-date {
+                    color: #aaa;
+                    background-color: rgba(255,255,255,0.1);
+                }
+            }
+        }
+
+        .honor-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.05); /* Light mode bg */
+            color: #B8860B; /* DarkGoldenRod */
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .honor-content {
+            flex: 1;
+
+            .honor-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0.5rem;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: #333;
+            }
+
+            p {
+                margin: 0;
+                color: #666;
+                font-size: 1rem;
+            }
+
+            .honor-date {
+                font-size: 0.9rem;
+                color: #555;
+                font-weight: 500;
+                background-color: #f0f0f0;
+                padding: 4px 8px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .honor-item {
+            padding: 1rem;
+            
+            .honor-icon {
+                width: 48px;
+                height: 48px;
+                margin-right: 1rem;
+                
+                svg {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .honor-content {
+                h3 {
+                    font-size: 1.1rem;
+                }
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
