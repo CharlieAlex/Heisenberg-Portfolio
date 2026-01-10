@@ -6,7 +6,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 import yulonLogo from '../assets/images/yulon_logo.png';
 import shopeeLogo from '../assets/images/shopee_logo.png';
-import spxLogo from '../assets/images/spx_logo.webp';
+import spxLogo from '../assets/images/spx_logo.png';
 import fccLogo from '../assets/images/fcc_logo.webp';
 import ntuLogo from '../assets/images/ntu_logo.jpg';
 import CloseIcon from '@mui/icons-material/Close';
