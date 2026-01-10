@@ -39,7 +39,7 @@ export const translations = {
             title: "Career History",
             yulon: {
                 title: "Data Analyst",
-                subtitle: "Yulon Group, Taiwan",
+                subtitle: "Yulon Group, Digital Transformation",
                 date: "2024.6 - Present",
                 summary: "Causal Machine Learning, Machine Learning, Tableau Dashboard, A/B Testing, Statistical Analysis",
                 details: [
@@ -60,7 +60,7 @@ export const translations = {
             },
             shopee_xpress: {
                 title: "Data Engineer Intern",
-                subtitle: "Shopee Xpress, Taiwan",
+                subtitle: "Shopee Xpress, Business Intelligence",
                 summary: "SQL Data Reporting, Apps Script Automation, Dashboard Maintenance",
                 details: [
                   "Assisted other teams in utilizing SQL to query databases and developed 10+ fully automated dynamic data reports based on actual business needs.",
@@ -71,7 +71,7 @@ export const translations = {
             },
             shopee_cb: {
                 title: "Logistics Analysis Intern",
-                subtitle: "Shopee Cross Border, Taiwan",
+                subtitle: "Shopee, Cross Border",
                 summary: "P&L Estimation, VBA Automation, Campaign Analytics",
                 details: [
                   "Estimated and validated the P&L of 5+ cross-border free shipping campaigns with a scale of NT$ 1 M+, assisting in the formulation of activities to maximize profits.",
@@ -90,7 +90,7 @@ export const translations = {
             },
             fcc: {
                 title: "Assistant Analyst Intern",
-                subtitle: "FCC Partners Asia, Taiwan",
+                subtitle: "FCC Partners Asia",
                 summary: "Investment Teaser, Business Plan, Market Research",
                 details: [
                   "Assisted in drafting 3 investment teaser and 1 business plan covering development plans, fundraising strategies, market prospects, and investment highlights.",
@@ -227,7 +227,7 @@ export const translations = {
             title: "職涯歷程",
             yulon: {
                 title: "資料分析師",
-                subtitle: "裕隆集團, 台灣",
+                subtitle: "裕隆集團, 數位轉型部門",
                 date: "2024.6 - 至今",
                 summary: "因果機器學習, 機器學習, Tableau儀表板, A/B Testing, 統計分析",
                 details: [
@@ -248,7 +248,7 @@ export const translations = {
             },
             shopee_xpress: {
                 title: "資料工程實習生",
-                subtitle: "蝦皮娛樂電商-店到店部門, 台灣",
+                subtitle: "蝦皮娛樂電商, 商業智慧部門",
                 summary: "SQL 數據報表, Apps Script 自動化, 儀表板維護",
                 details: [
                   "協助各團隊使用 SQL 查詢資料庫，根據實際商業需求建置 10+ 份全自動更新的動態數據報表。",
@@ -259,7 +259,7 @@ export const translations = {
             },
             shopee_cb: {
                 title: "物流分析實習生",
-                subtitle: "蝦皮娛樂電商-跨境部門, 台灣",
+                subtitle: "蝦皮娛樂電商, 跨境部門",
                 summary: "損益預估, VBA 自動化, 活動成效分析",
                 details: [
                   "預估與驗證 5 次規模 NT$ 1 M+ 的跨境免運活動之成本效益，協助制定能最大化利潤的活動內容。",
@@ -278,7 +278,7 @@ export const translations = {
             },
             fcc: {
                 title: "助理分析實習生",
-                subtitle: "藍濤亞洲, 台灣",
+                subtitle: "藍濤亞洲",
                 summary: "投資概要, 商業計畫書, 市場研究",
                 details: [
                   "協助撰寫 3 份投資概要與 1 份商業計畫書，內容涵蓋發展規劃、募資計劃、市場前景與投資亮點。",
