@@ -180,6 +180,10 @@ export const translations = {
             problem_solving: {
                 title: "McKinsey 7-Step Problem Solving",
                 desc: "A structural approach to solving complex business problems based on the McKinsey methodology."
+            },
+            scm: {
+                title: "Structural Causal Model",
+                desc: "A deep dive into Structural Causal Models (SCM). Covers DAGs, do-calculus, identification, and mediation, bridging the gap between statistical correlation and causal mechanisms."
             }
         }
     },
@@ -364,6 +368,10 @@ export const translations = {
             problem_solving: {
                 title: "麥肯錫解決問題七步驟",
                 desc: "基於麥肯錫方法論，系統性解決複雜商業問題的結構化方法。"
+            },
+            scm: {
+               title: "因果推論 Structural Causal Model",
+               desc: "深入解析因果推論的發展脈絡與 SCM 結構因果模型。涵蓋 DAG 圖形語言、do-calculus 介入邏輯、可識別性分析及中介效應，是連結統計與因果結構的完整指南。"
             }
         }
     }
