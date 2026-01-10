@@ -12,8 +12,8 @@
     }
 
     .honors-list {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
         width: 100%;
     }
@@ -107,6 +107,12 @@
                 padding: 4px 8px;
                 border-radius: 4px;
             }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .honors-list {
+            grid-template-columns: 1fr;
         }
     }
 
