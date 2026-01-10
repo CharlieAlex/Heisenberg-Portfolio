@@ -11,29 +11,34 @@ const labelsFirst = [
     "Python",
     "SQL",
     "Tableau",
+    "Statistics",
     "Scikit-learn",
-    "StatisticalAnalysis",
-    "GameTheory",
-    "SocialNetworkAnalysis",
-    "LinearProgramming"
+    "Optuna",
+    "AutoGluon",
+    "TimeSeries",
+    "Social Network Analysis",
+    "Linear Programming"
 ];
 
 const labelsSecond = [
-    "A/B Testing",
-    "CausalInference",
+    "AB Testing",
     "Econometrics",
+    "Causal Inference",
+    "Causal Machine Learning",
     "EconML",
     "CDP"
 ];
 
 const labelsThird = [
     "Git",
+    "BigQuery",
     "MLflow",
     "Docker",
-    "Airflow",
-    "AppsScript",
+    "API",
     "Streamlit",
-    "BigQuery"
+    "Apps Script",
+    "Airflow",
+    "Web Scraping"
 ];
 
 function Expertise() {
