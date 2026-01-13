@@ -53,10 +53,11 @@ export const translations = {
             ntu_master: {
                 title: "Master's Degree",
                 subtitle: "National Taiwan University, Economics",
-                summary: "Machine Learning, Econometrics, Data Science",
+                summary: "Machine Learning, Econometrics, Causal Inference",
                 details: [
                    "Overall GPA: 4.09/4.30 (Max 4.30)",
-                   "Course Highlights: Machine Learning and Econometrics, Data Science and Social Inquiry, Applied Econometric Method, Industrial Organization and Firm Strategy"
+                   "Course Highlights: Machine Learning and Causal Inference, Machine Learning and Econometrics, Applied Econometric Methods, Data Science and Social Inquiry",
+                   "Master's Thesis: Applied causal inference and event study methods to analyze large-scale real-world administrative data (10M+ records), investigating the impact of policies and events on individual decision-making"
                 ]
             },
             shopee_xpress: {
@@ -83,10 +84,11 @@ export const translations = {
             ntu_bachelor: {
                  title: "Double Bachelor's Degree",
                  subtitle: "National Taiwan University, Economics & Philosophy",
-                 summary: "Economics & Philosophy, Presidential Awards",
+                 summary: "Economic Thinking, Logical Thinking, Critical Thinking",
                  details: [
                     "Overall GPA: 4.00/4.30 (Max 4.30)",
-                    "Awards: President Awards in 106, President Awards in 109"
+                    "Economics Training: Microeconomics, Macroeconomics, Econometrics, Game Theory, Experimental Economics",
+                    "Mathematical & Logical Training: Introduction to Analysis, Set Theory, Basic Logic, Non-classical Logic"
                  ]
             },
             fcc: {
@@ -263,12 +265,13 @@ export const translations = {
                 ]
             },
             ntu_master: {
-                title: "經濟學研究所 碩士學位",
-                subtitle: "國立台灣大學",
-                summary: "機器學習, 計量經濟學, 資料科學",
+                title: "碩士學位",
+                subtitle: "國立台灣大學, 經濟學研究所",
+                summary: "機器學習, 計量方法, 因果推論",
                 details: [
                    "學業成績: 4.09/4.30 (最高 4.30)",
-                   "修課紀錄: 機器學習與因果推論、資料科學與社會研究、應用計量方法、產業組織與廠商策略"
+                   "修課重點: 機器學習與因果推論、機器學習與經濟計量、應用計量方法、資料科學與社會研究",
+                   "碩士論文: 運用因果推論與事件研究方法，分析大規模真實世界行政資料（千萬級），探討政策與事件對個體決策的影響"
                 ]
             },
             shopee_xpress: {
@@ -293,12 +296,13 @@ export const translations = {
                 ]
             },
             ntu_bachelor: {
-                 title: "經濟學系與哲學系 雙學士學位",
-                 subtitle: "國立台灣大學",
-                 summary: "經濟學 & 哲學, 書卷獎",
+                 title: "雙學士學位",
+                 subtitle: "國立台灣大學, 經濟學系與哲學系",
+                 summary: "經濟思維, 邏輯思維, 批判思維",
                  details: [
                     "學業成績: 4.00/4.30 (最高 4.30)",
-                    "獲獎紀錄: 109學年社科學院書卷獎、106學年文學院書卷獎"
+                    "經濟學訓練: 個體經濟學、總體經濟學、計量經濟學、賽局論、實驗經濟學",
+                    "數理與邏輯訓練: 分析導論、集合論、基本邏輯、非古典邏輯"
                  ]
             },
             fcc: {
