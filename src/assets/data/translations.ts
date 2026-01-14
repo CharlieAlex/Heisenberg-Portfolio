@@ -42,7 +42,7 @@ export const translations = {
                 title: "Data Analyst",
                 subtitle: "Yulon Group, Digital Transformation",
                 date: "2024.6 - Present",
-                summary: "Causal Machine Learning, Machine Learning, Tableau Dashboard, A/B Testing, Statistical Analysis",
+                summary: "A/B Testing, Statistical Analysis, Machine Learning, Causal Machine Learning, Tableau Dashboard, GCP",
                 details: [
                     "CarPlus: Designed and executed A/B tests to evaluate the impact of real-time incentives on user conversion, increasing order conversion rates by approximately 5%. Built operational metric dashboards to rapidly assess station performance, supporting decisions on differentiated marketing, vehicle dispatching, and station management.",
                     "LINE GO Taxi: Applied Causal Forest models to estimate heterogeneous treatment effects across user segments, optimizing promotional resource allocation and reducing subsidy costs by nearly 20%. Leveraged linear programming optimization to determine optimal incentive levels for different groups, achieving an additional ~10% cost reduction while maintaining performance.",
@@ -63,7 +63,7 @@ export const translations = {
             shopee_xpress: {
                 title: "Data Engineer Intern",
                 subtitle: "Shopee Xpress, Business Intelligence",
-                summary: "SQL Data Reporting, Apps Script Automation, Dashboard Maintenance",
+                summary: "SQL, Apps Script, Dynamic Data Report",
                 details: [
                   "Assisted other teams in utilizing SQL to query databases and developed 10+ fully automated dynamic data reports based on actual business needs.",
                   "Optimized the data storage system for the inventory management department, replacing spreadsheet functions with Apps Script to increase page load speed by 100%+.",
@@ -74,7 +74,7 @@ export const translations = {
             shopee_cb: {
                 title: "Logistics Analysis Intern",
                 subtitle: "Shopee, Cross Border",
-                summary: "P&L Estimation, VBA Automation, Campaign Analytics",
+                summary: "Cost-Benefit Estimation, Business Analysis, VBA",
                 details: [
                   "Estimated and validated the P&L of 5+ cross-border free shipping campaigns with a scale of NT$ 1 M+, assisting in the formulation of activities to maximize profits.",
                   "Tracked the performance of 3 cross-border seller programs, ensuring data integrity, and automated processes with VBA to reduce operational time by 50%+.",
@@ -256,7 +256,7 @@ export const translations = {
                 title: "資料分析師",
                 subtitle: "裕隆集團, 數位轉型部門",
                 date: "2024.6 - 至今",
-                summary: "因果機器學習, 機器學習, Tableau儀表板, A/B Testing, 統計分析",
+                summary: "A/B Testing, 統計分析, 機器學習, 因果機器學習, Tableau儀表板, GCP",
                 details: [
                     "格上租車: 設計並執行 A/B Testing 實驗，評估即時誘因對用戶轉換行為的影響，提升下單轉換率約 5%。建立營運指標視覺化儀表板，協助快速衡量站點表現，以支援差異化行銷、車輛調度與開關站決策。",
                     "LINE GO 計程車: 運用因果機器學習模型 Causal Forest 估計不同用戶群的異質性效果，優化優惠資源配置，補貼成本降低近 20%。透過線性規劃最佳化模型，針對不同人群配置最適誘因強度，在成效持平的前提下，額外降低約 10% 成本。",
@@ -277,7 +277,7 @@ export const translations = {
             shopee_xpress: {
                 title: "資料工程實習生",
                 subtitle: "蝦皮娛樂電商, 商業智慧部門",
-                summary: "SQL 數據報表, Apps Script 自動化, 儀表板維護",
+                summary: "SQL, Apps Script, 動態數據報表",
                 details: [
                   "協助各團隊使用 SQL 查詢資料庫，根據實際商業需求建置 10+ 份全自動更新的動態數據報表。",
                   "優化存貨管理部門的資料儲存系統，使用 Apps Script 取代試算表函式以提高頁面載入速度 100%+。",
@@ -288,7 +288,7 @@ export const translations = {
             shopee_cb: {
                 title: "物流分析實習生",
                 subtitle: "蝦皮娛樂電商, 跨境部門",
-                summary: "損益預估, VBA 自動化, 活動成效分析",
+                summary: "成本效益估計, 商業分析, VBA",
                 details: [
                   "預估與驗證 5 次規模 NT$ 1 M+ 的跨境免運活動之成本效益，協助制定能最大化利潤的活動內容。",
                   "追蹤彙整跨境三大賣家方案的成效，確認數據合理性，並以 VBA 自動化流程減少 50%+ 作業時間。",
