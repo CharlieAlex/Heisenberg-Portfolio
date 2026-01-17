@@ -42,12 +42,12 @@ export const translations = {
                 title: "Data Analyst",
                 subtitle: "Yulon Group, Digital Transformation",
                 date: "2024.6 - Present",
-                summary: "A/B Testing, Statistical Analysis, Machine Learning, Causal Machine Learning, Tableau Dashboard, GCP",
+                summary: "A/B Testing, Statistical Analysis, Machine Learning, Causal Machine Learning, Tableau, GCP",
                 details: [
-                    "CarPlus: Designed and executed A/B tests to evaluate the impact of real-time incentives on user conversion, increasing order conversion rates by approximately 5%. Built operational metric dashboards to rapidly assess station performance, supporting decisions on differentiated marketing, vehicle dispatching, and station management.",
-                    "LINE GO Taxi: Applied Causal Forest models to estimate heterogeneous treatment effects across user segments, optimizing promotional resource allocation and reducing subsidy costs by nearly 20%. Leveraged linear programming optimization to determine optimal incentive levels for different groups, achieving an additional ~10% cost reduction while maintaining performance.",
-                    "Sinjang Used Cars: Built an auction price prediction model using LightGBM, reducing acquisition risk through precise pricing benchmarks with performance comparable to human experts. Developed a historical trend dashboard to systematically track price changes by model, aiding residual value assessment and long-term analysis.",
-                    "Others: Proactively planned and distributed knowledge on data analysis and causal inference, leading over 10 internal technical sharing sessions. Mentored one intern and one junior analyst to expedite their transition to practical projects. Delivered 3 campus speeches on real-world data projects, engaging nearly 100 students and fostering academic-industry exchange."
+                    "CarPlus Car Rental: Designed and executed A/B tests to evaluate the impact of real-time incentives on short-term rental customers’ conversion behavior, increasing booking conversion rates by 5%. Built an operational KPI dashboard for car-sharing services to support fleet dispatching and station open/close decisions, reducing weekly decision-making time by 50%+.",
+                    "LINE GO Taxi: Led multiple incentive strategy optimization analyses using causal machine learning (Causal Forest), linear programming, and social network analysis. Improved incentive allocation efficiency from different decision perspectives, achieving 10–20% reductions in total subsidy costs while maintaining service performance.",
+                    "Sinjang Used Cars: Developed a used-car auction price prediction model using LightGBM, providing accurate pricing benchmarks to reduce acquisition risk. Model performance was within 5% of internal expert judgments. Built historical trend dashboards to systematically track price movements across vehicle types, supporting residual value evaluation and long-term analysis.",
+                    "Additional Contributions: Proactively planned and delivered 10+ internal knowledge-sharing sessions on data science topics. Mentored one data analyst intern and one junior analyst, enabling rapid onboarding to production projects. Participated in three university guest lectures, sharing real-world data analytics case studies with nearly 100 students, fostering industry–academia exchange."
                 ]
             },
             ntu_master: {
@@ -55,9 +55,9 @@ export const translations = {
                 subtitle: "National Taiwan University, Economics",
                 summary: "Machine Learning, Econometrics, Causal Inference",
                 details: [
-                   "Overall GPA: 4.09/4.30 (Max 4.30)",
-                   "Course Highlights: Machine Learning and Causal Inference, Machine Learning and Econometrics, Applied Econometric Methods, Data Science and Social Inquiry",
-                   "Master's Thesis: Applied causal inference and event study methods to analyze large-scale real-world administrative data (10M+ records), investigating the impact of policies and events on individual decision-making"
+                   "Academic Performance: GPA 4.09 / 4.30 (Highest: 4.30)",
+                   "Core Coursework: Machine Learning and Causal Inference; Machine Learning and Econometrics; Applied Econometrics; Data Science for Social Research",
+                   "Master’s Thesis: Applied causal inference and event study methods to large-scale real-world administrative data (tens of millions of records) to examine how policies and major events influence individual decision-making."
                 ]
             },
             shopee_xpress: {
@@ -65,20 +65,20 @@ export const translations = {
                 subtitle: "Shopee Xpress, Business Intelligence",
                 summary: "SQL, Apps Script, Dynamic Data Report",
                 details: [
-                  "Assisted other teams in utilizing SQL to query databases and developed 10+ fully automated dynamic data reports based on actual business needs.",
-                  "Optimized the data storage system for the inventory management department, replacing spreadsheet functions with Apps Script to increase page load speed by 100%+.",
-                  "Maintained dashboards for buyers and sellers, adding 3 key metrics and identifying 10+ existing errors.",
-                  "Constructed the data flow for the eco-package project, tracking the usage and lifecycle of each packaging unit to provide decision support for procurement and distribution."
+                  "Served as the cross-functional data access and analytics interface, translating business requirements into structured SQL queries and metric definitions; designed and maintained 10+ automated, decision-oriented dashboards, enabling non-technical teams to consistently access reliable and verifiable data.",
+                  "Optimized data storage and access workflows for the inventory management team by replacing high-latency spreadsheet formulas with Google Apps Script, reducing page load time by 50%+ and significantly improving daily operational efficiency.",
+                  "Owned maintenance and data quality control for core buyer–seller operational dashboards, introduced 3 key metrics, and proactively identified and corrected 10+ data issues, substantially improving metric reliability and decision confidence.",
+                  "Designed and built an end-to-end data pipeline from scratch for a reusable packaging initiative, integrating usage logs and status transitions to systematically track lifecycle stages, serving as a primary decision input for procurement sizing and resource allocation."
                 ]
             },
             shopee_cb: {
-                title: "Logistics Analysis Intern",
+                title: "Logistics Analyst Intern",
                 subtitle: "Shopee, Cross Border",
                 summary: "Cost-Benefit Estimation, Business Analysis, VBA",
                 details: [
-                  "Estimated and validated the P&L of 5+ cross-border free shipping campaigns with a scale of NT$ 1 M+, assisting in the formulation of activities to maximize profits.",
-                  "Tracked the performance of 3 cross-border seller programs, ensuring data integrity, and automated processes with VBA to reduce operational time by 50%+.",
-                  "Analyzed the impacts of relevant events such as the impact of customs real-name authentication, and the crowding-out effect of new logistics channels."
+                  "Led pre-campaign cost–benefit estimation and post-campaign performance validation for cross-border free-shipping promotions, analyzing 5 large-scale campaigns (NT$1M+ each) and supporting activity design and resource allocation decisions to maximize profitability.",
+                  "Built a systematic performance tracking and comparison framework for three major cross-border seller programs, validated data consistency and business logic, and automated reporting workflows with VBA, reducing manual effort by 50%+.",
+                  "Conducted impact analyses of policy and strategy changes in cross-border operations, including customs identity verification requirements, new incentive mechanisms, and logistics channel adjustments, assessing substitution and cannibalization effects on user behavior and program performance."
                 ]
             },
             ntu_bachelor: {
@@ -86,9 +86,9 @@ export const translations = {
                  subtitle: "National Taiwan University, Economics & Philosophy",
                  summary: "Economic Thinking, Logical Thinking, Critical Thinking",
                  details: [
-                    "Overall GPA: 4.00/4.30 (Max 4.30)",
-                    "Economics Training: Microeconomics, Macroeconomics, Econometrics, Game Theory, Experimental Economics",
-                    "Mathematical & Logical Training: Introduction to Analysis, Set Theory, Basic Logic, Non-classical Logic"
+                    "Academic Performance: GPA 4.00 / 4.30 (Highest: 4.30)",
+                    "Economics Training: Microeconomics; Macroeconomics; Econometrics; Game Theory; Experimental Economics",
+                    "Mathematical & Logical Foundations: Mathematical Analysis; Set Theory; Classical Logic; Non-classical Logic"
                  ]
             },
             fcc: {
@@ -96,8 +96,8 @@ export const translations = {
                 subtitle: "FCC Partners Asia",
                 summary: "Investment Teaser, Business Plan, Market Research",
                 details: [
-                  "Assisted in drafting 3 investment teaser and 1 business plan covering development plans, fundraising strategies, market prospects, and investment highlights.",
-                  "Prepared 20+ data collection reports for potential clients, focusing on business models, competitive advantages, financial performance, and fundraising records."
+                  "Supported front-office investment analysis by preparing 3 investment briefs and 1 business plan, focusing on business model evaluation, growth trajectory, fundraising strategy, and investment risk assessment.",
+                  "Conducted systematic data collection and synthesis for 20+ potential targets, gathering both structured and unstructured information on industry positioning, competitive landscape, financial performance, and historical financing records to enable preliminary investment screening and comparative analysis."
                 ]
             }
         },
