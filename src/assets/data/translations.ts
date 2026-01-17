@@ -130,7 +130,7 @@ export const translations = {
         analysis: {
             title: "Business Analysis",
             people_flow: {
-                title: "Tableau Shared Station Flow Map",
+                title: "Shared Station Flow Map",
                 short: "Optimizing station placement, elimination, and vehicle dispatching using shared station flow visualization.",
                 full: "This project utilizes Tableau to create a comprehensive visualization of shared station usage flows, empowering the business unit to intuitively understand \"people flow\" across different locations. These insights drive data-driven decisions for strategically opening new stations in high-demand areas, optimizing vehicle dispatching to meet usage needs, and identifying underperforming stations for potential elimination, thereby enhancing overall network efficiency."
             },
@@ -258,10 +258,10 @@ export const translations = {
                 date: "2024.6 - 至今",
                 summary: "A/B Testing, 統計分析, 機器學習, 因果機器學習, Tableau儀表板, GCP",
                 details: [
-                    "格上租車: 設計並執行 A/B Testing 實驗，評估即時誘因對用戶轉換行為的影響，提升下單轉換率約 5%。建立營運指標視覺化儀表板，協助快速衡量站點表現，以支援差異化行銷、車輛調度與開關站決策。",
-                    "LINE GO 計程車: 運用因果機器學習模型 Causal Forest 估計不同用戶群的異質性效果，優化優惠資源配置，補貼成本降低近 20%。透過線性規劃最佳化模型，針對不同人群配置最適誘因強度，在成效持平的前提下，額外降低約 10% 成本。",
-                    "行將中古車: 以 LightGBM 建立拍賣價格預測模型，透過精確的報價基準降低收購風險，模型表現與內部專業人員判斷水準相當。建立歷史趨勢分析儀表板，系統性追蹤不同車型的價格變化，作為殘值評估與長期分析依據。",
-                    "其他: 主動規劃並分享資料分析與因果推論相關主題，累計 10 堂以上內部技術分享。指導 1 位分析實習生與 1 位新人分析師，協助快速銜接實務專案。參與 3 場校園演講，對外分享實務資料分析專案，累計近 100 位學生參與，促進人才交流與學術合作。",
+                    "格上租車: 設計、執行 A/B Testing 實驗以評估即時誘因對日租車用戶轉換行為的影響，有效提升下單轉換率 5%。建立共享車營運指標儀表板，用以提供車輛調度與開關站決策所需資訊，每週節省決策流程時間 50%+。",
+                    "LINE GO 計程車: 主導多項優惠策略優化分析，涵蓋因果機器學習模型 Causal Forest、線性規劃模型與社會網絡分析，從不同決策角度提升誘因配置效率，在維持服務成效的前提下，分別大幅降低整體補貼成本 10%-20%。",
+                    "行將中古車: 以 LightGBM 建立中古車拍賣價格預測模型，透過精確的報價基準降低收購風險，模型表現與內部專業人員判斷水準差距不到 5%。建立歷史趨勢分析儀表板，系統性追蹤不同車型的價格變化，作為殘值評估與長期分析依據。",
+                    "其他: 主動規劃並分享資料科學領域相關主題，累計 10 堂以上內部技術分享。指導 1 位分析實習生與 1 位新人分析師，協助快速銜接實務專案。參與 3 場校園演講，對外分享實務資料分析專案，累計近 100 位學生參與，促進人才交流與學術合作。",
                 ]
             },
             ntu_master: {
@@ -279,10 +279,10 @@ export const translations = {
                 subtitle: "蝦皮娛樂電商, 商業智慧部門",
                 summary: "SQL, Apps Script, 動態數據報表",
                 details: [
-                  "協助各團隊使用 SQL 查詢資料庫，根據實際商業需求建置 10+ 份全自動更新的動態數據報表。",
-                  "優化存貨管理部門的資料儲存系統，使用 Apps Script 取代試算表函式以提高頁面載入速度 100%+。",
-                  "維護買賣家相關數據的儀表板，新增 3 個重要指標，並主動發掘修正 10+ 個既有錯誤。",
-                  "建構循環包裝專案的資料流，追蹤各包裝的使用近況與生命週期，提供採購與分配的決策依據。"
+                  "作為跨部門資料存取與分析窗口，將業務需求轉化為結構化查詢與指標定義，設計並維護 10+ 份可自動更新的決策型儀表板，使非技術團隊能穩定取得一致、可驗證的數據結果。",
+                  "優化存貨管理部門的資料儲存與存取流程，導入 Apps Script 取代高負載試算表函式，將頁面載入時間縮短逾 50%，顯著改善日常使用體驗與作業效率。",
+                  "負責買賣家核心營運數據的儀表板維護與品質控管，新增 3 項關鍵指標，並主動識別與修正 10+ 項既有數據錯誤，提升指標可信度與決策可靠性。",
+                  "從零設計並建構循環包裝專案的端到端資料流，整合使用紀錄與狀態變化，系統化追蹤包裝生命週期，成為採購規模評估與資源配置的關鍵決策依據。"
                 ]
             },
             shopee_cb: {
@@ -290,9 +290,9 @@ export const translations = {
                 subtitle: "蝦皮娛樂電商, 跨境部門",
                 summary: "成本效益估計, 商業分析, VBA",
                 details: [
-                  "預估與驗證 5 次規模 NT$ 1 M+ 的跨境免運活動之成本效益，協助制定能最大化利潤的活動內容。",
-                  "追蹤彙整跨境三大賣家方案的成效，確認數據合理性，並以 VBA 自動化流程減少 50%+ 作業時間。",
-                  "分析相關事件的潛在影響，如海關實名認證的衝擊、新蝦幣回饋方案與新物流渠道的排擠效果。"
+                  "負責跨境免運活動的事前成本效益預估與事後成效驗證，累計分析 5 次規模達 NT$ 1M+ 的活動，支援活動設計與資源投入決策，以達利潤最大化。",
+                  "系統化追蹤與比較跨境三大賣家方案之成效，檢核數據一致性與合理性，並透過 VBA 自動化彙整流程，降低 50%+ 人工作業時間。",
+                  "針對跨境業務中的制度與策略變動進行影響分析，包括海關實名認證政策、新回饋機制與物流通路調整，評估其對使用行為與方案表現的潛在排擠與替代效果。"
                 ]
             },
             ntu_bachelor: {
@@ -310,15 +310,15 @@ export const translations = {
                 subtitle: "藍濤亞洲",
                 summary: "投資概要, 商業計畫書, 市場研究",
                 details: [
-                  "協助撰寫 3 份投資概要與 1 份商業計畫書，內容涵蓋發展規劃、募資計劃、市場前景與投資亮點。",
-                  "製作 20+ 份潛在客戶的資料蒐集報告，聚焦於商業模式、競爭優勢、財務表現與融資紀錄。"
+                  "參與投資銀行前端分析工作，協助撰寫 3 份投資概要與 1 份商業計畫書，聚焦於商業模式拆解、成長路徑、募資邏輯與投資風險判斷。",
+                  "系統化蒐集並整理 20+ 家潛在標的之公開與非結構化資訊，涵蓋產業定位、競爭結構、財務表現與歷史融資紀錄，支援初步投資篩選與比較分析。"
                 ]
             }
         },
         honors: {
             title: "榮譽獎項",
             award1: {
-                title: "部門最佳員工",
+                title: "績優員工",
                 subtitle: "格上租車, 裕隆集團",
                 date: "2025"
             },
@@ -367,7 +367,7 @@ export const translations = {
         analysis: {
             title: "商業分析",
             people_flow: {
-                title: "Tableau 共享站點人流地圖",
+                title: "共享站點人流地圖",
                 short: "利用共享站點人流視覺化，優化站點的開設與淘汰、車輛調度等決策。",
                 full: "本專案利用 Tableau 建立了共享站點使用流量的綜合視覺化地圖。這份地圖讓業務單位能直觀地理解各個地點的「人流」。透過分析這些數據，團隊能夠依據數據決策，策略性地在需求量大的熱區開設新站點、將車輛調度至高需求站點，並識別出人流低、表現不佳的站點進行淘汰，從而優化整體的網絡效率。"
             },
