@@ -3,7 +3,7 @@ import '../assets/styles/Honors.scss';
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+// import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import SchoolIcon from '@mui/icons-material/School';
 import StarIcon from '@mui/icons-material/Star';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
