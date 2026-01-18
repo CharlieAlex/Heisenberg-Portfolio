@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Heisenberg-Portfolio/static/css/main.0e81419b.css",
-    "main.js": "/Heisenberg-Portfolio/static/js/main.14f90df4.js",
+    "main.js": "/Heisenberg-Portfolio/static/js/main.a7f67f28.js",
     "static/js/453.0f2d55e7.chunk.js": "/Heisenberg-Portfolio/static/js/453.0f2d55e7.chunk.js",
     "static/js/448.b7095e8c.chunk.js": "/Heisenberg-Portfolio/static/js/448.b7095e8c.chunk.js",
     "static/js/550.808a76a5.chunk.js": "/Heisenberg-Portfolio/static/js/550.808a76a5.chunk.js",
@@ -121,7 +121,7 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/Heisenberg-Portfolio/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/Heisenberg-Portfolio/index.html",
     "main.0e81419b.css.map": "/Heisenberg-Portfolio/static/css/main.0e81419b.css.map",
-    "main.14f90df4.js.map": "/Heisenberg-Portfolio/static/js/main.14f90df4.js.map",
+    "main.a7f67f28.js.map": "/Heisenberg-Portfolio/static/js/main.a7f67f28.js.map",
     "453.0f2d55e7.chunk.js.map": "/Heisenberg-Portfolio/static/js/453.0f2d55e7.chunk.js.map",
     "448.b7095e8c.chunk.js.map": "/Heisenberg-Portfolio/static/js/448.b7095e8c.chunk.js.map",
     "550.808a76a5.chunk.js.map": "/Heisenberg-Portfolio/static/js/550.808a76a5.chunk.js.map",
@@ -160,6 +160,6 @@
   },
   "entrypoints": [
     "static/css/main.0e81419b.css",
-    "static/js/main.14f90df4.js"
+    "static/js/main.a7f67f28.js"
   ]
 }
