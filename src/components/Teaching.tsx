@@ -25,6 +25,11 @@ function Teaching() {
             description: t.scm.desc
         },
         {
+            title: t.tree_model.title,
+            fileName: "樹模型演算法講義.md",
+            description: t.tree_model.desc
+        },
+        {
             title: t.git.title,
             fileName: "Git 進階課程.md",
             description: t.git.desc
