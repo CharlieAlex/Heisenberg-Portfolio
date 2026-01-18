@@ -19,7 +19,9 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src={require('../assets/images/head.jpg')} alt="Avatar" />
+          <div className="img-container">
+            <img src={require('../assets/images/head.jpg')} alt="Avatar" />
+          </div>
         </div>
         <div className="content">
           <div className="social_icons">
