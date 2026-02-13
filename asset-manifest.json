@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Heisenberg-Portfolio/static/css/main.61f06e15.css",
-    "main.js": "/Heisenberg-Portfolio/static/js/main.3a7bad6a.js",
+    "main.js": "/Heisenberg-Portfolio/static/js/main.64044a7b.js",
     "static/js/453.0f2d55e7.chunk.js": "/Heisenberg-Portfolio/static/js/453.0f2d55e7.chunk.js",
     "static/js/448.b7095e8c.chunk.js": "/Heisenberg-Portfolio/static/js/448.b7095e8c.chunk.js",
     "static/js/550.808a76a5.chunk.js": "/Heisenberg-Portfolio/static/js/550.808a76a5.chunk.js",
@@ -46,6 +46,7 @@
     "static/js/449.66f00278.chunk.js": "/Heisenberg-Portfolio/static/js/449.66f00278.chunk.js",
     "static/media/head.jpg": "/Heisenberg-Portfolio/static/media/head.9b1cf6c7ac70c7d1e445.jpg",
     "static/media/people_flow_map.png": "/Heisenberg-Portfolio/static/media/people_flow_map.24b6d92e82c8f716d65a.png",
+    "static/media/japan_adventure.png": "/Heisenberg-Portfolio/static/media/japan_adventure.97f5787b728d2bf206a2.png",
     "static/media/ntu_logo.jpg": "/Heisenberg-Portfolio/static/media/ntu_logo.da68f9c1128da8447f10.jpg",
     "static/media/bg-light.png": "/Heisenberg-Portfolio/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/ml-analysis-dashboard.png": "/Heisenberg-Portfolio/static/media/ml-analysis-dashboard.99b8c3571da0f7740dc9.png",
@@ -121,7 +122,7 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/Heisenberg-Portfolio/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/Heisenberg-Portfolio/index.html",
     "main.61f06e15.css.map": "/Heisenberg-Portfolio/static/css/main.61f06e15.css.map",
-    "main.3a7bad6a.js.map": "/Heisenberg-Portfolio/static/js/main.3a7bad6a.js.map",
+    "main.64044a7b.js.map": "/Heisenberg-Portfolio/static/js/main.64044a7b.js.map",
     "453.0f2d55e7.chunk.js.map": "/Heisenberg-Portfolio/static/js/453.0f2d55e7.chunk.js.map",
     "448.b7095e8c.chunk.js.map": "/Heisenberg-Portfolio/static/js/448.b7095e8c.chunk.js.map",
     "550.808a76a5.chunk.js.map": "/Heisenberg-Portfolio/static/js/550.808a76a5.chunk.js.map",
@@ -160,6 +161,6 @@
   },
   "entrypoints": [
     "static/css/main.61f06e15.css",
-    "static/js/main.3a7bad6a.js"
+    "static/js/main.64044a7b.js"
   ]
 }
