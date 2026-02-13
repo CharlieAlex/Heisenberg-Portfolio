@@ -32,7 +32,7 @@ function Footer() {
       </button>
       <div className="social-links">
         <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer"><GitHubIcon sx={{ fontSize: 28 }}/></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><LinkedInIcon sx={{ fontSize: 28 }}/></a>
+        <a href="https://www.linkedin.com/in/charliealex123/" target="_blank" rel="noreferrer"><LinkedInIcon sx={{ fontSize: 28 }}/></a>
         <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMediumIcon size={28}/></a>
         <a href={process.env.PUBLIC_URL + (language === 'en' ? "/cv/myCV_en.pdf" : "/cv/myCV.pdf")} target="_blank" rel="noreferrer"><ImProfileIcon size={28}/></a>
       </div>

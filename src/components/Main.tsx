@@ -26,7 +26,7 @@ function Main() {
         <div className="content">
           <div className="social_icons">
             <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://www.linkedin.com/in/charliealex123/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
             <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMediumIcon/></a>
             <a href={process.env.PUBLIC_URL + (language === 'en' ? "/cv/myCV_en.pdf" : "/cv/myCV.pdf")} target="_blank" rel="noreferrer"><ImProfileIcon/></a>
           </div>
@@ -36,7 +36,7 @@ function Main() {
 
           <div className="mobile_social_icons">
             <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://www.linkedin.com/in/charliealex123/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
             <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMediumIcon/></a>
             <a href={process.env.PUBLIC_URL + (language === 'en' ? "/cv/myCV_en.pdf" : "/cv/myCV.pdf")} target="_blank" rel="noreferrer"><ImProfileIcon/></a>
           </div>
