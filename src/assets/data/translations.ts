@@ -287,7 +287,7 @@ export const translations = {
             },
             shopee_xpress: {
                 title: "資料工程實習生",
-                subtitle: "蝦皮娛樂電商, 商業智慧部門",
+                subtitle: "蝦皮店到店, 商業智慧部門",
                 summary: "SQL, Apps Script, 動態數據報表",
                 details: [
                   "作為跨部門資料存取與分析窗口，將業務需求轉化為結構化查詢與指標定義，設計並維護 10+ 份可自動更新的決策型儀表板，使非技術團隊能穩定取得一致、可驗證的數據結果。",
