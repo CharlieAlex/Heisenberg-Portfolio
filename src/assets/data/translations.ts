@@ -125,6 +125,13 @@ export const translations = {
                 full: "Sports Betting Freerider is a Line Bot driven crawler system designed to track and analyze prediction results from top-ranking sports betting players.\n\nKey Features:\n• Flexible crawling targets specified via Line Bot, fully automated with iOS Shortcuts\n• Automated scraping of prediction data from Playsport, with statistical analysis of prediction accuracy by sport, league, and betting type\n• BigQuery & Google Sheets integration for seamless data tracking and sharing\n• Performance metrics dashboard to identify consistently accurate predictors\n\nBy leveraging collective intelligence from proven successful bettors, this system provides data-driven insights to inform betting strategies. The analysis reveals patterns in prediction accuracy across different sports and time periods.",
                 link: "https://sports-betting-freerider.streamlit.app/",
                 github: "https://github.com/CharlieAlex/Sports-Betting-Freerider"
+            },
+            shopping_adventure: {
+                title: "Japan Shopping Adventure",
+                short: "An adventure-themed shopping list app designed for two players, turning shopping into an exciting quest!",
+                full: "Japan Shopping Adventure is a collaborative shopping list application that gamifies the shopping experience with adventure elements.\n\nKey Features:\n• Shopping List Management: Built-in 60+ curated must-buy items in Japan, with real-time addition and editing capabilities.\n• Two-Player Collaboration: \"Villager A\" and \"Villager B\" can track their individual progress with dynamic contribution bars.\n• Smart Search & Filter: Keyword search support with category and store filtering options.\n• Visual Experience: Integrated Google Drive image display and one-click Google Image Search.\n• Travel Guide Map: Manage shopping, anime, and dining spots with visit tracking and external link support.\n• Immersive Adventure UI: Deep green theme with gold accents, optimizing the user experience for mobile devices.\n• Cloud Sync: Real-time multi-device synchronization using Firebase Firestore and Google Sheets integration.",
+                link: "https://shopping-adventure-app.vercel.app/",
+                github: "https://github.com/CharlieAlex/Shopping-Adventure-App"
             }
         },
         analysis: {
@@ -366,6 +373,13 @@ export const translations = {
                 full: "運彩高手預測追蹤系統是一個以 Line Bot 驅動的爬蟲系統，專門追蹤並分析頂尖運彩玩家的預測結果。\n\n主要功能：\n• 以 Line Bot 彈性指定要爬蟲的資料內容，可透過 ios 捷徑實現全自動化\n• 從玩運彩網站爬取預測數據，依運動、聯賽、投注類型進行準確率統計分析\n• BigQuery 與 Google Sheets 整合，方便數據追蹤與分享\n• 績效指標儀表板，識別持續準確的預測者\n\n透過彙整經驗證的成功投注者的集體智慧，這個系統提供數據驅動的洞察，作為投注策略的參考依據。分析結果揭示了不同運動項目和時間期間的預測準確率模式。",
                 link: "https://sports-betting-freerider.streamlit.app/",
                 github: "https://github.com/CharlieAlex/Sports-Betting-Freerider"
+            },
+            shopping_adventure: {
+                title: "日本購物大冒險",
+                short: "一個冒險主題的日本購物清單管理應用，專為「村民A」和「村民B」設計，讓購物變成一場冒險遊戲！",
+                full: "日本購物大冒險是一個結合冒險遊戲元素的購物清單管理應用，專為雙人協作設計。\n\n主要功能：\n• 購物清單管理：內建 60+ 種精選日本必買商品，支援即時新增與編輯。\n• 雙人協作追蹤：村民 A 與村民 B 可分別標記購買進度，透過動態進度條呈現貢獻。\n• 智能搜尋與篩選：支援關鍵字搜尋，並可依分類或店舖篩選商品。\n• 視覺化體驗：整合 Google Drive 商品圖片與 Google 圖片搜尋功能。\n• 旅遊攻略地圖：管理購物、動漫、餐廳等據點，標記造訪進度並支援外部連結。\n• 沉浸式冒險介面：深綠色調搭配金色漸層，結合行動裝置優先的響應式設計。\n• 雲端資料同步：整合 Firebase Firestore 與 Google Sheets 實現多裝置即時同步。",
+                link: "https://shopping-adventure-app.vercel.app/",
+                github: "https://github.com/CharlieAlex/Shopping-Adventure-App"
             }
         },
         analysis: {

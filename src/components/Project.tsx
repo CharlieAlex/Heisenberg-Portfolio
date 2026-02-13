@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import parking1 from '../assets/images/parking1.png';
 import totalResult from '../assets/images/streamlit_dashboard.png';
 import mlAnalysisDashboard from '../assets/images/ml-analysis-dashboard.png';
+import japanAdventure from '../assets/images/japan_adventure.png';
 import '../assets/styles/Project.scss';
 import { Modal, Box, Typography, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-// import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from '@mui/material/IconButton';
 import { useTheme } from "../contexts/ThemeContext";
@@ -63,6 +64,15 @@ function Project() {
     };
 
     const projectData: ProjectItem[] = [
+      {
+        id: 'shopping_adventure',
+        title: t.shopping_adventure.title,
+        image: japanAdventure,
+        shortDescription: t.shopping_adventure.short,
+        fullDescription: t.shopping_adventure.full,
+        link: t.shopping_adventure.link,
+        github: t.shopping_adventure.github
+      },
       {
         id: 'ml_analysis',
         title: t.ml_analysis.title,
