@@ -132,6 +132,13 @@ export const translations = {
                 full: "Japan Shopping Adventure is a collaborative shopping list application that gamifies the shopping experience with adventure elements.\n\nKey Features:\n• Shopping List Management: Built-in 60+ curated must-buy items in Japan, with real-time addition and editing capabilities.\n• Two-Player Collaboration: \"Villager A\" and \"Villager B\" can track their individual progress with dynamic contribution bars.\n• Smart Search & Filter: Keyword search support with category and store filtering options.\n• Visual Experience: Integrated Google Drive image display and one-click Google Image Search.\n• Travel Guide Map: Manage shopping, anime, and dining spots with visit tracking and external link support.\n• Immersive Adventure UI: Deep green theme with gold accents, optimizing the user experience for mobile devices.\n• Cloud Sync: Real-time multi-device synchronization using Firebase Firestore and Google Sheets integration.",
                 link: "https://shopping-adventure-app.vercel.app/",
                 github: "https://github.com/CharlieAlex/Shopping-Adventure-App"
+            },
+            trip_ledger: {
+                title: "Trip-Ledger-AI",
+                short: "AI-driven travel expense tracker with multi-model invoice recognition and visualized analytics.",
+                full: "Trip-Ledger-AI is a smart travel expense tracking tool powered by AI, supporting multiple models (Gemini / Hugging Face) for automatic invoice recognition and offering rich visualized analytics.\n\nKey Features:\n• AI Invoice Recognition: Upload invoice photos for automatic extraction of store, item, and price details.\n• Multi-Model Support: Switch between Google Gemini and Hugging Face models freely.\n• Multi-Language Support: Supports Japanese, English, and Traditional Chinese invoices with automatic translation.\n• Smart Categorization: Automatically classifies items into 8 major categories and subcategories.\n• Visualized Analytics: View cumulative spending trends, daily breakdowns, category distribution, and store rankings.\n• Report Export: Supports exporting reports in Excel and PDF formats.",
+                link: "https://trip-ledger-ai.streamlit.app/",
+                github: "https://github.com/CharlieAlex/Trip-Ledger-AI"
             }
         },
         analysis: {
@@ -380,6 +387,13 @@ export const translations = {
                 full: "日本購物大冒險是一個結合冒險遊戲元素的購物清單管理應用，專為雙人協作設計。\n\n主要功能：\n• 購物清單管理：內建 60+ 種精選日本必買商品，支援即時新增與編輯。\n• 雙人協作追蹤：村民 A 與村民 B 可分別標記購買進度，透過動態進度條呈現貢獻。\n• 智能搜尋與篩選：支援關鍵字搜尋，並可依分類或店舖篩選商品。\n• 視覺化體驗：整合 Google Drive 商品圖片與 Google 圖片搜尋功能。\n• 旅遊攻略地圖：管理購物、動漫、餐廳等據點，標記造訪進度並支援外部連結。\n• 沉浸式冒險介面：深綠色調搭配金色漸層，結合行動裝置優先的響應式設計。\n• 雲端資料同步：整合 Firebase Firestore 與 Google Sheets 實現多裝置即時同步。",
                 link: "https://shopping-adventure-app.vercel.app/",
                 github: "https://github.com/CharlieAlex/Shopping-Adventure-App"
+            },
+            trip_ledger: {
+                title: "Trip-Ledger-AI",
+                short: "AI 驅動的旅遊發票記帳工具，支援多種 AI 模型自動辨識發票照片，並提供豐富的視覺化分析。",
+                full: "Trip-Ledger-AI 是一款由 AI 驅動的智慧旅遊發票記帳工具，支援多種模型（Gemini / Hugging Face）自動辨識發票照片，並提供豐富的視覺化分析功能。\n\n主要功能：\n• 發票照片辨識：上傳發票照片，AI 自動擷取店家、品項、金額等資訊。\n• 多模型支援：支援 Google Gemini 與 Hugging Face 模型，可自由切換。\n• 多語系支援：支援日文、英文、繁體中文發票，自動翻譯品名與店名。\n• 智慧分類：自動將品項分類到 8 大類別與子類別。\n• 多維度分析：查看累計消費趨勢、每日明細、類別分布與店家排行。\n• 報告匯出：支援 Excel、PDF 格式匯出。",
+                link: "https://trip-ledger-ai.streamlit.app/",
+                github: "https://github.com/CharlieAlex/Trip-Ledger-AI"
             }
         },
         analysis: {

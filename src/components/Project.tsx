@@ -3,6 +3,7 @@ import parking1 from '../assets/images/parking1.png';
 import totalResult from '../assets/images/streamlit_dashboard.png';
 import mlAnalysisDashboard from '../assets/images/ml-analysis-dashboard.png';
 import japanAdventure from '../assets/images/japan_adventure.png';
+import tripLedger from '../assets/images/trip-ledger-ai.png';
 import '../assets/styles/Project.scss';
 import { Modal, Box, Typography, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
@@ -63,6 +64,15 @@ function Project() {
     };
 
     const projectData: ProjectItem[] = [
+      {
+        id: 'trip_ledger',
+        title: t.trip_ledger.title,
+        image: tripLedger,
+        shortDescription: t.trip_ledger.short,
+        fullDescription: t.trip_ledger.full,
+        link: t.trip_ledger.link,
+        github: t.trip_ledger.github
+      },
       {
         id: 'shopping_adventure',
         title: t.shopping_adventure.title,
