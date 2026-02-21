@@ -32,12 +32,15 @@ const labelsSecond = [
 const labelsThird = [
     "Git",
     "BigQuery",
+    "DVC",
     "MLflow",
     "Docker",
     "API",
     "Streamlit",
     "Apps Script",
     "Airflow",
+    "Dataform",
+    "RAG",
     "Web Scraping"
 ];
 
