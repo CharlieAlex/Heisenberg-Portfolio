@@ -4,6 +4,7 @@ import totalResult from '../assets/images/streamlit_dashboard.png';
 import mlAnalysisDashboard from '../assets/images/ml-analysis-dashboard.png';
 import japanAdventure from '../assets/images/japan_adventure.png';
 import tripLedger from '../assets/images/trip-ledger-ai.png';
+import ragGraph from '../assets/images/rag-graph.png';
 import '../assets/styles/Project.scss';
 import { Modal, Box, Typography, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
@@ -19,7 +20,7 @@ interface ProjectItem {
   image: string;
   shortDescription: string;
   fullDescription: string;
-  link: string;
+  link?: string;
   github: string;
 }
 
@@ -64,6 +65,14 @@ function Project() {
     };
 
     const projectData: ProjectItem[] = [
+      {
+        id: 'box_note_rag',
+        title: t.box_note_rag.title,
+        image: ragGraph,
+        shortDescription: t.box_note_rag.short,
+        fullDescription: t.box_note_rag.full,
+        github: t.box_note_rag.github
+      },
       {
         id: 'trip_ledger',
         title: t.trip_ledger.title,
@@ -179,29 +188,31 @@ function Project() {
                             >
                                 {t.visit_github}
                             </Button>
-                            <Button
-                                variant="outlined"
-                                startIcon={
-                                    <img 
-                                        src="https://streamlit.io/images/brand/streamlit-mark-color.png" 
-                                        alt="Streamlit" 
-                                        style={{ width: '20px', height: '20px' }} 
-                                    />
-                                }
-                                href={selectedItem.link}
-                                target="_blank"
-                                rel="noreferrer"
-                                sx={{
-                                    color: isDark ? '#fff' : '#333',
-                                    borderColor: isDark ? '#fff' : '#333',
-                                    '&:hover': {
-                                        borderColor: isDark ? '#ccc' : '#000',
-                                        bgcolor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)',
+                            {selectedItem.link && (
+                                <Button
+                                    variant="outlined"
+                                    startIcon={
+                                        <img 
+                                            src="https://streamlit.io/images/brand/streamlit-mark-color.png" 
+                                            alt="Streamlit" 
+                                            style={{ width: '20px', height: '20px' }} 
+                                        />
                                     }
-                                }}
-                            >
-                                {t.visit_app}
-                            </Button>
+                                    href={selectedItem.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    sx={{
+                                        color: isDark ? '#fff' : '#333',
+                                        borderColor: isDark ? '#fff' : '#333',
+                                        '&:hover': {
+                                            borderColor: isDark ? '#ccc' : '#000',
+                                            bgcolor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)',
+                                        }
+                                    }}
+                                >
+                                    {t.visit_app}
+                                </Button>
+                            )}
                         </Box>
                     </>
                 )}

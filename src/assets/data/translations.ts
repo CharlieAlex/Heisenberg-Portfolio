@@ -105,6 +105,12 @@ export const translations = {
             title: "Side Projects",
             visit_github: "Visit GitHub",
             visit_app: "Visit App",
+            box_note_rag: {
+                title: "Box-Note-RAG",
+                short: "Search your notes with AI — A personal knowledge base Q&A system built with LangGraph.",
+                full: "Box-Note is a personal note archiving app. This project leverages RAG (Retrieval-Augmented Generation) technology, allowing you to ask questions to your own notes using natural language. The AI retrieves relevant content from your notes and generates an answer.\n\nKey Features:\n• Hybrid Retrieval: Combines dense retrieval with BM25 sparse retrieval.\n• HyDE (Hypothetical Document Embeddings): LLM generates a hypothetical answer to enhance retrieval quality.\n• Multi-format Support: Supports importing Markdown and PDF notes.\n• Local LLM: Uses Ollama to run local models, keeping data completely private.\n• Query Clarification & Auto-optimization: Automatically analyzes questions and rewrites queries when retrieval results are suboptimal.",
+                github: "https://github.com/CharlieAlex/Box-Note-RAG"
+            },
             ml_analysis: {
                 title: "ML Analysis Dashboard",
                 short: "Error analysis and interpretability dashboard for trained machine learning models.",
@@ -360,6 +366,12 @@ export const translations = {
             title: "個人專案",
             visit_github: "前往 GitHub",
             visit_app: "前往應用程式",
+            box_note_rag: {
+                title: "Box-Note RAG",
+                short: "用 AI 搜尋你的筆記 — 基於 LangGraph 的個人知識庫問答系統。",
+                full: "Box-Note 是一個個人筆記檔案庫，本專案透過 RAG（Retrieval-Augmented Generation）技術，讓你可以用自然語言向自己的筆記提問，AI 會從筆記中檢索相關內容並生成回答。\n\n主要特色：\n• 混合檢索：結合向量語意檢索與 BM25 詞彙檢索。\n• HyDE 假說文件：先讓 LLM 生成假說回答，再以此增強檢索品質。\n• 多格式支援：支援 Markdown 與 PDF 筆記匯入。\n• 本地 LLM：使用 Ollama 運行本地模型，確保資料完全不外流。\n• 問題釐清與自動優化：自動分析問題涵義，並在檢索結果不佳時自動改寫問題重新搜尋。",
+                github: "https://github.com/CharlieAlex/Box-Note-RAG"
+            },
             ml_analysis: {
                 title: "機器學習分析儀表板",
                 short: "針對訓練完成的機器學習模型進行錯誤分析與可解釋性分析。",
