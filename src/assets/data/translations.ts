@@ -38,6 +38,8 @@ export const translations = {
         },
         career: {
             title: "Career History",
+            legend_work: "Work",
+            legend_edu: "Education",
             yulon: {
                 title: "Data Analyst",
                 subtitle: "Yulon Group, Digital Transformation",
@@ -276,6 +278,8 @@ export const translations = {
         },
         career: {
             title: "職涯歷程",
+            legend_work: "工作",
+            legend_edu: "學歷",
             yulon: {
                 title: "資料分析師",
                 subtitle: "裕隆集團, 數位轉型部門",
