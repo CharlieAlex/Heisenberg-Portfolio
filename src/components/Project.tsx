@@ -1,226 +1,70 @@
-import React, { useState } from "react";
+import React from "react";
 import parking1 from '../assets/images/parking1.png';
 import totalResult from '../assets/images/streamlit_dashboard.png';
 import mlAnalysisDashboard from '../assets/images/ml-analysis-dashboard.png';
 import japanAdventure from '../assets/images/japan_adventure.png';
 import tripLedger from '../assets/images/trip-ledger-ai.png';
 import ragGraph from '../assets/images/rag-graph.png';
-import '../assets/styles/Project.scss';
-import { Modal, Box, Typography, Button } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import IconButton from '@mui/material/IconButton';
-import { useTheme } from "../contexts/ThemeContext";
+import LaunchIcon from '@mui/icons-material/Launch';
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
+import Showcase, { ShowcaseItem } from "./Showcase";
 
-interface ProjectItem {
-  id: string;
-  title: string;
-  image: string;
-  shortDescription: string;
-  fullDescription: string;
-  link?: string;
-  github: string;
-}
-
-const modalStyle = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '90%',
-  maxWidth: 800,
-  bgcolor: 'background.paper',
-  boxShadow: 24,
-  p: 4,
-  borderRadius: 2,
-  outline: 'none',
-  maxHeight: '90vh',
-  overflowY: 'auto' as 'auto'
+const tags: Record<string, string[]> = {
+    box_note_rag: ["LangGraph", "RAG", "BM25", "HyDE", "Ollama"],
+    trip_ledger: ["Gemini", "HuggingFace", "OCR", "Streamlit"],
+    shopping_adventure: ["Firebase", "Firestore", "React", "Vercel"],
+    ml_analysis: ["SHAP", "Streamlit", "scikit-learn"],
+    parkfinder: ["Data Pipeline", "Streamlit", "Gov API"],
+    betting: ["LINE Bot", "BigQuery", "Crawler"],
 };
 
 function Project() {
-    const { mode } = useTheme();
     const { language } = useLanguage();
     const t = translations[language].projects;
-    const isDark = mode === 'dark';
 
-    const [open, setOpen] = useState(false);
-    const [selectedItem, setSelectedItem] = useState<ProjectItem | null>(null);
+    const github = (href: string) => ({
+        label: t.visit_github, href, icon: <GitHubIcon />,
+    });
+    const app = (href: string) => ({
+        label: t.visit_app, href, primary: true, icon: <LaunchIcon />,
+    });
 
-    const handleOpen = (item: ProjectItem) => {
-        setSelectedItem(item);
-        setOpen(true);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
-    };
-
-    const dynamicModalStyle = {
-        ...modalStyle,
-        bgcolor: isDark ? '#1e232a' : 'background.paper',
-        color: isDark ? '#f0f0f0' : 'black',
-    };
-
-    const projectData: ProjectItem[] = [
-      {
-        id: 'box_note_rag',
-        title: t.box_note_rag.title,
-        image: ragGraph,
-        shortDescription: t.box_note_rag.short,
-        fullDescription: t.box_note_rag.full,
-        github: t.box_note_rag.github
-      },
-      {
-        id: 'trip_ledger',
-        title: t.trip_ledger.title,
-        image: tripLedger,
-        shortDescription: t.trip_ledger.short,
-        fullDescription: t.trip_ledger.full,
-        link: t.trip_ledger.link,
-        github: t.trip_ledger.github
-      },
-      {
-        id: 'shopping_adventure',
-        title: t.shopping_adventure.title,
-        image: japanAdventure,
-        shortDescription: t.shopping_adventure.short,
-        fullDescription: t.shopping_adventure.full,
-        link: t.shopping_adventure.link,
-        github: t.shopping_adventure.github
-      },
-      {
-        id: 'ml_analysis',
-        title: t.ml_analysis.title,
-        image: mlAnalysisDashboard,
-        shortDescription: t.ml_analysis.short,
-        fullDescription: t.ml_analysis.full,
-        link: t.ml_analysis.link,
-        github: t.ml_analysis.github
-      },
-      {
-        id: 'parkfinder',
-        title: t.parkfinder.title,
-        image: parking1,
-        shortDescription: t.parkfinder.short,
-        fullDescription: t.parkfinder.full,
-        link: t.parkfinder.link,
-        github: t.parkfinder.github
-      },
-      {
-        id: 'betting',
-        title: t.betting.title,
-        image: totalResult,
-        shortDescription: t.betting.short,
-        fullDescription: t.betting.full,
-        link: t.betting.link,
-        github: t.betting.github
-      }
+    const projectData: ShowcaseItem[] = [
+        {
+            id: 'box_note_rag', title: t.box_note_rag.title, image: ragGraph, tags: tags.box_note_rag,
+            shortDescription: t.box_note_rag.short, fullDescription: t.box_note_rag.full,
+            actions: [github(t.box_note_rag.github)],
+        },
+        {
+            id: 'trip_ledger', title: t.trip_ledger.title, image: tripLedger, tags: tags.trip_ledger,
+            shortDescription: t.trip_ledger.short, fullDescription: t.trip_ledger.full,
+            actions: [app(t.trip_ledger.link), github(t.trip_ledger.github)],
+        },
+        {
+            id: 'shopping_adventure', title: t.shopping_adventure.title, image: japanAdventure, tags: tags.shopping_adventure,
+            shortDescription: t.shopping_adventure.short, fullDescription: t.shopping_adventure.full,
+            actions: [app(t.shopping_adventure.link), github(t.shopping_adventure.github)],
+        },
+        {
+            id: 'ml_analysis', title: t.ml_analysis.title, image: mlAnalysisDashboard, tags: tags.ml_analysis,
+            shortDescription: t.ml_analysis.short, fullDescription: t.ml_analysis.full,
+            actions: [app(t.ml_analysis.link), github(t.ml_analysis.github)],
+        },
+        {
+            id: 'parkfinder', title: t.parkfinder.title, image: parking1, tags: tags.parkfinder,
+            shortDescription: t.parkfinder.short, fullDescription: t.parkfinder.full,
+            actions: [app(t.parkfinder.link), github(t.parkfinder.github)],
+        },
+        {
+            id: 'betting', title: t.betting.title, image: totalResult, tags: tags.betting,
+            shortDescription: t.betting.short, fullDescription: t.betting.full,
+            actions: [app(t.betting.link), github(t.betting.github)],
+        },
     ];
 
-    return(
-    <div className="projects-container" id="projects">
-        <h1>{t.title}</h1>
-        <div className="projects-grid">
-            {projectData.map((item) => (
-                <div className="project" key={item.id} onClick={() => handleOpen(item)} style={{ cursor: 'pointer' }}>
-                    <div className="project-img-wrapper">
-                        <img src={item.image} className="zoom" alt={item.title} width="100%"/>
-                    </div>
-                    <h2>{item.title}</h2>
-                    <p>{item.shortDescription}</p>
-                </div>
-            ))}
-        </div>
-
-        <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-        >
-            <Box sx={dynamicModalStyle}>
-                <IconButton
-                    aria-label="close"
-                    onClick={handleClose}
-                    sx={{
-                        position: 'absolute',
-                        right: 8,
-                        top: 8,
-                        color: isDark ? '#aaa' : (theme) => theme.palette.grey[500],
-                    }}
-                >
-                    <CloseIcon />
-                </IconButton>
-                {selectedItem && (
-                    <>
-                        <Typography id="modal-modal-title" variant="h5" component="h2" sx={{ fontWeight: 'bold', mb: 2, color: isDark ? '#fff' : '#333' }}>
-                            {selectedItem.title}
-                        </Typography>
-                        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-                             <img 
-                                width="100%"
-                                src={selectedItem.image} 
-                                alt={selectedItem.title} 
-                                style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain', borderRadius: '4px' }}
-                            />
-                        </div>
-                        <Typography id="modal-modal-description" sx={{ mt: 2, color: isDark ? '#ccc' : '#555', lineHeight: 1.8, whiteSpace: 'pre-line' }}>
-                            {selectedItem.fullDescription}
-                        </Typography>
-                        <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3, gap: 2 }}>
-                            <Button
-                                variant="outlined"
-                                startIcon={<GitHubIcon />}
-                                href={selectedItem.github}
-                                target="_blank"
-                                rel="noreferrer"
-                                sx={{
-                                    color: isDark ? '#fff' : '#333',
-                                    borderColor: isDark ? '#fff' : '#333',
-                                    '&:hover': {
-                                        borderColor: isDark ? '#ccc' : '#000',
-                                        bgcolor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)',
-                                    }
-                                }}
-                            >
-                                {t.visit_github}
-                            </Button>
-                            {selectedItem.link && (
-                                <Button
-                                    variant="outlined"
-                                    startIcon={
-                                        <img 
-                                            src="https://streamlit.io/images/brand/streamlit-mark-color.png" 
-                                            alt="Streamlit" 
-                                            style={{ width: '20px', height: '20px' }} 
-                                        />
-                                    }
-                                    href={selectedItem.link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    sx={{
-                                        color: isDark ? '#fff' : '#333',
-                                        borderColor: isDark ? '#fff' : '#333',
-                                        '&:hover': {
-                                            borderColor: isDark ? '#ccc' : '#000',
-                                            bgcolor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)',
-                                        }
-                                    }}
-                                >
-                                    {t.visit_app}
-                                </Button>
-                            )}
-                        </Box>
-                    </>
-                )}
-            </Box>
-        </Modal>
-        <hr style={{ width: '100%', margin: '0 auto', border: '0', borderTop: '1px solid var(--line)', marginTop: '5rem' }} />
-    </div>
-    );
+    return <Showcase id="projects" title={t.title} items={projectData} />;
 }
 
 export default Project;
