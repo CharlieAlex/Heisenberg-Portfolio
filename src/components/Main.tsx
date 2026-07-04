@@ -18,27 +18,27 @@ function Main() {
   return (
     <div className="container">
       <div className="about-section">
-        <div className="image-wrapper">
-          <div className="img-container">
-            <img src={require('../assets/images/head.jpg')} alt="Avatar" />
-          </div>
-        </div>
         <div className="content">
           <div className="social_icons">
-            <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/charliealex123/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-            <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMediumIcon/></a>
-            <a href={process.env.PUBLIC_URL + (language === 'en' ? "/cv/myCV_en.pdf" : "/cv/myCV.pdf")} target="_blank" rel="noreferrer"><ImProfileIcon/></a>
+            <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer" aria-label="GitHub"><GitHubIcon/></a>
+            <a href="https://www.linkedin.com/in/charliealex123/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><LinkedInIcon/></a>
+            <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer" aria-label="Medium"><FaMediumIcon/></a>
+            <a href={process.env.PUBLIC_URL + (language === 'en' ? "/cv/myCV_en.pdf" : "/cv/myCV.pdf")} target="_blank" rel="noreferrer" aria-label="Resume"><ImProfileIcon/></a>
           </div>
           <h1>{t.name}</h1>
-          <p>{t.title}</p>
-          <p style={{fontSize: '1em', marginTop: '10px'}}>{t.description}</p>
+          <p className="role">{t.title}</p>
+          <p>{t.description}</p>
 
           <div className="mobile_social_icons">
-            <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/charliealex123/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-            <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer"><FaMediumIcon/></a>
-            <a href={process.env.PUBLIC_URL + (language === 'en' ? "/cv/myCV_en.pdf" : "/cv/myCV.pdf")} target="_blank" rel="noreferrer"><ImProfileIcon/></a>
+            <a href="https://github.com/CharlieAlex" target="_blank" rel="noreferrer" aria-label="GitHub"><GitHubIcon/></a>
+            <a href="https://www.linkedin.com/in/charliealex123/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><LinkedInIcon/></a>
+            <a href="https://medium.com/@jasonlo1468" target="_blank" rel="noreferrer" aria-label="Medium"><FaMediumIcon/></a>
+            <a href={process.env.PUBLIC_URL + (language === 'en' ? "/cv/myCV_en.pdf" : "/cv/myCV.pdf")} target="_blank" rel="noreferrer" aria-label="Resume"><ImProfileIcon/></a>
+          </div>
+        </div>
+        <div className="image-wrapper">
+          <div className="img-container">
+            <img src={require('../assets/images/head.jpg')} alt="Portrait of Heisenberg Lo" />
           </div>
         </div>
       </div>

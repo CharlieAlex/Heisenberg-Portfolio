@@ -9,23 +9,29 @@
 
   button {
     float: right;
-    background-color: white;
-    color: #050f0b;
+    background-color: var(--accent);
+    color: #ffffff;
+    border-radius: 100px;
+    padding: 8px 24px;
+    transition: transform 0.2s var(--ease), background-color 0.2s var(--ease);
   }
 
   button:hover {
-    background-color: #5000ca;
-    color: white;
+    background-color: var(--accent-strong);
+  }
+
+  button:active {
+    transform: scale(0.98);
   }
 
   fieldset {
-    background-color: white;
+    background-color: transparent;
   }
 }
 
 label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
+  font-size: 1.1rem;
+  font-family: var(--font-body);
 }
 
 .form-flex {

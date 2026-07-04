@@ -22,9 +22,9 @@
         transition: all 0.2s;
 
         &:hover {
-            background-color: rgba(80, 0, 202, 0.05); // Very subtle hint
-            color: #5000ca !important;
-            border-color: #5000ca;
+            background-color: rgba(58,90,120,0.06); // Very subtle hint
+            color: #3a5a78 !important;
+            border-color: #3a5a78;
         }
     }
 
@@ -131,16 +131,16 @@
     }
 
     &.dark-mode {
-        background-color: #0d1116; // Match index.scss main-container
+        background-color: #15181c; // Match index.scss main-container
         color: #e6edf3;
 
         .back-button {
             border-color: #30363d;
             color: #c9d1d9 !important;
             &:hover {
-                background-color: rgba(187, 134, 252, 0.1);
-                border-color: #bb86fc;
-                color: #bb86fc !important;
+                background-color: rgba(127,168,207,0.12);
+                border-color: #7fa8cf;
+                color: #7fa8cf !important;
             }
         }
 
@@ -203,7 +203,7 @@
             background: none;
             border: none;
             cursor: pointer;
-            color: #5000ca;
+            color: #3a5a78;
             transition: transform 0.3s ease, color 0.3s ease;
             padding: 10px;
 
@@ -218,7 +218,7 @@
 
             &:hover {
                 transform: translateY(-5px);
-                color: #bb86fc;
+                color: #7fa8cf;
             }
 
             svg {
@@ -238,9 +238,9 @@
         .viewer-footer {
             border-top-color: rgba(255, 255, 255, 0.1);
             .back-to-top {
-                color: #bb86fc;
+                color: #7fa8cf;
                 &:hover {
-                    color: #d1b3ff; // Even lighter for hover in dark mode
+                    color: #a7c4de; // Even lighter for hover in dark mode
                 }
             }
         }

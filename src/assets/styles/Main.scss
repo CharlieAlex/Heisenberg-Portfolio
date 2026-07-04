@@ -1,20 +1,11 @@
-.dark-mode .about-section {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 .about-section {
-    display: flex;
-    gap: 30px;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
     align-items: center;
     width: 100%;
-    padding: 0px 15%;
-    min-height: 700px;
-    background-image: url("../images/bg-dark.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    padding: 40px 10% 70px;
+    min-height: 620px;
 }
 
 .about-section .content {
@@ -24,11 +15,23 @@
     .social_icons {
         display: flex;
         flex-direction: row;
-        gap: 10px;
-        color: white;
+        gap: 16px;
+        color: var(--ink);
+        margin-bottom: 26px;
+
+        a {
+            color: var(--ink);
+            display: inline-flex;
+            transition: color 0.2s var(--ease), transform 0.2s var(--ease);
+
+            &:hover {
+                color: var(--accent);
+                transform: translateY(-2px);
+            }
+        }
 
         svg {
-            font-size: 1.8em;
+            font-size: 1.7em;
         }
     }
 
@@ -36,16 +39,36 @@
         display: none;
     }
 
+    .role {
+        font-family: var(--font-mono);
+        font-size: 0.95em;
+        letter-spacing: 0.02em;
+        color: var(--accent);
+        text-transform: uppercase;
+        margin: 0 0 18px;
+    }
+
     p {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        color: var(--muted);
+        max-width: 52ch;
         margin-block-start: 0px;
         margin-block-end: 0px;
     }
 
     h1 {
-        font-size: 5em;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: clamp(3rem, 7vw, 5.2rem);
+        line-height: 0.98;
+        letter-spacing: -0.035em;
+        margin: 0 0 20px;
+
+        .accent {
+            background: linear-gradient(transparent 62%, var(--accent-soft) 0);
+            padding: 0 0.05em;
+            color: var(--accent);
+        }
     }
 }
 
@@ -53,10 +76,11 @@
     z-index: 2;
 
     .img-container {
-        width: 200px;
-        height: 250px;
-        border-radius: 50%;
+        width: 240px;
+        height: 300px;
+        border-radius: 20px 20px 20px 4px;
         overflow: hidden;
+        box-shadow: var(--shadow);
 
         img {
             width: 100%;
@@ -67,55 +91,15 @@
     }
 }
 
-.about p {
-    text-align: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
-}
-
 @media screen {
-    @media (max-width: 567px) {
-        .nav-left{
-            padding-top: 20px;
-            float:left;
+    @media (max-width: 768px) {
+        .about-section {
+            display: block;
+            padding: 120px 5% 40px;
         }
 
-        .nav-left img {
-            height: 35px
-        }
-
-        .nav-right {
-            float:right;
-        }
-
-        .nav-right li {
-            padding: 10px 15px;
-            list-style:none;
-            font-size:13px;
-            color:white;
-            width: 10%;
-        }
-
-        .nav-right ul {
-            list-style-type: none;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body {
-            width: 100%;
-        }
-
-        .about {
-            padding-left: 5%;
-            padding-right: 5%;
-            font-size: 12px;
-        }
-    }
-
-    @media (max-width:768px) {
         .about-section h1 {
-            font-size: 4em !important;
+            font-size: 3.2rem !important;
             text-align: left;
         }
 
@@ -132,42 +116,39 @@
         }
 
         .mobile_social_icons {
-            padding-top: 10px;
+            padding-top: 22px;
             display: flex !important;
             flex-direction: row;
-            gap: 10px;
-            color: white;
-    
+            gap: 16px;
+            color: var(--ink);
+
+            a {
+                color: var(--ink);
+                transition: color 0.2s var(--ease);
+
+                &:hover { color: var(--accent); }
+            }
+
             svg {
-                font-size: 1.8em;
+                font-size: 1.7em;
             }
         }
 
-        .about-section {
-            padding-top: 150px;
-            display: block;
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-
         .about-section .content {
-            width: 90%;
-            padding-left: 5%;
-            padding-right: 5%;
+            width: 100%;
             padding-bottom: 5%;
         }
 
         .about-section .image-wrapper {
-            padding-left: 5%;
             width: 100%;
             display: flex;
             justify-content: center;
+            margin-top: 34px;
 
             .img-container {
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-                overflow: hidden;
+                width: 180px;
+                height: 220px;
+                border-radius: 18px 18px 18px 4px;
 
                 img {
                     width: 100%;

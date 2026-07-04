@@ -64,7 +64,7 @@ function Timeline() {
 
   const dynamicModalStyle = {
     ...modalStyle,
-    bgcolor: isDark ? '#333' : 'background.paper',
+    bgcolor: isDark ? '#1e232a' : 'background.paper',
     color: isDark ? '#f0f0f0' : 'black',
   };
 
@@ -149,16 +149,20 @@ function Timeline() {
             <VerticalTimelineElement
               key={item.id}
               className={`vertical-timeline-element--${item.type} clickable-element`}
-              contentStyle={{ 
-                background: isDark ? '#333' : 'white', 
-                color: isDark ? '#f0f0f0' : 'rgb(39, 40, 34)', 
-                cursor: 'pointer' 
+              contentStyle={{
+                background: isDark ? '#1e232a' : '#ffffff',
+                color: isDark ? '#e9eae7' : '#141414',
+                border: `1px solid ${isDark ? '#2a2f36' : '#e4e4de'}`,
+                borderRadius: '18px',
+                boxShadow: 'none',
+                cursor: 'pointer'
               }}
-              contentArrowStyle={{ borderRight: `7px solid ${isDark ? '#333' : 'white'}` }}
+              contentArrowStyle={{ borderRight: `7px solid ${isDark ? '#1e232a' : '#ffffff'}` }}
               date={item.date}
-              iconStyle={{ 
-                background: item.type === 'education' ? 'rgb(233, 30, 99)' : (isDark ? '#333' : 'white'), 
-                color: item.type === 'education' ? 'white' : (isDark ? '#f0f0f0' : 'rgb(39, 40, 34)') 
+              iconStyle={{
+                background: item.type === 'education' ? '#3a5a78' : (isDark ? '#1e232a' : '#ffffff'),
+                color: item.type === 'education' ? 'white' : (isDark ? '#e9eae7' : '#141414'),
+                boxShadow: `0 0 0 4px ${isDark ? '#2a2f36' : '#e4e4de'}`
               }}
               icon={item.icon}
               onTimelineElementClick={() => handleOpen(item)}
@@ -213,7 +217,7 @@ function Timeline() {
           </Box>
         </Modal>
       </div>
-      <hr style={{ width: '80%', margin: '0 auto', border: '0', borderTop: '2px dashed #ccc' }} />
+      <hr style={{ width: '80%', margin: '0 auto', border: '0', borderTop: '1px solid var(--line)' }} />
     </div>
   );
 }

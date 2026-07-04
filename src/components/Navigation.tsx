@@ -147,13 +147,13 @@ function Navigation() {
               <Button 
                 key={item[0]} 
                 onClick={() => scrollToSection(item[1])} 
-                sx={{ 
-                  color: activeSection === item[1] ? (mode === 'dark' ? '#bb86fc' : '#5000ca') : (mode === 'light' && !scrolled ? '#000' : '#fff'),
-                  fontWeight: activeSection === item[1] ? 'bold' : 'normal',
-                  borderBottom: activeSection === item[1] ? `2px solid ${mode === 'dark' ? '#bb86fc' : '#5000ca'}` : '2px solid transparent',
+                sx={{
+                  color: activeSection === item[1] ? (mode === 'dark' ? '#7fa8cf' : '#3a5a78') : (mode === 'dark' ? '#9aa0a6' : '#77776f'),
+                  fontWeight: activeSection === item[1] ? 600 : 500,
+                  borderBottom: activeSection === item[1] ? `2px solid ${mode === 'dark' ? '#7fa8cf' : '#3a5a78'}` : '2px solid transparent',
                   borderRadius: 0,
                   '&:hover': {
-                    color: mode === 'dark' ? '#bb86fc' : '#5000ca'
+                    color: mode === 'dark' ? '#7fa8cf' : '#3a5a78'
                   }
                 }}
               >

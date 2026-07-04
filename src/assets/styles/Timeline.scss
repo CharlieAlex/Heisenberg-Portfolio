@@ -1,64 +1,27 @@
-.vertical-timeline span {
-    color: white;
-    font-family: 'Courier Prime', monospace;
-}
-
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
-}
-
+/* Font for card text; colors are set inline via contentStyle */
+.vertical-timeline-element h3,
 .vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
+    font-family: var(--font-display);
 }
 
 .vertical-timeline-element span {
-    color: rgb(39, 40, 34);
+    font-family: var(--font-mono);
 }
 
+/* Date label sits on the timeline track (outside the card) */
 .vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
-}
-
-.svg-inline--fa {
-    color: white;
-}
-
-@media screen and (max-width: 1170px) {
-    .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
-    }
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    opacity: 1;
 }
 
 .clickable-element {
     .vertical-timeline-element-content {
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
         &:hover {
-            transform: scale(1.02);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+            transform: translateY(-4px);
+            box-shadow: var(--shadow) !important;
         }
-    }
-}
-
-.dark-mode {
-    .vertical-timeline-element-content {
-        box-shadow: 0 3px 0 #1a1a1a !important; // Darker shadow for bottom edge
-    }
-    
-    .vertical-timeline-element-date {
-        color: #aaa !important;
-    }
-
-    .vertical-timeline-element-title,
-    .vertical-timeline-element-subtitle,
-    .vertical-timeline-element p {
-        color: #f0f0f0 !important;
     }
 }

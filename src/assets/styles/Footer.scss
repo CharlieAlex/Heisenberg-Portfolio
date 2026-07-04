@@ -13,7 +13,7 @@ footer {
         background: none;
         border: none;
         cursor: pointer;
-        color: #5000ca;
+        color: var(--accent);
         transition: transform 0.3s ease, color 0.3s ease;
         padding: 10px;
         margin-bottom: 20px;
@@ -28,7 +28,7 @@ footer {
 
         &:hover {
             transform: translateY(-5px);
-            color: #bb86fc;
+            color: var(--accent-strong);
         }
 
         svg {
@@ -48,11 +48,11 @@ footer {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white; // Default to white (Dark Mode)
+            color: var(--ink);
             transition: color 0.3s ease, transform 0.2s ease;
-            
+
             &:hover {
-                color: #bb86fc;
+                color: var(--accent);
                 transform: translateY(-2px);
             }
         }
@@ -81,10 +81,7 @@ footer {
 }
 
 .light-mode footer {
-    .back-to-top {
-        color: #5000ca;
-        &:hover {
-            color: #3e00a0;
-        }
+    p {
+        color: var(--muted);
     }
 }

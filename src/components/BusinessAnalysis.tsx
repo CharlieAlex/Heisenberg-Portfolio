@@ -54,7 +54,7 @@ function BusinessAnalysis() {
 
     const dynamicModalStyle = {
         ...modalStyle,
-        bgcolor: isDark ? '#333' : 'background.paper',
+        bgcolor: isDark ? '#1e232a' : 'background.paper',
         color: isDark ? '#f0f0f0' : 'black',
     };
 
@@ -136,7 +136,7 @@ function BusinessAnalysis() {
                 )}
             </Box>
         </Modal>
-        <hr style={{ width: '100%', margin: '0 auto', border: '0', borderTop: '2px dashed #ccc', marginTop: '5rem' }} />
+        <hr style={{ width: '100%', margin: '0 auto', border: '0', borderTop: '1px solid var(--line)', marginTop: '5rem' }} />
     </div>
     );
 }
