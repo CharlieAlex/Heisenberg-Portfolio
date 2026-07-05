@@ -5,10 +5,6 @@
     text-align: left;
     width: 100%;
 
-    h1 {
-        margin-bottom: 3rem;
-    }
-
     .honors-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -86,10 +82,6 @@
     }
 
     @media only screen and (max-width: 600px) {
-        h1 {
-            font-size: 2rem;
-        }
-
         .honor-item {
             padding: 1rem;
 

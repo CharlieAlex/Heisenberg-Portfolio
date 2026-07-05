@@ -3,6 +3,7 @@ import '../assets/styles/Teaching.scss';
 import { Link } from 'react-router-dom';
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
+import SectionTitle from "./SectionTitle";
 
 function Teaching() {
     const { language } = useLanguage();
@@ -43,7 +44,7 @@ function Teaching() {
 
     return (
         <div className="teaching-container" id="teaching">
-            <h1>{t.title}</h1>
+            <SectionTitle eyebrow={t.eyebrow} title={t.title} />
             <div className="teaching-grid">
                 {teachingData.map((item, index) => (
                     <div className="teaching-item" key={index}>

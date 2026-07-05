@@ -22,6 +22,7 @@ export const translations = {
         },
         expertise: {
             title: "Expertise",
+            eyebrow: "What I do",
             tech_stack: "Tech stack:",
             decision_science: {
                 title: "Decision-Oriented Data Science",
@@ -38,6 +39,7 @@ export const translations = {
         },
         career: {
             title: "Career History",
+            eyebrow: "Where I've been",
             legend_work: "Work",
             legend_edu: "Education",
             yulon: {
@@ -105,6 +107,7 @@ export const translations = {
         },
         projects: {
             title: "Side Projects",
+            eyebrow: "What I build",
             visit_github: "Visit GitHub",
             visit_app: "Visit App",
             box_note_rag: {
@@ -151,6 +154,7 @@ export const translations = {
         },
         analysis: {
             title: "Business Analysis",
+            eyebrow: "What I solve",
             people_flow: {
                 title: "Shared Station Flow Map",
                 short: "Optimizing station placement, elimination, and vehicle dispatching using shared station flow visualization.",
@@ -169,6 +173,7 @@ export const translations = {
         },
         research: {
             title: "Research",
+            eyebrow: "What I study",
             thesis: {
                 title: "Parental Death & Marital Decisions",
                 short: "Pioneering Event Study research on how parental loss affects offspring's marriage decisions.",
@@ -190,6 +195,7 @@ export const translations = {
         },
         honors: {
             title: "Honors",
+            eyebrow: "What I've earned",
             award1: {
                 title: "Department's Best Employee",
                 subtitle: "CarPlus, Yulon Group",
@@ -213,6 +219,7 @@ export const translations = {
         },
         teaching: {
             title: "Teaching",
+            eyebrow: "What I teach",
             git: {
                 title: "Git Advanced Course",
                 desc: "An advanced guide to Git version control, covering branching strategies, conflict resolution, and best practices."
@@ -262,6 +269,7 @@ export const translations = {
         },
         expertise: {
             title: "專業技能",
+            eyebrow: "我做的事",
             tech_stack: "技術堆疊：",
             decision_science: {
                 title: "決策導向資料科學",
@@ -278,6 +286,7 @@ export const translations = {
         },
         career: {
             title: "職涯歷程",
+            eyebrow: "一路走來",
             legend_work: "工作",
             legend_edu: "學歷",
             yulon: {
@@ -345,6 +354,7 @@ export const translations = {
         },
         honors: {
             title: "榮譽獎項",
+            eyebrow: "獲得肯定",
             award1: {
                 title: "績優員工",
                 subtitle: "格上租車, 裕隆集團",
@@ -368,6 +378,7 @@ export const translations = {
         },
         projects: {
             title: "個人專案",
+            eyebrow: "親手打造",
             visit_github: "前往 GitHub",
             visit_app: "前往應用程式",
             box_note_rag: {
@@ -414,6 +425,7 @@ export const translations = {
         },
         analysis: {
             title: "商業分析",
+            eyebrow: "實戰案例",
             people_flow: {
                 title: "共享站點人流地圖",
                 short: "利用共享站點人流視覺化，優化站點的開設與淘汰、車輛調度等決策。",
@@ -432,6 +444,7 @@ export const translations = {
         },
         research: {
             title: "學術研究",
+            eyebrow: "研究成果",
             thesis: {
                 title: "父母過世與婚姻決策",
                 short: "使用事件研究法探討父母過世如何影響子女婚姻決策的先驅研究。",
@@ -453,6 +466,7 @@ export const translations = {
         },
         teaching: {
             title: "教學文件",
+            eyebrow: "知識分享",
             git: {
                 title: "Git 進階課程",
                 desc: "Git 版本控制進階指南，涵蓋分支策略、衝突解決與最佳實踐。"

@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
+import SectionTitle from './SectionTitle';
 
 function Contact() {
 
@@ -53,7 +54,7 @@ function Contact() {
     <div id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
-          <h1>Contact Me</h1>
+          <SectionTitle eyebrow="How to reach me" title="Contact Me" />
           <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
           <Box
             ref={form}

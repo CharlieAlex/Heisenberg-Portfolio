@@ -164,17 +164,6 @@ button:focus-visible,
   justify-content: center;
 }
 
-/* ===== Section heading rhythm ===== */
-.skills-container > h1,
-.projects-container > h1,
-.business-analysis-container > h1,
-.honors-container > h1,
-.teaching-container > h1 {
-  font-size: clamp(2.2rem, 4vw, 3rem);
-  font-weight: 700;
-  margin-bottom: 2.5rem;
-}
-
 /* Chips shared surface */
 .chip {
   background-color: var(--accent-soft) !important;

@@ -3,6 +3,7 @@ import '../assets/styles/Honors.scss';
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
+import SectionTitle from "./SectionTitle";
 // import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import SchoolIcon from '@mui/icons-material/School';
 import StarIcon from '@mui/icons-material/Star';
@@ -47,7 +48,7 @@ function Honors() {
 
   return (
     <div className="honors-container" id="honors">
-      <h1>{t.title}</h1>
+      <SectionTitle eyebrow={t.eyebrow} title={t.title} />
       <div className="honors-list">
         {awards.map((award) => (
           <div key={award.id} className={`honor-item ${isDark ? 'dark' : ''}`}>

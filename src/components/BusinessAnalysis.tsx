@@ -31,7 +31,7 @@ function BusinessAnalysis() {
         },
     ];
 
-    return <Showcase id="business-analysis" title={t.title} items={analysisData} />;
+    return <Showcase id="business-analysis" eyebrow={t.eyebrow} title={t.title} items={analysisData} />;
 }
 
 export default BusinessAnalysis;

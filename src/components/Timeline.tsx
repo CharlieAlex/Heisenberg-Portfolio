@@ -7,6 +7,7 @@ import fccLogo from '../assets/images/fcc_logo.webp';
 import ntuLogo from '../assets/images/ntu_logo.jpg';
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
+import SectionTitle from "./SectionTitle";
 
 interface TimelineItem {
   id: string;
@@ -58,7 +59,7 @@ function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1>{t.title}</h1>
+        <SectionTitle eyebrow={t.eyebrow} title={t.title} />
 
         <div className="gantt-split">
           <div className="gantt">

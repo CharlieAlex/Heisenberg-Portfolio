@@ -43,7 +43,7 @@ function Research() {
         },
     ];
 
-    return <Showcase id="research" title={t.title} items={researchData} />;
+    return <Showcase id="research" eyebrow={t.eyebrow} title={t.title} items={researchData} />;
 }
 
 export default Research;

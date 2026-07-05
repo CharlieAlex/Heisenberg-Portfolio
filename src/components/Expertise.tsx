@@ -6,6 +6,7 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../assets/data/translations";
+import SectionTitle from "./SectionTitle";
 
 const labelsFirst = [
     "Python",
@@ -51,7 +52,7 @@ function Expertise() {
     return (
     <div className="container" id="expertise">
         <div className="skills-container">
-            <h1>{t.title}</h1>
+            <SectionTitle eyebrow={t.eyebrow} title={t.title} />
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faChartLine} size="3x"/>

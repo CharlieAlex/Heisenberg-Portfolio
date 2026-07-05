@@ -64,7 +64,7 @@ function Project() {
         },
     ];
 
-    return <Showcase id="projects" title={t.title} items={projectData} />;
+    return <Showcase id="projects" eyebrow={t.eyebrow} title={t.title} items={projectData} />;
 }
 
 export default Project;

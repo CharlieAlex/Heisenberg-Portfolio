@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../assets/styles/Showcase.scss';
 import { useLanguage } from "../contexts/LanguageContext";
+import SectionTitle from "./SectionTitle";
 
 export interface ShowcaseAction {
     label: string;
@@ -21,11 +22,12 @@ export interface ShowcaseItem {
 
 interface ShowcaseProps {
     id: string;
+    eyebrow: string;
     title: string;
     items: ShowcaseItem[];
 }
 
-function Showcase({ id, title, items }: ShowcaseProps) {
+function Showcase({ id, eyebrow, title, items }: ShowcaseProps) {
     const { language } = useLanguage();
     const collapseLabel = language === 'en' ? 'collapse' : '收合';
     const projectWord = language === 'en' ? 'Project' : '項目';
@@ -41,7 +43,7 @@ function Showcase({ id, title, items }: ShowcaseProps) {
 
     return (
         <section className="showcase-container" id={id}>
-            <h1>{title}</h1>
+            <SectionTitle eyebrow={eyebrow} title={title} />
 
             <div className="showcase-grid">
                 {items.map((item, i) => (
