@@ -43,6 +43,7 @@ function Showcase({ id, eyebrow, title, items }: ShowcaseProps) {
 
     return (
         <section className="showcase-container" id={id}>
+            <hr className="section-divider" />
             <SectionTitle eyebrow={eyebrow} title={title} />
 
             <div className="showcase-grid">
@@ -106,8 +107,6 @@ function Showcase({ id, eyebrow, title, items }: ShowcaseProps) {
                     )}
                 </div>
             </div>
-
-            <hr style={{ width: '100%', margin: '0 auto', border: '0', borderTop: '1px solid var(--line)', marginTop: '5rem' }} />
         </section>
     );
 }

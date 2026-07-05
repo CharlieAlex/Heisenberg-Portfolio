@@ -59,6 +59,7 @@ function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
+        <hr className="section-divider" />
         <SectionTitle eyebrow={t.eyebrow} title={t.title} />
 
         <div className="gantt-split">
@@ -126,7 +127,6 @@ function Timeline() {
           </div>
         </div>
       </div>
-      <hr style={{ width: '80%', margin: '0 auto', border: '0', borderTop: '1px solid var(--line)' }} />
     </div>
   );
 }

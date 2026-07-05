@@ -48,6 +48,7 @@ function Honors() {
 
   return (
     <div className="honors-container" id="honors">
+      <hr className="section-divider" />
       <SectionTitle eyebrow={t.eyebrow} title={t.title} />
       <div className="honors-list">
         {awards.map((award) => (
@@ -65,7 +66,6 @@ function Honors() {
           </div>
         ))}
       </div>
-      <hr style={{ width: '100%', margin: '0 auto', border: '0', borderTop: '1px solid var(--line)', marginTop: '3rem' }} />
     </div>
   );
 }

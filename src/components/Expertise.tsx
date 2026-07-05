@@ -50,8 +50,8 @@ function Expertise() {
     const t = translations[language].expertise;
 
     return (
-    <div className="container" id="expertise">
-        <div className="skills-container">
+    <div className="skills-container" id="expertise">
+            <hr className="section-divider" />
             <SectionTitle eyebrow={t.eyebrow} title={t.title} />
             <div className="skills-grid">
                 <div className="skill">
@@ -90,8 +90,6 @@ function Expertise() {
                     </div>
                 </div>
             </div>
-        </div>
-        <hr style={{ width: '80%', margin: '0 auto', border: '0', borderTop: '1px solid var(--line)' }} />
     </div>
     );
 }

@@ -44,6 +44,7 @@ function Teaching() {
 
     return (
         <div className="teaching-container" id="teaching">
+            <hr className="section-divider" />
             <SectionTitle eyebrow={t.eyebrow} title={t.title} />
             <div className="teaching-grid">
                 {teachingData.map((item, index) => (
@@ -55,7 +56,6 @@ function Teaching() {
                     </div>
                 ))}
             </div>
-            <hr style={{ width: '100%', margin: '0 auto', border: '0', borderTop: '1px solid var(--line)', marginTop: '3rem' }} />
         </div>
     );
 }
