@@ -1,0 +1,36 @@
+.scroll-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.scroll-background-grid {
+  position: absolute;
+  inset: -10%;
+  background-image: radial-gradient(circle, var(--line) 1.4px, transparent 1.6px);
+  background-size: 30px 30px;
+  will-change: transform;
+
+  .dark-mode & {
+    background-image: radial-gradient(circle, var(--muted) 1.4px, transparent 1.6px);
+    opacity: 0.3;
+  }
+}
+
+.scroll-background-spotlight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(480px 480px at 50% 42%, var(--accent-soft) 0%, transparent 70%);
+  opacity: 0.25;
+  will-change: opacity, transform;
+  transition: opacity 0.15s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-background-grid,
+  .scroll-background-spotlight {
+    transition: none;
+  }
+}

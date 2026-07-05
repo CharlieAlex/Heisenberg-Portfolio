@@ -12,6 +12,7 @@ import {
   Teaching,
   Navigation,
   Footer,
+  ScrollBackground,
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
@@ -38,6 +39,7 @@ function App() {
 
     return (
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
+        <ScrollBackground/>
         <Navigation/>
         <FadeIn transitionDuration={700}>
             <Main/>
