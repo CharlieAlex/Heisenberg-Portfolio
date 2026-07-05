@@ -46,15 +46,20 @@ function Teaching() {
         <div className="teaching-container" id="teaching">
             <hr className="section-divider" />
             <SectionTitle eyebrow={t.eyebrow} title={t.title} />
-            <div className="teaching-grid">
-                {teachingData.map((item, index) => (
-                    <div className="teaching-item" key={index}>
-                        <Link to={`/teaching/${item.fileName}`}>
+            <div className="teaching-card">
+                <div className="teaching-grid">
+                    {teachingData.map((item, index) => (
+                        <Link className="teaching-cell" to={`/teaching/${item.fileName}`} key={index}>
+                            <div className="tc-top">
+                                <span className="tc-num">{String(index + 1).padStart(2, '0')}</span>
+                                <span className="tc-badge">.md</span>
+                            </div>
                             <h2>{item.title}</h2>
+                            <p>{item.description}</p>
+                            <span className="tc-arrow">→</span>
                         </Link>
-                        <p>{item.description}</p>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );
